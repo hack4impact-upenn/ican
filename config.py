@@ -14,6 +14,10 @@ class Config:
     ICAN_MAIL_SENDER = 'iCAN Admin <admin@ican.com>'
     ICAN_ADMIN = os.environ.get('ICAN_ADMIN')
 
+    # SCSS Config
+    SCSS_STATIC_DIR = os.path.join(basedir, 'app/static')
+    SCSS_ASSETS_DIR = os.path.join(basedir, 'app/assets')
+
     @staticmethod
     def init_app(app):
         pass
