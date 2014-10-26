@@ -13,7 +13,7 @@ def signup():
         student = Student.query.filter_by(email=form.email.data).first()
         if student is None:
             student = Student(email=form.email.data, name=form.name.data)
-            db.session.add(user)
+            db.session.add(student)
             return redirect(url_for('.index'))
         else:
             #throw some error and rerender form
