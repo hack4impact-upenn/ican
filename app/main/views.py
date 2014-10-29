@@ -6,7 +6,8 @@ from . import main
 from .forms import SignupForm
 
 
-@main.route('/signup', methods=['GET', 'POST'])
+@main.route('/')
+@main.route('/index', methods=['GET', 'POST'])
 def signup():
     form = SignupForm()
     if form.validate_on_submit():
@@ -14,14 +15,13 @@ def signup():
         if student is None:
             student = Student(email=form.email.data, name=form.name.data)
             db.session.add(student)
-            return redirect(url_for('.index'))
+            return redirect(url_for('.menu'))
         else:
             #throw some error and rerender form
-            return redirect(url_for('.index'))
-    return render_template('signup.html',
+            return redirect(url_for('.menu'))
+    return render_template('index.html',
                            form=form)
 
-@main.route('/')
-@main.route('/index')
+@main.route('/menu')
 def index():
-    return render_template('index.html')
+    return render_template('menu.html')

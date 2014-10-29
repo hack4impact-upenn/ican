@@ -1,7 +1,8 @@
 {% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block title %}iCAN{% endblock %}
 
 {% block page_content %}
-home page
+{{ wtf.quick_form(form) }}
 {% endblock %}
