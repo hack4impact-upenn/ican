@@ -17,7 +17,12 @@ def signup():
     if form_signup.validate_on_submit():
         student = Student.query.filter_by(email=form_signup.email.data).first()
         if student is None:
-            student = Student(email=form_signup.email.data, name=form_signup.name.data)
+            student = Student(email=form_signup.email.data,
+                              name=form_signup.name.data,
+                              number=form_signup.number.data,
+                              school=form_signup.school.data,
+                              password=form_signup.password.data,
+                              )
             db.session.add(student)
             return redirect(url_for('.menu'))
         else:
@@ -33,9 +38,7 @@ def login():
     if form_login.validate_on_submit():
         student = Student.query.filter_by(email=form_login.email.data).first()
         if student is None:
-            student = Student(email=form_login.email.data, name=form_login.name.data)
-            db.session.add(student)
-            return redirect(url_for('.menu'))
+            return redirect(url_for('.signup'))
         else:
             #throw some error and rerender form
             return redirect(url_for('.menu'))
