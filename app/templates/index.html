@@ -8,21 +8,32 @@
 		<header class="all-full landing">
 			<h1>iCAN Interactive Mentoring</h1>
 		</header>
-	</div>
 
-	<div class="row">
-		<main class="all-full landing">
-			<button>Log in!</button>
-			<button>Sign up!</button>
-		</main>
 	</div>
 
 	{% if form %}
+
+
+
 	<div class="row" id="meh">
 		<div class="all-full">
 			{{ wtf.quick_form(form) }}
 		</div>
+
+		<button onclick="window.location='/'">Back to home</button>
+
 	</div>
+
+	{% else %}
+
+	<div class="row">
+
+		<main class="all-full landing">
+			<button onclick="window.location='/login'">Log in!</button>
+			<button onclick="window.location='/signup'">Sign up!</button>
+		</main>
+	</div>
+
 	{% endif %}
 
 </body>
