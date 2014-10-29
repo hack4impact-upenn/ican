@@ -9,7 +9,7 @@ from .forms import SignupForm, LoginForm
 # @backend TODO check
 @main.route('/')
 def landing():
-    return render_template('index.html')
+    return render_template('index.html',  css_name='landing')
 
 @main.route('/signup', methods=['GET', 'POST'])
 def signup():
@@ -24,6 +24,7 @@ def signup():
             #throw some error and rerender form
             return redirect(url_for('.menu'))
     return render_template('index.html',
+						   css_name='signup',
                            form=form_signup)
 
 # @backend TODO check
@@ -40,6 +41,7 @@ def login():
             #throw some error and rerender form
             return redirect(url_for('.menu'))
     return render_template('index.html',
+						   css_name='login',
                            form=form_login)
 
 @main.route('/menu')
