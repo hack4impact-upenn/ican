@@ -1,3 +1,10 @@
+@import "_normalize";
+@import "_layout";
+@import "_ui";
+@import "_type";
+
+$text-color: black;
+
 body {
-    color: pink;
+    color: $text-color;
 }

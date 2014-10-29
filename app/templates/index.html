@@ -1,8 +1,28 @@
-{% extends "base.html" %}
-{% import "bootstrap/wtf.html" as wtf %}
+<!-- {% import "bootstrap/wtf.html" as wtf %} -->
 
-{% block title %}iCAN{% endblock %}
+{% include "head.html" %}
 
-{% block page_content %}
-{{ wtf.quick_form(form) }}
-{% endblock %}
+<body class="gridlock">
+
+	<div class="row">
+		<header class="all-full landing">
+			<h1>iCAN Interactive Mentoring</h1>
+		</header>
+	</div>
+
+	<div class="row">
+		<main class="all-full landing">
+			<button>Log in!</button>
+			<button>Sign up!</button>
+		</main>
+	</div>
+
+	{% if form %}
+	<div class="row" id="meh">
+		<div class="all-full">
+			{{ wtf.quick_form(form) }}
+		</div>
+	</div>
+	{% endif %}
+
+</body>
