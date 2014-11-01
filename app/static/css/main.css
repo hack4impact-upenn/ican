@@ -750,6 +750,11 @@ html {
     margin-left: auto;
     margin-right: auto;   }
 }
+button {
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 2em; }
 * {
   font-family: 'Source Sans Pro', sans-serif; }
 
