@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic); 
+  body {
+    background-color: #4ecdc4;
+    color: #fff;
+    font-size: 20px; }
+
+    h1 {
+      margin-bottom: 5%; }
+
+      form {
+        margin: 0 25%;
+        padding: 3%;
+        text-align: center;
+        color: #4ecdc4;
+        background-color: #fff;
+        border: 10px solid rgba(78, 205, 196, 0.5);
+        border-radius: 10px; }
+
+        .form-group {
+          padding: 1%;
+          margin-bottom: 5%;
+          width: 100%; }
+
+          .control-label {
+            display: block;
+            margin-bottom: 2%;
+            text-transform: uppercase; }
+
+            .form-control {
+              width: 75%;
+              padding: 2%;
+              outline: none;
+              color: #4ecdc4;
+              border: 2px solid #4ecdc4;
+              border-radius: 10px; }
+
+              .help-block {
+                color: #878787;
+                font-size: 15px;
+                margin: 0;
+                margin-top: 2%; }
+
+                #submit, .back {
+                  display: inline-block;
+                  padding: 1% 3%;
+                  margin-top: 5%;
+                  background-color: #4ecdc4;
+                  color: #fff;
+                  border: 2px solid #C6F5F2;
+                  border-radius: 10px;
+                  text-transform: uppercase;
+                  text-align: center;
+                  outline: none;
+                  cursor: pointer;
+                  transition: ease 0.4s; }
+
+                  #submit:hover, .back:hover {
+                    background-color: #fff;
+                    color: #4ecdc4;
+                    border-color: #4ecdc4; }
+
+                    .back {
+                      padding: 0.5% 1%; }
+* {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+  h1 {
+    font-weight: normal; }
+
+    header.landing h1 {
+      text-align: center; }
