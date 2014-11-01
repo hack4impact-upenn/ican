@@ -1,6 +1,7 @@
-from . import db
+from . import db, login_manager
+from flask.ext.login import UserMixin
 
-class User(db.Model):
+class User(UserMixin, db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), index=True)
@@ -11,6 +12,14 @@ class User(db.Model):
     mentor_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     mentor = db.relationship('User', backref='students', remote_side=[id])
     tasks = db.relationship('Task', backref='student', lazy='dynamic')
+
+    def is_role(self, role):
+        return self.user_role == role
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
 
 
 class Task(db.Model):
