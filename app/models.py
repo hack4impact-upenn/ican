@@ -40,14 +40,14 @@ class User(UserMixin, db.Model):
         possible_mentors = []
         if university:
             possible_mentors = [m for m in university.users.all() if m.user_role == 'mentor']
-        if (university is None or len(possible_mentors) == 0):   
+        if (university is None or len(possible_mentors) == 0):
             possible_mentors = [m for m in User.query.all() if m.user_role == 'mentor']
         if (len(possible_mentors) >= 1):
-            min_mentor = None
-            min_students = len(possible_mentors[0].students.all())
+            min_mentor = possible_mentors[0]
+            min_students = len(possible_mentors[0].students)
             for m in possible_mentors:
-                if len(m.students.all()) < min_students:
-                    min_students = len(m.students.all())
+                if len(m.students) < min_students:
+                    min_students = len(m.students)
                     min_mentor = m
             self.mentor = min_mentor
     
