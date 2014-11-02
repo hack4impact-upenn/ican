@@ -11,6 +11,7 @@ class User(UserMixin, db.Model):
     user_role = db.Column(db.String(15))
     phone = db.Column(db.Integer, unique=True, index=True)
     mentor_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    university_id = db.Column(db.Integer, db.ForeignKey('universities.id'))
     mentor = db.relationship('User', backref='students', remote_side=[id])
     tasks = db.relationship('Task', backref='student', lazy='dynamic')
 
@@ -27,6 +28,29 @@ class User(UserMixin, db.Model):
 
     def verify_password(self, password):
         return check_password_hash(self.password_hash, password)
+
+    def match_with_mentor(self):
+        '''
+        Matches self(role=student) with User(role=mentor)
+        1) Tries to match based on shared university
+        2) If student.university is None or university.mentors is None:
+            matches student with any mentor with fewest students
+        '''
+        university = self.university
+        possible_mentors = []
+        if university:
+            possible_mentors = [m for m in university.users.all() if m.user_role == 'mentor']
+        if (university is None or len(possible_mentors) == 0):   
+            possible_mentors = [m for m in User.query.all() if m.user_role == 'mentor']
+        if (len(possible_mentors) >= 1):
+            min_mentor = None
+            min_students = len(possible_mentors[0].students.all())
+            for m in possible_mentors:
+                if len(m.students.all()) < min_students:
+                    min_students = len(m.students.all())
+                    min_mentor = m
+            self.mentor = min_mentor
+    
 
 
 @login_manager.user_loader
@@ -55,3 +79,6 @@ class University(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64))
     tasks = db.relationship('GeneralTask', backref='university', lazy='dynamic')
+    #students = db.relationship('User', backref='university', lazy='dynamic')
+    #mentors = db.relationship('User', backref='university', lazy='dynamic')
+    users = db.relationship('User', backref='university', lazy='dynamic')
