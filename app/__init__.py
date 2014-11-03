@@ -1,4 +1,7 @@
 import os
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+
 from flask import Flask
 from flask.ext.bootstrap import Bootstrap
 from flask.ext.mail import Mail
@@ -8,8 +11,6 @@ from flask.ext.scss import Scss
 from config import config
 from flask.ext.login import LoginManager
 from flask.ext import assets
-
-basedir = os.path.abspath(os.path.dirname(__file__))
 
 bootstrap = Bootstrap()
 mail = Mail()
@@ -28,6 +29,7 @@ def create_app(config_name):
     # Set up SASS compilation
     # NB: you may need to `sudo gem install sass` locally
     env = assets.Environment(app)
+    # env.config['SASS_STYLE'] = 'compressed'
     # Tell assets where to look for scss files
     env.load_path = [os.path.join(basedir, 'assets/scss')]
     sass_bundle = assets.Bundle('main.scss', filters='scss', output='css/main.css')
