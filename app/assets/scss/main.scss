@@ -1,3 +1,14 @@
-body {
-    color: pink;
-}
+//
+//  Root-level SCSS file
+//
+
+// CSS reset
+@import "base/normalize";
+
+// Import Bourbon SCSS libraries - they're awesome
+@import "bourbon/bourbon";  // handy mixins for autoprefixing etc.
+@import "base/base";        // base styles - to modify, see variables in base/_variables.scss
+@import "neat/neat";        // grid system
+
+// Import CSS3 transitions for page-switching with jquery.smoothState.js
+@import "transitions/transitions";

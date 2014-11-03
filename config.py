@@ -1,6 +1,8 @@
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
+def prepend_basedir(folder):
+    return os.path.join(basedir, folder)
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
@@ -13,10 +15,6 @@ class Config:
     ICAN_MAIL_SUBJECT_PREFIX = '[iCAN]'
     ICAN_MAIL_SENDER = 'iCAN Admin <admin@ican.com>'
     ICAN_ADMIN = os.environ.get('ICAN_ADMIN')
-
-    # SCSS Config
-    SCSS_STATIC_DIR = os.path.join(basedir, 'app/static')
-    SCSS_ASSETS_DIR = os.path.join(basedir, 'app/assets')
 
     @staticmethod
     def init_app(app):
