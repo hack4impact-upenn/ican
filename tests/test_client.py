@@ -21,9 +21,8 @@ class FlaskClientTestCase(unittest.TestCase):
     def test_home_page(self):
         response = self.client.get(url_for('main.index'))
         self.assertTrue(True) # change to some condition true for main.index
-        u = User(email="ali")
 
-    def test_register_and_login_mentor(self):
+    def test_register_mentor(self):
 
         # register a new account
         response = self.client.post(url_for('mentors.signup'), data={
@@ -34,9 +33,15 @@ class FlaskClientTestCase(unittest.TestCase):
         u = User.query.first()
         self.assertTrue(u.email == 'john@example.com')
 
+    def test_login_student(self):
+        u = User(email="alialtaf@gmail.com", password="hello", user_role="student")
+        db.session.add(u)
+        db.session.commit()
+        u = User.query.first()
         # login with the new account
-        response =client.post(url_for('main.login'), data={
+        response =self.client.post(url_for('main.login'), data={
             'email': 'alialtaf@gmail.com',
-            'password': 'hello'
+            'password': 'hello',
+            'remember_me' : True
         }, follow_redirects=True)
-        self.assertTrue(re.search(b'some string', response.data)) #change some string to a condition that should be true only if redirected correctly
+        self.assertTrue('student' in response.data)

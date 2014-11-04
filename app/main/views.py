@@ -13,7 +13,8 @@ def index():
 
 @main.route('/login', methods=['GET', 'POST'])
 def login():
-    form = LoginForm()
+    app = current_app._get_current_object()
+    form = LoginForm(CSRF_ENABLED=app.config['WTF_CSRF_ENABLED'])
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         if user is not None and user.verify_password(form.password.data):
