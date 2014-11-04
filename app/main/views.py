@@ -9,7 +9,7 @@ from flask.ext.login import login_user
 @main.route('/')
 @main.route('/index')
 def index():
-    return render_template('landing.html')
+    return render_template('backend_placeholders/index.html')
 
 @main.route('/login', methods=['GET', 'POST'])
 def login():

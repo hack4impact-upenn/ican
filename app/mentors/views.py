@@ -3,7 +3,7 @@ from flask import render_template, session, redirect, url_for, current_app
 
 @mentors.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('backend_placeholders/index.html')
 
 # @mentors.route('/signup', methods=['GET', 'POST'])
 # def signup():

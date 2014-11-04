@@ -7,7 +7,7 @@ from flask.ext.login import login_required, current_user
 @login_required
 @student_required
 def index():
-    return render_template('index.html')
+    return render_template('backend_placeholders/index.html')
 
 # @students.route('/signup', methods=['GET', 'POST'])
 # def signup():
