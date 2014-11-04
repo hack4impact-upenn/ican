@@ -1,7 +1,11 @@
 from . import students
 from flask import render_template, session, redirect, url_for, current_app
+from ..decorators import student_required
+from flask.ext.login import login_required, current_user
 
 @students.route('/')
+@login_required
+@student_required
 def index():
     return render_template('index.html')
 

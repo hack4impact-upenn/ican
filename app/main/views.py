@@ -4,6 +4,7 @@ from ..models import User
 from ..email import send_email
 from .forms import LoginForm
 from . import main
+from flask.ext.login import login_user
 
 @main.route('/')
 @main.route('/index')
@@ -18,10 +19,10 @@ def login():
         if user is not None and user.verify_password(form.password.data):
             login_user(user, form.remember_me.data)
             if user.is_role("admin"):
-                return url_for('admin.index')
+                return redirect(url_for('admin.index'))
             elif user.is_role("student"):
-                return url_form('students.index')
+                return redirect(url_for('students.index'))
             else:
-                return url_for('mentors.index')
+                return redirect(url_for('mentors.index'))
         flash('Invalid username or password.')
     return render_template('login.html', form=form)
