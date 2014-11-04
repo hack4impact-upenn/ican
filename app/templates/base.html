@@ -1,49 +1,60 @@
-{% extends "bootstrap/base.html" %}
+<!doctype html>
+<html lang="en">
 
-{% block title %}iCAN{% endblock %}
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        {% assets "css_main" %}
+            <link rel="stylesheet" href="{{ ASSET_URL }}">
+        {% endassets %}
+        <title>{% block title %}{% endblock %} - iCAN</title>
+    {% endblock %} 
+</head>
 
-{% block head %}
-{{ super() }}
-<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
-{% endblock %}
+<body>
+    <div id="main" class="scene">
+        {# we are now inside the smoothState.js container. #}
 
-{% block navbar %}
-<div class="navbar navbar-inverse" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ url_for('main.index') }}">iCAN</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="{{ url_for('main.index') }}">Home</a></li>
-            </ul>
-        </div>
+        <header>
+            {% block header %}{% endblock %}
+        </header>
+
+        <main class="fade-in-up element">
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer>
+            {% block footer %}{% endblock %}
+        </footer>
+
     </div>
-</div>
-{% endblock %}
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://raw.githubusercontent.com/weblinc/jquery.smoothState.js/master/jquery.smoothState.js"></script>
+    <script>
+        ;(function($) {
+            'use strict';
+            var $body = $('html, body'),
+            content = $('#main').smoothState({
+                development: true,
+                prefetch: true,
+                pageCacheSize: 4,
+                // Runs when a link has been activated
+                onStart: {
+                    duration: 250, // Duration of our animation
+                    render: function (url, $container) {
+                        // toggleAnimationClass() is a public method
+                        // for restarting css animations with a class
+                        content.toggleAnimationClass('is-exiting');
+                        // Scroll user to the top
+//                        $body.animate({
+//                            scrollTop: 0
+//                        });
+                    }
+                }
+            }).data('smoothState'); // makes public methods available
+        })(jQuery);
+    </script>
+</body>
 
-{% block content %}
-<div class="container">
-    {% for message in get_flashed_messages() %}
-    <div class="alert alert-warning">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        {{ message }}
-    </div>
-    {% endfor %}
-
-    {% block page_content %}{% endblock %}
-</div>
-{% endblock %}
-
-{% block scripts %}
-{{ super() }}
-{{ moment.include_moment() }}
-{% endblock %}
+</html>
