@@ -1,14 +1,155 @@
-//
-//  Root-level SCSS file
-//
+/******************************************************************************
+ **  IMPORTS
+ ******************************************************************************/
 
-// CSS reset
+// ----- CSS reset -----
 @import "base/normalize";
 
-// Import Bourbon SCSS libraries - they're awesome
-@import "bourbon/bourbon";  // handy mixins for autoprefixing etc.
-@import "base/base";        // base styles - to modify, see variables in base/_variables.scss
-@import "neat/neat";        // grid system
+// ----- SASS libraries -----
 
-// Import CSS3 transitions for page-switching with jquery.smoothState.js
-@import "transitions/transitions";
+// handy mixins for autoprefixing, etc.
+@import "bourbon/bourbon";
+
+// base styles, see esp. base/_variables.scss
+@import "base/base";
+
+// lightweight grid system
+@import "neat/neat";
+
+// ----- Page transitions -----
+
+// for page-switching with jquery.smoothState.js
+//@import "transitions/_transitions.scss";
+
+/******************************************************************************
+ **  BASE STYLES                                                                
+ ******************************************************************************/
+
+// ----- Header -----
+
+header {
+    background-color: $base-accent-color;
+    color: white;
+    padding: 5px 0;
+}
+
+// ----- Main -----
+
+main {
+    background-color: $lilia;
+}
+
+// ----- Footer -----
+
+footer {
+    background-color: $stone;
+    color: $heather;
+    // if too dark, try $pearl
+}
+
+/******************************************************************************
+ **  GRID 
+ **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
+ ******************************************************************************/
+
+.wrap {
+    @include outer-container;
+}
+
+/******************************************************************************
+ **  MODULES / LOBOTOMIZED OWLS     
+ **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
+ ******************************************************************************/
+
+* + * {
+    margin-top: 1.5em;
+}
+
+.compact * + * {
+    margin-top: 0.75em;
+}
+
+.margins-off > * {
+    margin-top: 0;
+}
+
+/******
+idk **/
+
+@mixin grid-item-columns($columns) {
+    width: 100% / 12 * $columns;
+}
+
+.grid-items-lines {
+    $grid-items-background: $base-background-color;
+    $grid-item-background: $base-background-color;
+    $grid-item-border: 1px solid transparentize($base-font-color, 0.8);
+    $grid-item-columns: 4;
+    $grid-item-big-columns: 8;
+    $grid-item-color: $base-font-color;
+    $grid-item-height: 14em;
+    @include clearfix;
+    position: relative;
+    .grid-item {
+        @include transition(all 0.2s ease-in-out);
+        height: $grid-item-height;
+        background: $grid-item-background;
+        width: 100%;
+        overflow: hidden;
+        float: left;
+        padding: 2em;
+        border-right: $grid-item-border;
+        border-bottom: $grid-item-border;
+        cursor: pointer;
+        @include media($large-screen) {
+            @include grid-item-columns($grid-item-columns);
+        }
+
+        &:hover {
+            background: transparentize($grid-item-color, 0.95);
+        }
+    }
+    .grid-item img {
+        display: block;
+        height: 2.5em;
+        margin-bottom: 1.2em;
+        opacity: .2;
+    }
+    .grid-item h1 {
+        color: $grid-item-color;
+        font-size: 1.3em;
+        margin-bottom: .4em;
+    }
+    .grid-item p {
+        color: transparentize($grid-item-color, 0.4);
+        @include media($medium-screen) {
+            max-width: 70%;
+        }
+    }
+    .grid-item-big {
+        @include media($large-screen) {
+            @include grid-item-columns($grid-item-big-columns);
+        }
+
+        p {
+            @include media($medium-screen) {
+                max-width: 60%;
+            }
+        }
+    }
+    // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+    .bottom-cover {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 3px;
+        background: $grid-items-background;
+    }
+    .right-cover {
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        width: 4px;
+        background: $grid-items-background;
+    }
+}

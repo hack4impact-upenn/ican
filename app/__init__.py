@@ -33,7 +33,7 @@ def create_app(config_name):
     # Tell assets where to look for scss files
     env.load_path = [os.path.join(basedir, 'assets/scss')]
     sass_bundle = assets.Bundle('main.scss', filters='scss', output='css/main.css')
-    env.register('css', sass_bundle)
+    env.register('css_main', sass_bundle)
 
     bootstrap.init_app(app)
     mail.init_app(app)

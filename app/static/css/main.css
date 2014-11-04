@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/******************************************************************************
+ **  IMPORTS
+ ******************************************************************************/
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,300italic,400italic,700italic);
 /* line 45, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
 article,
@@ -286,7 +289,7 @@ input[type="checkbox"], input[type="radio"] {
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
-  background-color: #117899;
+  background-color: #9e1b34;
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -299,7 +302,7 @@ input[type="submit"] {
 /* line 13, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/extends/_button.scss */
 button:hover,
 input[type="submit"]:hover {
-  background-color: #094254;
+  background-color: #5d101e;
   color: white;
 }
 /* line 18, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/extends/_button.scss */
@@ -372,16 +375,16 @@ a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
-  color: #117899;
+  color: #9e1b34;
   text-decoration: none;
 }
 /* line 58, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
 a:hover {
-  color: #094254;
+  color: #5d101e;
 }
 /* line 62, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
 a:active, a:focus {
-  color: #094254;
+  color: #5d101e;
   outline: none;
 }
 
@@ -480,8 +483,8 @@ select[multiple=multiple]:hover {
 textarea:focus,
 input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
 select[multiple=multiple]:focus {
-  border-color: #117899;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(14, 102, 130, 0.7);
+  border-color: #9e1b34;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(136, 23, 45, 0.7);
   outline: none;
 }
 
@@ -600,4 +603,150 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+}
+
+/******************************************************************************
+ **  BASE STYLES                                                                
+ ******************************************************************************/
+/* line 30 */
+header {
+  background-color: #9e1b34;
+  color: white;
+  padding: 5px 0;
+}
+
+/* line 38 */
+main {
+  background-color: #f2f3f4;
+}
+
+/* line 44 */
+footer {
+  background-color: #707c80;
+  color: #c1c7c9;
+}
+
+/******************************************************************************
+ **  GRID 
+ **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
+ ******************************************************************************/
+/* line 55 */
+.wrap {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+.wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/******************************************************************************
+ **  MODULES / LOBOTOMIZED OWLS     
+ **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
+ ******************************************************************************/
+/* line 64 */
+* + * {
+  margin-top: 1.5em;
+}
+
+/* line 68 */
+.compact * + * {
+  margin-top: 0.75em;
+}
+
+/* line 72 */
+.margins-off > * {
+  margin-top: 0;
+}
+
+/******
+idk **/
+/* line 83 */
+.grid-items-lines {
+  position: relative;
+}
+/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+.grid-items-lines:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 93 */
+.grid-items-lines .grid-item {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  height: 14em;
+  background: #f2f3f4;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+  padding: 2em;
+  border-right: 1px solid rgba(55, 61, 63, 0.2);
+  border-bottom: 1px solid rgba(55, 61, 63, 0.2);
+  cursor: pointer;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 93 */
+  .grid-items-lines .grid-item {
+    width: 33.33333%;
+  }
+}
+/* line 108 */
+.grid-items-lines .grid-item:hover {
+  background: rgba(55, 61, 63, 0.05);
+}
+/* line 112 */
+.grid-items-lines .grid-item img {
+  display: block;
+  height: 2.5em;
+  margin-bottom: 1.2em;
+  opacity: .2;
+}
+/* line 118 */
+.grid-items-lines .grid-item h1 {
+  color: #373d3f;
+  font-size: 1.3em;
+  margin-bottom: .4em;
+}
+/* line 123 */
+.grid-items-lines .grid-item p {
+  color: rgba(55, 61, 63, 0.6);
+}
+@media screen and (min-width: 40em) {
+  /* line 123 */
+  .grid-items-lines .grid-item p {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 53.75em) {
+  /* line 129 */
+  .grid-items-lines .grid-item-big {
+    width: 66.66667%;
+  }
+}
+@media screen and (min-width: 40em) {
+  /* line 134 */
+  .grid-items-lines .grid-item-big p {
+    max-width: 60%;
+  }
+}
+/* line 141 */
+.grid-items-lines .bottom-cover {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 3px;
+  background: #f2f3f4;
+}
+/* line 148 */
+.grid-items-lines .right-cover {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 4px;
+  background: #f2f3f4;
 }
