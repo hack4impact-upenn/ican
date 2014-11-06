@@ -4,10 +4,10 @@ from ..decorators import student_required
 from flask.ext.login import login_required, current_user
 
 @students.route('/')
-@login_required
-@student_required
+# @login_required
+# @student_required
 def index():
-    return render_template('backend_placeholders/student_index.html')
+    return render_template('student/landing.html')
 
 # @students.route('/signup', methods=['GET', 'POST'])
 # def signup():

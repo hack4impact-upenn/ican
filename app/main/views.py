@@ -9,7 +9,7 @@ from flask.ext.login import login_user
 @main.route('/')
 @main.route('/index')
 def index():
-    return render_template('backend_placeholders/index.html')
+    return render_template('main/landing.html')
 
 @main.route('/login', methods=['GET', 'POST'])
 def login():
@@ -26,4 +26,4 @@ def login():
             else:
                 return redirect(url_for('mentors.index'))
         flash('Invalid username or password.')
-    return render_template('login.html', form=form)
+    return render_template('main/login.html', form=form)
