@@ -1,0 +1,10 @@
+{% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}iCAN{% endblock %}
+
+{% block main %}
+<div class="wrap">
+{{ wtf.quick_form(form) }}
+</div>
+{% endblock %}
