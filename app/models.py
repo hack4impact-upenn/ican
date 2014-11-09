@@ -19,6 +19,9 @@ class User(UserMixin, db.Model):
         super(User, self).__init__(**kwargs)
         # add mentor matching and task addition here
 
+    def __repr__(self):
+        return '<User %r>' % self.name
+
     def is_role(self, role):
         return self.user_role == role
 
@@ -68,6 +71,9 @@ class Task(db.Model):
     description = db.Column(db.Text)
     deadline = db.Column(db.DateTime)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+
+    def __repr__(self):
+        return '<Task %r>' % self.id
 
 
 class GeneralTask(db.Model):
