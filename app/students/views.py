@@ -8,7 +8,7 @@ from forms import SignupForm
 # @login_required
 # @student_required
 def index():
-    return render_template('student/landing.html')
+    return render_template('student/menu.html')
 
 @students.route('/signup', methods=['GET', 'POST'])
 def signup():
