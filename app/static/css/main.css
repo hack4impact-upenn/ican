@@ -3,7 +3,7 @@
  **  IMPORTS
  ******************************************************************************/
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,300italic,400italic,700italic);
-/* line 45, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 45, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 article,
 aside,
 details,
@@ -18,25 +18,25 @@ summary {
   display: block;
 }
 
-/* line 61, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 61, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 audio,
 canvas,
 video {
   display: inline-block;
 }
 
-/* line 74, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 74, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 84, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 84, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 [hidden], template {
   display: none;
 }
 
-/* line 97, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 97, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 html {
   background: #fff;
   color: #000;
@@ -44,7 +44,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* line 109, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 109, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 html,
 button,
 input,
@@ -53,83 +53,83 @@ textarea {
   font-family: sans-serif;
 }
 
-/* line 119, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 119, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 body {
   margin: 0;
 }
 
-/* line 132, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 132, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 a {
   background: transparent;
 }
-/* line 139, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 139, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
-/* line 145, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 145, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 a:hover, a:active {
   outline: 0;
 }
 
-/* line 159, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 159, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 164, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 164, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 169, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 169, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 174, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 174, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 179, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 179, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 184, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 184, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
 }
 
-/* line 192, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 192, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 198, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 198, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 211, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 211, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 217, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 217, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 233, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 233, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 code,
 kbd,
 pre,
@@ -138,30 +138,30 @@ samp {
   font-size: 1em;
 }
 
-/* line 246, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 246, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 254, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 254, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 270, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 270, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 279, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 279, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* line 286, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 286, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -170,46 +170,46 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 294, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 294, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 298, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 298, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 350, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 350, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 img {
   border: 0;
 }
 
-/* line 359, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 359, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 369, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 369, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* line 386, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 386, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 397, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 397, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
 }
 
-/* line 411, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 411, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button,
 input,
 select,
@@ -220,18 +220,18 @@ textarea {
   vertical-align: baseline;
 }
 
-/* line 426, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 426, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button, input {
   line-height: normal;
 }
 
-/* line 435, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 435, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 448, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 448, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -240,42 +240,42 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 461, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 461, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
-/* line 470, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 470, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 479, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 479, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 490, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 490, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 498, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 498, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-/* line 506, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 506, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-/* line 516, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 516, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
@@ -285,7 +285,7 @@ input[type="checkbox"], input[type="radio"] {
  * http://bitters.bourbon.io
  * Copyright 2013–2014 thoughtbot, inc.
  * MIT License */
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/extends/_button.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/extends/_button.scss */
 a.button,
 button,
 input[type="submit"] {
@@ -300,14 +300,14 @@ input[type="submit"] {
   padding: 0.75em 1em;
   text-decoration: none;
 }
-/* line 13, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/extends/_button.scss */
+/* line 13, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/extends/_button.scss */
 a.button:hover,
 button:hover,
 input[type="submit"]:hover {
   background-color: #5d101e;
   color: white;
 }
-/* line 18, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/extends/_button.scss */
+/* line 18, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/extends/_button.scss */
 a.button:disabled,
 button:disabled,
 input[type="submit"]:disabled {
@@ -315,12 +315,12 @@ input[type="submit"]:disabled {
   opacity: 0.5;
 }
 
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/extends/_errors.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/extends/_errors.scss */
 .help-block {
   color: #96151b;
 }
 
-/* line 4, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 4, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 body {
   -webkit-font-smoothing: antialiased;
   background-color: #f2f3f4;
@@ -330,7 +330,7 @@ body {
   line-height: 1.5;
 }
 
-/* line 13, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 13, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h1,
 h2,
 h3,
@@ -343,42 +343,42 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 
-/* line 25, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 25, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h1 {
   font-size: 2.25em;
 }
 
-/* line 29, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 29, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h2 {
   font-size: 2em;
 }
 
-/* line 33, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 33, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h3 {
   font-size: 1.75em;
 }
 
-/* line 37, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 37, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h4 {
   font-size: 1.5em;
 }
 
-/* line 41, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 41, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h5 {
   font-size: 1.25em;
 }
 
-/* line 45, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 45, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h6 {
   font-size: 1em;
 }
 
-/* line 49, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 49, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 p {
   margin: 0 0 0.75em;
 }
 
-/* line 53, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 53, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
@@ -386,17 +386,17 @@ a {
   color: #9e1b34;
   text-decoration: none;
 }
-/* line 58, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 58, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 a:hover {
   color: #5d101e;
 }
-/* line 62, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 62, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 a:active, a:focus {
   color: #5d101e;
   outline: none;
 }
 
-/* line 68, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 68, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 hr {
   border-bottom: 1px solid #DDD;
   border-left: none;
@@ -405,14 +405,14 @@ hr {
   margin: 1.5em 0;
 }
 
-/* line 76, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 76, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 img,
 picture {
   margin: 0;
   max-width: 100%;
 }
 
-/* line 82, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 82, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 blockquote {
   border-left: 2px solid #DDD;
   color: #5b6568;
@@ -420,17 +420,17 @@ blockquote {
   padding-left: 0.75em;
 }
 
-/* line 89, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 89, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 cite {
   color: #727f83;
   font-style: italic;
 }
-/* line 93, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 93, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 cite:before {
   content: "\2014 \00A0";
 }
 
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 fieldset {
   background: #f7f7f7;
   border: 1px solid #DDD;
@@ -438,7 +438,7 @@ fieldset {
   padding: 1.5em;
 }
 
-/* line 8, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 8, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 input,
 label,
 select {
@@ -447,21 +447,21 @@ select {
   font-size: 1em;
 }
 
-/* line 16, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 16, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 label {
   font-weight: bold;
   margin-bottom: 0.375em;
 }
-/* line 20, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 20, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 label.required:after {
   content: "*";
 }
-/* line 24, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 24, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 label abbr {
   display: none;
 }
 
-/* line 29, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 29, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 textarea,
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
 select[multiple=multiple] {
@@ -481,13 +481,13 @@ select[multiple=multiple] {
   padding: 0.5em 0.5em;
   width: 100%;
 }
-/* line 44, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 44, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 textarea:hover,
 input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
 select[multiple=multiple]:hover {
   border-color: #c4c4c4;
 }
-/* line 48, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 48, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 textarea:focus,
 input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
 select[multiple=multiple]:focus {
@@ -496,12 +496,12 @@ select[multiple=multiple]:focus {
   outline: none;
 }
 
-/* line 55, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 55, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 59, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 59, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -510,27 +510,27 @@ input[type="search"] {
   appearance: none;
 }
 
-/* line 63, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 63, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
   margin-right: 0.375em;
 }
 
-/* line 69, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 69, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 input[type="file"] {
   padding-bottom: 0.75em;
   width: 100%;
 }
 
-/* line 74, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 74, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 select {
   margin-bottom: 1.5em;
   max-width: 100%;
   width: auto;
 }
 
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_tables.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_tables.scss */
 table {
   border-collapse: collapse;
   margin: 0.75em 0;
@@ -538,7 +538,7 @@ table {
   width: 100%;
 }
 
-/* line 8, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_tables.scss */
+/* line 8, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_tables.scss */
 th {
   border-bottom: 1px solid #b7b7b7;
   font-weight: bold;
@@ -546,41 +546,41 @@ th {
   text-align: left;
 }
 
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_tables.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_tables.scss */
 td {
   border-bottom: 1px solid #DDD;
   padding: 0.75em 0;
 }
 
-/* line 20, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_tables.scss */
+/* line 20, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_tables.scss */
 tr,
 td,
 th {
   vertical-align: middle;
 }
 
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_lists.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_lists.scss */
 ul,
 ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 20, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_lists.scss */
+/* line 20, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_lists.scss */
 dl {
   margin-bottom: 0.75em;
 }
-/* line 23, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_lists.scss */
+/* line 23, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_lists.scss */
 dl dt {
   font-weight: bold;
   margin-top: 0.75em;
 }
-/* line 28, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_lists.scss */
+/* line 28, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_lists.scss */
 dl dd {
   margin: 0;
 }
 
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_buttons.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_buttons.scss */
 a.button,
 button,
 input[type="submit"] {
@@ -600,14 +600,14 @@ input[type="submit"] {
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
  * MIT License */
-/* line 2, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/neat/grid/_box-sizing.scss */
+/* line 2, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/neat/grid/_box-sizing.scss */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 7, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/neat/grid/_box-sizing.scss */
+/* line 7, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/neat/grid/_box-sizing.scss */
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -630,27 +630,21 @@ header a {
 }
 
 /* line 43 */
-main {
+body {
   background-color: #f2f3f4;
-}
-
-/* line 49 */
-footer {
-  background-color: #707c80;
-  color: #c1c7c9;
 }
 
 /******************************************************************************
  **  GRID
  **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
  ******************************************************************************/
-/* line 60 */
+/* line 52 */
 .wrap {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
 .wrap:after {
   content: "";
   display: table;
@@ -658,7 +652,7 @@ footer {
 }
 
 /**** LANDING SPECIFIC ****/
-/* line 52 */
+/* line 57 */
 .overlay {
   position: fixed;
   width: 100%;
@@ -670,7 +664,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 63 */
+/* line 68 */
 .outer {
   margin: 0;
   height: 100%;
@@ -679,7 +673,7 @@ footer {
   overflow: hidden;
 }
 
-/* line 71 */
+/* line 76 */
 .landing {
   max-width: 68em;
   margin-left: auto;
@@ -709,12 +703,12 @@ footer {
 /******************************************************************************
  ** FORMS
  ******************************************************************************/
-/* line 69 */
+/* line 92 */
 .help-block::before {
   content: "\2716\00A0\00A0";
 }
 
-/* line 75 */
+/* line 98 */
 .form-wrapper {
   background-color: white;
   border: 5px solid rgba(158, 27, 52, 0.6);
@@ -726,43 +720,43 @@ footer {
   width: 57.35098%;
   margin-left: 21.32451%;
 }
-/* line 85, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/neat/grid/_span-columns.scss */
+/* line 85, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/neat/grid/_span-columns.scss */
 .form-wrapper:last-child {
   margin-right: 0;
 }
 
 /******************************************************************************
- **  MODULES / LOBOTOMIZED OWLS     
+ **  MODULES / LOBOTOMIZED OWLS
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
  ******************************************************************************/
-/* line 91 */
+/* line 114 */
 * + * {
   margin-top: 1.5em;
 }
 
-/* line 95 */
+/* line 118 */
 .compact * + * {
   margin-top: 0.75em;
 }
 
-/* line 99 */
+/* line 122 */
 .margins-off > * {
   margin-top: 0;
 }
 
 /******
 idk **/
-/* line 110 */
+/* line 133 */
 .grid-items-lines {
   position: relative;
 }
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
 .grid-items-lines:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 120 */
+/* line 143 */
 .grid-items-lines .grid-item {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -778,51 +772,51 @@ idk **/
   cursor: pointer;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 120 */
+  /* line 143 */
   .grid-items-lines .grid-item {
     width: 33.33333%;
   }
 }
-/* line 135 */
+/* line 158 */
 .grid-items-lines .grid-item:hover {
   background: rgba(55, 61, 63, 0.05);
 }
-/* line 139 */
+/* line 162 */
 .grid-items-lines .grid-item img {
   display: block;
   height: 2.5em;
   margin-bottom: 1.2em;
   opacity: .2;
 }
-/* line 145 */
+/* line 168 */
 .grid-items-lines .grid-item h1 {
   color: #373d3f;
   font-size: 1.3em;
   margin-bottom: .4em;
 }
-/* line 150 */
+/* line 173 */
 .grid-items-lines .grid-item p {
   color: rgba(55, 61, 63, 0.6);
 }
 @media screen and (min-width: 40em) {
-  /* line 150 */
+  /* line 173 */
   .grid-items-lines .grid-item p {
     max-width: 70%;
   }
 }
 @media screen and (min-width: 53.75em) {
-  /* line 156 */
+  /* line 179 */
   .grid-items-lines .grid-item-big {
     width: 66.66667%;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 161 */
+  /* line 184 */
   .grid-items-lines .grid-item-big p {
     max-width: 60%;
   }
 }
-/* line 168 */
+/* line 191 */
 .grid-items-lines .bottom-cover {
   position: absolute;
   bottom: 0px;
@@ -830,7 +824,7 @@ idk **/
   height: 3px;
   background: #f2f3f4;
 }
-/* line 175 */
+/* line 198 */
 .grid-items-lines .right-cover {
   position: absolute;
   right: 0px;

@@ -31,7 +31,7 @@ header {
     background-color: $base-accent-color;
     color: white;
     padding: 5px 0;
-    
+
     a {
         color: white;
         font-weight: bold;
@@ -96,18 +96,18 @@ body {
 }
 
 .form-wrapper {
-    background-color: white; 
+    background-color: white;
     border: 5px solid transparentize($base-accent-color, 0.4);
     border-radius: 8px;
     padding: 30px 30px;
-    
+
     @include span-columns(7);
     @include shift(2.5);
 }
 
 
 /******************************************************************************
- **  MODULES / LOBOTOMIZED OWLS     
+ **  MODULES / LOBOTOMIZED OWLS
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
  ******************************************************************************/
 
