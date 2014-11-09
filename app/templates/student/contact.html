@@ -1,0 +1,20 @@
+{% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Contact{% endblock %}
+
+{% block header %}
+  <div class="wrap">
+    iCAN College Checklist
+    <span style="float: right"><a href="/">Log out</a></span>
+  </div>
+{% endblock %}
+
+{% block main %}
+<div class="wrap">
+    <div class="form-wrapper">
+        <h1>Contact iCAN</h1>
+        {{ wtf.quick_form(form) }}
+    </div>
+</div>
+{% endblock %}

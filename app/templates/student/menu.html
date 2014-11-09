@@ -5,9 +5,13 @@
 {% block header %}
 <div class="wrap">
     iCAN College Checklist
-    <span style="float: right"><a href="/">Log out</a></span>
+    <span style="float: right"><a href="/"><i class="fa fa-times-circle"></i>&nbsp; Log out</a></span>
 </div>
 {% endblock %}
+{# number of upcoming tasks #}
+{# list of overdue tasks #}
+{# mentor name #}
+{# student name #}
 
 {% block main %}
 <div class="wrap">
@@ -18,43 +22,37 @@
 <div class="wrap">
     <div class="grid-items-lines margins-off">
         <a href="/tasks" class="grid-item grid-item-big">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
+            <i class="fa fa-check-square-o fa-3x"></i>
             <h1>Your Tasks</h1>
             <p>You have three upcoming tasks.</p>
         </a>
         <a href="/mentor" class="grid-item">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
+            <i class="fa fa-compass fa-3x"></i>
             <h1>Your Mentor</h1>
             <p>Lorem ipsum consectetur dolor sit amet, consectetur adipisicing elit.</p>
         </a>
         <a href="/profile" class="grid-item">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+            <i class="fa fa-user fa-3x"></i>
             <h1>Your profile</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, illum.</p>
+            <p>Edit your info.</p>
         </a>
         <a href="/school" class="grid-item grid-item-big">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+            <i class="fa fa-graduation-cap fa-3x"></i>
             <h1>Temple University</h1>
             <p>Find out more about your college, contact the admissions office, and more.</p>
         </a>
         <a href="/faq" class="grid-item">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+            <i class="fa fa-question-circle fa-3x"></i>
             <h1>Frequently asked questions</h1>
             <p>Find out more information about the iCAN program and preparing for college.</p>
         </a>
         <a href="/contact" class="grid-item">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
+            <i class="fa fa-comments fa-3x"></i>
             <h1>Contact Us</h1>
-            <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
+            <p>Get in touch with the iCAN team.</p>
         </a>
         <div class="right-cover"></div>
         <div class="bottom-cover"></div>
     </div>
-</div>
-{% endblock %}
-
-{% block footer %}
-<div class="wrap">
-    this be footer
 </div>
 {% endblock %}
