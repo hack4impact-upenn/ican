@@ -46,12 +46,12 @@ def create_app(config_name):
     app.register_blueprint(main_blueprint)
 
     from .students import students as students_blueprint
-    app.register_blueprint(students_blueprint, url_prefix="/students")
+    app.register_blueprint(students_blueprint, url_prefix="/student")
 
     from .mentors import mentors as mentors_blueprint
-    app.register_blueprint(students_blueprint, url_prefix="/mentors")
+    app.register_blueprint(mentors_blueprint, url_prefix="/mentor")
 
     from .admin import admin as admin_blueprint
-    app.register_blueprint(students_blueprint, url_prefix="/admin")
+    app.register_blueprint(admin_blueprint, url_prefix="/admin")
 
     return app
