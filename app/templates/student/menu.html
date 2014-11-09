@@ -12,11 +12,18 @@
 
 {% block main %}
 <div class="wrap">
-    {# student name #}
-    <h1>Hey there, {{ student.name }}{#  if current_user is defined else  #}.</h1>
-    {# number of upcoming tasks #}
-    <h3>You have <strong>3</strong> upcoming tasks.</h3>
-    {# list of overdue tasks - compare with date.today() #}
+    <h1>Hey there, {{ student.name }}.</h1>
+    <h3>You have {{student.tasks.all()|length}} task{{'s' if student.tasks.all()|length != 1}}.</h3>
+    <ul class="margins-off">
+    {% for task in student.tasks.all() %}
+      {# Overdue tasks #}
+      {% if date.now() > task.deadline %}
+        <li class="overdue">{{ task.description }}</li>
+      {% else %}
+        <li>{{ task.description }} due on {{task.deadline.strftime('%B %d, %Y')}}</li>
+      {% endif %}
+    {% endfor %}
+    </ul>
 </div>
 
 <div class="wrap">
@@ -24,14 +31,16 @@
         <a href="/tasks" class="grid-item grid-item-big">
             <i class="fa fa-check-square-o fa-3x"></i>
             <h1>Your Tasks</h1>
-            {# number of upcoming tasks #}
-            <p>You have three upcoming tasks.</p>
-
+            <p>What's on the list?</p>
         </a>
         <a href="/mentor" class="grid-item">
             <i class="fa fa-compass fa-3x"></i>
             <h1>Your Mentor</h1>
-            <p>Lorem ipsum consectetur dolor sit amet, consectetur adipisicing elit.</p>
+            {% if student.mentor.name %}
+            <p>Connect with {{student.mentor.name}}.</p>
+            {% else %}
+            <p>Mentor pending!</p>
+            {% endif %}
         </a>
         <a href="/profile" class="grid-item">
             <i class="fa fa-user fa-3x"></i>

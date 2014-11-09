@@ -11,7 +11,7 @@ import datetime
 def index():
     # name = student.name
     # tasks = student.tasks.all()
-    return render_template('student/menu.html', student=current_user, date=datetime.date)
+    return render_template('student/menu.html', student=current_user, date=datetime.datetime)
 
 @students.route('/signup', methods=['GET', 'POST'])
 def signup():

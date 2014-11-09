@@ -211,3 +211,14 @@ idk **/
         background: $grid-items-background;
     }
 }
+
+
+/***************** STUDENT MENU ******************/
+li.overdue {
+  color:$temple-red;
+
+  &::before {
+    @include fa-icon();
+    content: "#{$fa-var-exclamation-circle}\00a0\0020";
+  }
+}
