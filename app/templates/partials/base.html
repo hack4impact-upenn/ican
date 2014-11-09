@@ -3,11 +3,9 @@
 
 <head>
     {% block head %}
-        <meta charset="utf-8">
-        {% assets "css_main" %}
-            <link rel="stylesheet" href="{{ ASSET_URL }}">
-        {% endassets %}
-        <title>{% block title %}{% endblock %} - iCAN</title>
+    <meta charset="utf-8">{% assets "css_main" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">{% endassets %}
+    <title>{% block title %}{% endblock %} - iCAN</title>
     {% endblock %}
 </head>
 
@@ -21,6 +19,14 @@
         </header>
         {% endif %}
         <main class="fade-in-up element">
+            {% with messages = get_flashed_messages() %} 
+                {% if messages %}
+                    {% for message in messages %}
+                    <div class="flash-error">{{ message }}</div>
+                    {% endfor %}
+                {% endif %} 
+            {% endwith %} 
+            
             {% block main %}{% endblock %}
         </main>
 
@@ -29,27 +35,28 @@
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdn.rawgit.com/weblinc/jquery.smoothState.js/master/jquery.smoothState.js"></script>
     <script>
-        ;(function($) {
+        ;
+        (function ($) {
             'use strict';
             var $body = $('html, body'),
-            content = $('#main').smoothState({
-                development: true,
-                prefetch: true,
-                pageCacheSize: 4,
-                // Runs when a link has been activated
-                onStart: {
-                    duration: 250, // Duration of our animation
-                    render: function (url, $container) {
-                        // toggleAnimationClass() is a public method
-                        // for restarting css animations with a class
-                        content.toggleAnimationClass('is-exiting');
-                        // Scroll user to the top
-//                        $body.animate({
-//                            scrollTop: 0
-//                        });
+                content = $('#main').smoothState({
+                    development: true,
+                    prefetch: true,
+                    pageCacheSize: 4,
+                    // Runs when a link has been activated
+                    onStart: {
+                        duration: 250, // Duration of our animation
+                        render: function (url, $container) {
+                            // toggleAnimationClass() is a public method
+                            // for restarting css animations with a class
+                            content.toggleAnimationClass('is-exiting');
+                            // Scroll user to the top
+                            //                        $body.animate({
+                            //                            scrollTop: 0
+                            //                        });
+                        }
                     }
-                }
-            }).data('smoothState'); // makes public methods available
+                }).data('smoothState'); // makes public methods available
         })(jQuery);
     </script>
 </body>

@@ -31,6 +31,11 @@ header {
     background-color: $base-accent-color;
     color: white;
     padding: 5px 0;
+    
+    a {
+        color: white;
+        font-weight: bold;
+    }
 }
 
 // ----- Main -----
@@ -80,7 +85,29 @@ body {
 }
 
 /******************************************************************************
- **  MODULES / LOBOTOMIZED OWLS
+ ** FORMS
+ ******************************************************************************/
+
+.help-block {
+    &::before {
+        content: "\2716\00A0\00A0";
+    }
+    @extend %error;
+}
+
+.form-wrapper {
+    background-color: white; 
+    border: 5px solid transparentize($base-accent-color, 0.4);
+    border-radius: 8px;
+    padding: 30px 30px;
+    
+    @include span-columns(7);
+    @include shift(2.5);
+}
+
+
+/******************************************************************************
+ **  MODULES / LOBOTOMIZED OWLS     
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
  ******************************************************************************/
 
@@ -109,7 +136,6 @@ idk **/
     $grid-item-border: 1px solid transparentize($base-font-color, 0.8);
     $grid-item-columns: 4;
     $grid-item-big-columns: 8;
-    $grid-item-mid-columns: 6;
     $grid-item-color: $base-font-color;
     $grid-item-height: 14em;
     @include clearfix;
@@ -158,17 +184,6 @@ idk **/
         p {
             @include media($medium-screen) {
                 max-width: 60%;
-            }
-        }
-    }
-    .grid-item-mid {
-        @include media($large-screen) {
-            @include grid-item-columns($grid-item-mid-columns);
-        }
-
-        p {
-            @include media($medium-screen) {
-                max-width: 50%;
             }
         }
     }

@@ -1,3 +1,4 @@
+a.button,
 button,
 input[type="submit"] {
   @extend %button;
@@ -8,4 +9,3 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap;
 }
-

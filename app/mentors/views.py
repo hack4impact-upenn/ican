@@ -5,7 +5,7 @@ from flask import render_template, session, redirect, url_for, current_app
 @mentors.route('/signup')
 # @mentors_required
 def index():
-    return render_template('mentor/signup.html')
+    return render_template('mentors/signup.html')
 
 # @mentors.route('/signup', methods=['GET', 'POST'])
 # def signup():
