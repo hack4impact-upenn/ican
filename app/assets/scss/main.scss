@@ -31,6 +31,11 @@ header {
     background-color: $base-accent-color;
     color: white;
     padding: 5px 0;
+    
+    a {
+        color: white;
+        font-weight: bold;
+    }
 }
 
 // ----- Main -----
@@ -55,6 +60,28 @@ footer {
 .wrap {
     @include outer-container;
 }
+
+/******************************************************************************
+ ** FORMS
+ ******************************************************************************/
+
+.help-block {
+    &::before {
+        content: "\2716\00A0\00A0";
+    }
+    @extend %error;
+}
+
+.form-wrapper {
+    background-color: white; 
+    border: 5px solid transparentize($base-accent-color, 0.4);
+    border-radius: 8px;
+    padding: 30px 30px;
+    
+    @include span-columns(7);
+    @include shift(2.5);
+}
+
 
 /******************************************************************************
  **  MODULES / LOBOTOMIZED OWLS     

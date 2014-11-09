@@ -1,11 +1,19 @@
 {% extends "partials/base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
 
-{% block title %}iCAN{% endblock %}
+{% block title %}Log in{% endblock %}
+
+{% block header %}
+    <div class="wrap">
+        <a href="/">&larr; Back</a>
+    </div>
+{% endblock %}
 
 {% block main %}
 <div class="wrap">
-{{ wtf.quick_form(form) }}
-<button type="button" onClick="location.href='/'">Back</button>
+    <div class="form-wrapper">
+            <h1>Log in</h1>
+    {{ wtf.quick_form(form) }}
+    </div>
 </div>
 {% endblock %}
