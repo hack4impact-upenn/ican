@@ -606,7 +606,7 @@ html {
 }
 
 /******************************************************************************
- **  BASE STYLES                                                                
+ **  BASE STYLES
  ******************************************************************************/
 /* line 30 */
 header {
@@ -616,21 +616,15 @@ header {
 }
 
 /* line 38 */
-main {
+body {
   background-color: #f2f3f4;
 }
 
-/* line 44 */
-footer {
-  background-color: #707c80;
-  color: #c1c7c9;
-}
-
 /******************************************************************************
- **  GRID 
+ **  GRID
  **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
  ******************************************************************************/
-/* line 55 */
+/* line 47 */
 .wrap {
   max-width: 68em;
   margin-left: auto;
@@ -643,28 +637,77 @@ footer {
   clear: both;
 }
 
+/**** LANDING SPECIFIC ****/
+/* line 52 */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 63 */
+.outer {
+  margin: 0;
+  height: 100%;
+  background: url("../img/landing.jpg") no-repeat 50% 50% fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* line 71 */
+.landing {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  position: relative;
+  margin-top: 10em;
+  text-align: center;
+  z-index: 50;
+  color: #fff;
+}
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+.landing:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 85, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/neat/grid/_span-columns.scss */
+.landing:last-child {
+  margin-right: 0;
+}
+
 /******************************************************************************
- **  MODULES / LOBOTOMIZED OWLS     
+ **  MODULES / LOBOTOMIZED OWLS
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
  ******************************************************************************/
-/* line 64 */
+/* line 87 */
 * + * {
   margin-top: 1.5em;
 }
 
-/* line 68 */
+/* line 91 */
 .compact * + * {
   margin-top: 0.75em;
 }
 
-/* line 72 */
+/* line 95 */
 .margins-off > * {
   margin-top: 0;
 }
 
 /******
 idk **/
-/* line 83 */
+/* line 106 */
 .grid-items-lines {
   position: relative;
 }
@@ -674,7 +717,7 @@ idk **/
   display: table;
   clear: both;
 }
-/* line 93 */
+/* line 117 */
 .grid-items-lines .grid-item {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -690,51 +733,63 @@ idk **/
   cursor: pointer;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 93 */
+  /* line 117 */
   .grid-items-lines .grid-item {
     width: 33.33333%;
   }
 }
-/* line 108 */
+/* line 132 */
 .grid-items-lines .grid-item:hover {
   background: rgba(55, 61, 63, 0.05);
 }
-/* line 112 */
+/* line 136 */
 .grid-items-lines .grid-item img {
   display: block;
   height: 2.5em;
   margin-bottom: 1.2em;
   opacity: .2;
 }
-/* line 118 */
+/* line 142 */
 .grid-items-lines .grid-item h1 {
   color: #373d3f;
   font-size: 1.3em;
   margin-bottom: .4em;
 }
-/* line 123 */
+/* line 147 */
 .grid-items-lines .grid-item p {
   color: rgba(55, 61, 63, 0.6);
 }
 @media screen and (min-width: 40em) {
-  /* line 123 */
+  /* line 147 */
   .grid-items-lines .grid-item p {
     max-width: 70%;
   }
 }
 @media screen and (min-width: 53.75em) {
-  /* line 129 */
+  /* line 153 */
   .grid-items-lines .grid-item-big {
     width: 66.66667%;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 134 */
+  /* line 158 */
   .grid-items-lines .grid-item-big p {
     max-width: 60%;
   }
 }
-/* line 141 */
+@media screen and (min-width: 53.75em) {
+  /* line 164 */
+  .grid-items-lines .grid-item-mid {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 40em) {
+  /* line 169 */
+  .grid-items-lines .grid-item-mid p {
+    max-width: 50%;
+  }
+}
+/* line 176 */
 .grid-items-lines .bottom-cover {
   position: absolute;
   bottom: 0px;
@@ -742,7 +797,7 @@ idk **/
   height: 3px;
   background: #f2f3f4;
 }
-/* line 148 */
+/* line 183 */
 .grid-items-lines .right-cover {
   position: absolute;
   right: 0px;

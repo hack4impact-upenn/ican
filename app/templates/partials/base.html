@@ -15,16 +15,14 @@
     <div id="main" class="scene">
         {# we are now inside the smoothState.js container. #}
 
+        {% if self.header() %}
         <header>
             {% block header %}{% endblock %}
         </header>
+        {% endif %}
         <main class="fade-in-up element">
             {% block main %}{% endblock %}
         </main>
-
-        <footer>
-            {% block footer %}{% endblock %}
-        </footer>
 
     </div>
     <!-- scripts -->

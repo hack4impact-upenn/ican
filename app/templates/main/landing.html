@@ -1,10 +1,15 @@
-{% extends "partials/base.html" %}
+<div class="overlay">
+</div>
+<div class="outer">
+  {% extends "partials/base.html" %}
+  {% block title %}iCAN{% endblock %}
 
-{% block title %}iCAN{% endblock %}
-
-{% block main %}
-home page <br>
-<button type="button" onClick='location.href="login"'>Login</button>
-<button type="button" onClick='location.href="/students/signup"'>Student Signup</button>
-<button type="button" onClick='location.href="/mentors/signup"'>Mentor Signup</button>
-{% endblock %}
+  {% block main %}
+    <div class="landing">
+      <h1 class="landing-title">iCAN Road to College</h1><br>
+      <button type="button" onClick='location.href="login"'>Login</button>
+      <button type="button" onClick='location.href="/students/signup"'>Student Signup</button>
+      <button type="button" onClick='location.href="/mentors/signup"'>Mentor Signup</button>
+    </div>
+  {% endblock %}
+</div>
