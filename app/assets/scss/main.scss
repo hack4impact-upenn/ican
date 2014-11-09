@@ -25,6 +25,10 @@
  **  BASE STYLES
  ******************************************************************************/
 
+html {
+    height: 100%;
+}
+
 // ----- Header -----
 
 header {
@@ -42,6 +46,7 @@ header {
 
 body {
     background-color: $lilia;
+    min-height: 100%;
 }
 
 
