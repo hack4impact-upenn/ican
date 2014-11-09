@@ -83,6 +83,4 @@ class University(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64))
     tasks = db.relationship('GeneralTask', backref='university', lazy='dynamic')
-    #students = db.relationship('User', backref='university', lazy='dynamic')
-    #mentors = db.relationship('User', backref='university', lazy='dynamic')
     users = db.relationship('User', backref='university', lazy='dynamic')
