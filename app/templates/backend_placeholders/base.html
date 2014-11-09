@@ -6,7 +6,11 @@
 {{ super() }}
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
+{% assets "css" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+{% endassets %}
+
 {% endblock %}
 
 {% block navbar %}

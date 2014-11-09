@@ -1,0 +1,43 @@
+//
+//  Define view transitions for use with jquery.smoothState.js
+//
+
+@import "keyframes";
+
+//
+//.scene {
+//    .element {
+//        @include animation-duration(0.25s);
+//        @include transition-timing-function(ease-in);
+//        @include animation-fill-mode(both);
+//    }
+//    .element.fade-in {
+//        animation-name: fadeIn;
+//    }
+//    .element.fade-in-up {
+//        animation-name: fadeInUp;
+//    }
+//    &.is-exiting .element {
+//        @include animation-direction(alternate-reverse);
+//    }
+//}
+
+.scene {
+    .element {
+        @include animation-duration(0.25s);
+        @include transition-timing-function(ease-in);
+        @include animation-fill-mode(both);
+    }
+    .element.fade-in {
+        animation-name: fadeIn;
+    }
+    .element.fade-in-up {
+        animation-name: fadeInUp;
+    }
+    /** Reverse "exit" animations */
+    &.is-exiting {
+        .scene_element {
+            @include animation-direction(alternate-reverse);
+        }
+    }
+}

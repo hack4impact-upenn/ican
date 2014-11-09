@@ -15,6 +15,10 @@ class User(UserMixin, db.Model):
     mentor = db.relationship('User', backref='students', remote_side=[id])
     tasks = db.relationship('Task', backref='student', lazy='dynamic')
 
+    def __init__(self, **kwargs):
+        super(User, self).__init__(**kwargs)
+        # add mentor matching and task addition here
+
     def is_role(self, role):
         return self.user_role == role
 
@@ -50,7 +54,7 @@ class User(UserMixin, db.Model):
                     min_students = len(m.students)
                     min_mentor = m
             self.mentor = min_mentor
-    
+
 
 
 @login_manager.user_loader
