@@ -1,6 +1,6 @@
 from . import db, login_manager
 from flask.ext.login import UserMixin
-from werkzeug.security import generate_password_hash, check_password_hash
+from datetime import timedelta
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
@@ -48,7 +48,8 @@ class User(UserMixin, db.Model):
         if university:
             possible_mentors = [m for m in university.users.all() if m.user_role == 'mentor']
         if (university is None or len(possible_mentors) == 0):
-            possible_mentors = [m for m in User.query.all() if m.user_role == 'mentor']
+            #possible_mentors = [m for m in User.query.all() if m.user_role == 'mentor']
+            possible_mentors = User.query.filter_by(user_role='mentor').all()
         if (len(possible_mentors) >= 1):
             min_mentor = possible_mentors[0]
             min_students = len(possible_mentors[0].students)
@@ -57,6 +58,20 @@ class User(UserMixin, db.Model):
                     min_students = len(m.students)
                     min_mentor = m
             self.mentor = min_mentor
+
+    def add_task(self, new_task):
+        '''
+        Adds task to list of student tasks in order of deadline from closest -> furthest
+        so tasks are already sorted when they are displayed
+        '''
+        inserted = False
+        for i,task in enumerate(self.tasks):
+            diff = new_task.deadline - task.deadline
+            if diff.days < 0:
+                self.tasks.insert(i-1, task)
+                inserted = True
+        if (not inserted):
+            self.tasks.append(new_task)
 
 
 
@@ -90,3 +105,9 @@ class University(db.Model):
     name = db.Column(db.String(64))
     tasks = db.relationship('GeneralTask', backref='university', lazy='dynamic')
     users = db.relationship('User', backref='university', lazy='dynamic')
+
+class FAQ(db.Model):
+    __tablename__ = 'FAQs'
+    id = db.Column(db.Integer, primary_key=True)
+    question = db.Column(db.String(64))
+    answer = db.Column(db.String(64))

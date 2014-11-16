@@ -27,3 +27,15 @@ def signup():
             return redirect(url_for('.index'))
     return render_template('student/signup.html',
                             form=form)
+
+@students.route('/tasks')
+def tasks():
+    return render_template('student/tasks.html', student=current_user, date=datetime.datetime)
+
+@students.route('/mentor')
+def mentor():
+    return render_template('student/mentor.html', student=current_user, mentor=current_user.mentor)
+
+@students.route('/faq')
+def faq():
+    return render_template('student/faq.html', faqs=FAQ.query.all())
