@@ -1,7 +1,9 @@
 from . import students
+from ..models import User
+from .. import db
 from flask import render_template, session, redirect, url_for, current_app
 from ..decorators import student_required
-from flask.ext.login import login_required, current_user
+from flask.ext.login import login_required, current_user, login_user
 from forms import SignupForm
 
 import datetime
@@ -21,10 +23,13 @@ def index():
 def signup():
     form = SignupForm()
     if form.validate_on_submit():
-        student = Students.query.filter_by(email=form.email.data).first()
+        student = User.query.filter_by(email=form.email.data).first()
         if student is None:
-            student = Student(email=form.email.data, name=form.name.data)
+            student = User(email=form.email.data, name=form.name.data, password=form.password.data, user_role='student')
+            # student.password(form.password.data)
             db.session.add(student)
+            db.session.commit()
+            login_user(student)
             return redirect(url_for('.index'))
         else:
             #throw some error and rerender form
