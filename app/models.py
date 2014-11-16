@@ -16,6 +16,8 @@ class User(UserMixin, db.Model):
     mentor = db.relationship('User', backref='students', remote_side=[id])
     tasks = db.relationship('Task', backref='student', lazy='dynamic')
 
+    preferred_contact = db.Column(db.Boolean) # for mentors only,  = True | False, (= phone | email)
+
     def __init__(self, **kwargs):
         super(User, self).__init__(**kwargs)
         # add mentor matching and task addition here

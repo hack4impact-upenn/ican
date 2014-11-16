@@ -39,6 +39,7 @@ def signup():
 
 @students.route('/tasks')
 def tasks():
+    tasks = student.tasks.order_by(Task.deadline)
     return render_template('student/tasks.html', student=current_user, date=datetime.datetime)
 
 @students.route('/mentor')
