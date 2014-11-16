@@ -1,10 +1,10 @@
 from . import students
-from ..models import User
+from ..models import User, FAQ, Task
 from .. import db
 from flask import render_template, session, redirect, url_for, current_app
 from ..decorators import student_required
 from flask.ext.login import login_required, current_user, login_user
-from forms import SignupForm
+from forms import SignupForm, ContactForm
 
 import datetime
 
@@ -39,7 +39,7 @@ def signup():
 
 @students.route('/tasks')
 def tasks():
-    ordered_tasks = student.tasks.order_by(Task.deadline)
+    ordered_tasks = current_user.tasks.order_by(Task.deadline)
     return render_template('student/tasks.html', student=current_user, tasks=ordered_tasks, date=datetime.datetime)
 
 @students.route('/mentor')
@@ -49,3 +49,15 @@ def mentor():
 @students.route('/faq')
 def faq():
     return render_template('student/faq.html', faqs=FAQ.query.all())
+
+@students.route('/profile')
+def profile():
+    return render_template('student/profile.html', student=current_user)
+
+@students.route('/college')
+def college():
+    return render_template('student/college.html', student=current_user)
+
+@students.route('/contact')
+def contact():
+    return render_template('student/contact.html', form=ContactForm())

@@ -1,0 +1,31 @@
+{% extends "partials/base.html" %}
+
+{% block title %}My Mentor{% endblock %}
+
+{% block header %}
+{% include "partials/pageheader.html" %}
+{% endblock %}
+
+{% block main %}
+    <div class="wrap">
+        <div class="module">
+        <h1>Your mentor is {{ mentor.name|default('pending') }}</h1>
+        </div>
+        {% if mentor %}
+        <div class="module">
+        <h4>About me</h4>
+        <p>Here's a mentor bio</p>
+        </div>
+        <div class="module">
+        <h4>How to contact me</h4>
+        <dl>
+            <dt>Email address</dt><dd>{{ mentor.email }}</dd>
+            {% if mentor.display_phone %}<dt>Phone number</dt><dd>{{ mentor.phone }}</dd>{% endif %}
+        </dl>
+        </div>
+        
+        {% else %}
+        <p>Check back later to find out more about your mentor.</p>
+        {% endif %}
+    </div>
+{% endblock %}

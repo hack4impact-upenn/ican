@@ -42,6 +42,7 @@ header {
     a {
         color: white;
         font-weight: bold;
+        display: inline !important;
     }
 }
 
@@ -131,8 +132,9 @@ body {
     margin-top: 0;
 }
 
-/******
-idk **/
+/******************************************************************************
+ **  MENU GRID SYSTEM
+ ******************************************************************************/
 
 @mixin grid-item-columns($columns) {
     width: 100% / 12 * $columns;

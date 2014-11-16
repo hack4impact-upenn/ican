@@ -2,10 +2,16 @@ from . import mentors
 from flask import render_template, session, redirect, url_for, current_app
 
 @mentors.route('/')
+def index():
+    return render_template('mentor/menu.html')
+
 @mentors.route('/signup')
 # @mentors_required
-def index():
+def signup():
     return render_template('mentor/signup.html')
+
+
+
 
 # @mentors.route('/signup', methods=['GET', 'POST'])
 # def signup():
