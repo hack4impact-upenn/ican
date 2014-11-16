@@ -60,20 +60,14 @@ class User(UserMixin, db.Model):
                     min_mentor = m
             self.mentor = min_mentor
 
-    def add_task(self, new_task):
+    def add_task(self, description, deadline):
         '''
         Adds task to list of student tasks in order of deadline from closest -> furthest
         so tasks are already sorted when they are displayed
         '''
-        inserted = False
-        for i,task in enumerate(self.tasks):
-            diff = new_task.deadline - task.deadline
-            if diff.days < 0:
-                self.tasks.insert(i-1, task)
-                inserted = True
-        if (not inserted):
-            self.tasks.append(new_task)
-
+        new_task = Task(deadline=deadline, description=description, user_id=self.id)
+        db.session.add(new_task)
+        db.session.commit()
 
 
 @login_manager.user_loader
