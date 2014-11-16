@@ -3,15 +3,19 @@ from flask import render_template, session, redirect, url_for, current_app
 from ..decorators import student_required
 from flask.ext.login import login_required, current_user
 from forms import SignupForm
+
 import datetime
 
 @students.route('/')
-# @login_required
-# @student_required
+@login_required
+@student_required
 def index():
     # name = student.name
     # tasks = student.tasks.all()
-    return render_template('student/menu.html', student=current_user, date=datetime.datetime)
+    print "*****"
+    print current_user.tasks
+    print "*****"
+    return render_template('student/menu.html', student=current_user, date=datetime.datetime, tasks=[])
 
 @students.route('/signup', methods=['GET', 'POST'])
 def signup():
