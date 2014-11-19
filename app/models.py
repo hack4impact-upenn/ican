@@ -1,5 +1,6 @@
 from . import db, login_manager
-from flask.ext.login import UserMixin
+from flask.ext.login import UserMixin, login_required
+from datetime import timedelta
 from werkzeug.security import generate_password_hash, check_password_hash
 
 class User(UserMixin, db.Model):
@@ -14,6 +15,8 @@ class User(UserMixin, db.Model):
     university_id = db.Column(db.Integer, db.ForeignKey('universities.id'))
     mentor = db.relationship('User', backref='students', remote_side=[id])
     tasks = db.relationship('Task', backref='student', lazy='dynamic')
+
+    display_phone = db.Column(db.Boolean) # for mentors only, True: display phone & email; False: display just email
 
     def __init__(self, **kwargs):
         super(User, self).__init__(**kwargs)
@@ -48,7 +51,8 @@ class User(UserMixin, db.Model):
         if university:
             possible_mentors = [m for m in university.users.all() if m.user_role == 'mentor']
         if (university is None or len(possible_mentors) == 0):
-            possible_mentors = [m for m in User.query.all() if m.user_role == 'mentor']
+            #possible_mentors = [m for m in User.query.all() if m.user_role == 'mentor']
+            possible_mentors = User.query.filter_by(user_role='mentor').all()
         if (len(possible_mentors) >= 1):
             min_mentor = possible_mentors[0]
             min_students = len(possible_mentors[0].students)
@@ -58,6 +62,14 @@ class User(UserMixin, db.Model):
                     min_mentor = m
             self.mentor = min_mentor
 
+    def add_task(self, description, deadline):
+        '''
+        Adds task to list of student tasks in order of deadline from closest -> furthest
+        so tasks are already sorted when they are displayed
+        '''
+        new_task = Task(deadline=deadline, description=description, user_id=self.id)
+        db.session.add(new_task)
+        db.session.commit()
 
 
 @login_manager.user_loader
@@ -90,3 +102,9 @@ class University(db.Model):
     name = db.Column(db.String(64))
     tasks = db.relationship('GeneralTask', backref='university', lazy='dynamic')
     users = db.relationship('User', backref='university', lazy='dynamic')
+
+class FAQ(db.Model):
+    __tablename__ = 'FAQs'
+    id = db.Column(db.Integer, primary_key=True)
+    question = db.Column(db.String(64))
+    answer = db.Column(db.String(64))
