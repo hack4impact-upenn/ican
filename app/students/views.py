@@ -27,6 +27,7 @@ def signup():
         if student is None:
             student = User(email=form.email.data, name=form.name.data, password=form.password.data, user_role='student')
             # student.password(form.password.data)
+            student.match_with_mentor()
             db.session.add(student)
             db.session.commit()
             login_user(student)
