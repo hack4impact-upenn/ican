@@ -8,7 +8,6 @@
     <span style="float: right"><a href="/"><i class="fa fa-times-circle"></i>&nbsp; Log out</a></span>
 </div>
 {% endblock %}
-{# mentor name #}
 
 {% block main %}
 <div class="wrap">
@@ -18,9 +17,9 @@
     {% for task in student.tasks.all() %}
       {# Overdue tasks #}
       {% if date.now() > task.deadline %}
-        <li class="overdue">{{ task.description }}</li>
+        <li class="overdue">{{ task.description }} due on {{task.deadline.strftime('%b %d, %Y')}}</li>
       {% else %}
-        <li>{{ task.description }} due on {{task.deadline.strftime('%B %d, %Y')}}</li>
+        <li>{{ task.description }} due on {{task.deadline.strftime('%b %d, %Y')}}</li>
       {% endif %}
     {% endfor %}
     </ul>
