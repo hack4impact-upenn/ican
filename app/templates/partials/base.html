@@ -19,14 +19,14 @@
         </header>
         {% endif %}
         <main class="fade-in-up element">
-            {% with messages = get_flashed_messages() %} 
+            {% with messages = get_flashed_messages() %}
                 {% if messages %}
                     {% for message in messages %}
                     <div class="flash-error">{{ message }}</div>
                     {% endfor %}
-                {% endif %} 
-            {% endwith %} 
-            
+                {% endif %}
+            {% endwith %}
+
             {% block main %}{% endblock %}
         </main>
 

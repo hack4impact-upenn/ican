@@ -3327,11 +3327,7 @@ body {
  **  GRID
  **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
  ******************************************************************************/
-<<<<<<< HEAD
-/* line 60 */
-=======
 /* line 59 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
 .wrap {
   max-width: 68em;
   margin-left: auto;
@@ -3345,11 +3341,7 @@ body {
 }
 
 /**** LANDING SPECIFIC ****/
-<<<<<<< HEAD
-/* line 65 */
-=======
 /* line 64 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
 .overlay {
   position: fixed;
   width: 100%;
@@ -3364,8 +3356,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-<<<<<<< HEAD
-/* line 79 */
+/* line 78 */
 .landing {
   position: fixed;
   width: 100%;
@@ -3373,61 +3364,17 @@ body {
   background: url("../img/landing.jpg") no-repeat 50% 50% fixed;
   background-size: cover;
   z-index: 0;
-=======
-/* line 75 */
-.outer {
-  margin: 0;
-  height: 100%;
-  background: url("../img/landing.jpg") no-repeat 50% 50% fixed;
-  background-size: cover;
-  overflow: hidden;
-}
-
-/* line 83 */
-.landing {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
-  position: relative;
-  margin-top: 10em;
-  text-align: center;
-  z-index: 50;
-  color: #fff;
-}
-/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
-.landing:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 85, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/neat/grid/_span-columns.scss */
-.landing:last-child {
-  margin-right: 0;
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
 }
 
 /******************************************************************************
  ** FORMS
  ******************************************************************************/
-<<<<<<< HEAD
-/* line 94 */
-=======
-/* line 99 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 93 */
 .help-block::before {
   content: "\2716\00A0\00A0";
 }
 
-<<<<<<< HEAD
-/* line 100 */
-=======
-/* line 105 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 99 */
 .form-wrapper {
   background-color: white;
   border: 5px solid rgba(158, 27, 52, 0.6);
@@ -3448,29 +3395,17 @@ body {
  **  MODULES / LOBOTOMIZED OWLS
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
  ******************************************************************************/
-<<<<<<< HEAD
-/* line 116 */
-=======
-/* line 119 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 113 */
 * + * {
   margin-top: 1.5em;
 }
 
-<<<<<<< HEAD
-/* line 120 */
-=======
-/* line 123 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 117 */
 .compact * + * {
   margin-top: 0.75em;
 }
 
-<<<<<<< HEAD
-/* line 124 */
-=======
-/* line 127 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 121 */
 .margins-off > * {
   margin-top: 0;
 }
@@ -3478,11 +3413,7 @@ body {
 /******************************************************************************
  **  MENU GRID SYSTEM
  ******************************************************************************/
-<<<<<<< HEAD
-/* line 136 */
-=======
-/* line 140 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 134 */
 .grid-items-lines {
   position: relative;
 }
@@ -3492,11 +3423,7 @@ body {
   display: table;
   clear: both;
 }
-<<<<<<< HEAD
-/* line 146 */
-=======
-/* line 148 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 142 */
 .grid-items-lines .grid-item {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -3511,113 +3438,52 @@ body {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.1);
 }
 @media screen and (min-width: 53.75em) {
-<<<<<<< HEAD
-  /* line 146 */
-=======
-  /* line 148 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+  /* line 142 */
   .grid-items-lines .grid-item {
     width: 30%;
     margin: 15px;
   }
 }
-<<<<<<< HEAD
-/* line 161 */
-=======
-/* line 163 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 157 */
 .grid-items-lines .grid-item:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
-<<<<<<< HEAD
-/* line 165 */
-.grid-items-lines .grid-item img {
-  display: block;
-  height: 2.5em;
-  margin-bottom: 1.2em;
-  opacity: .2;
-}
-/* line 171 */
-=======
-/* line 167 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 161 */
 .grid-items-lines .grid-item h1 {
   color: #373d3f;
   font-size: 1.3em;
   margin-bottom: .4em;
 }
-<<<<<<< HEAD
-/* line 176 */
-=======
-/* line 172 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 166 */
 .grid-items-lines .grid-item p {
   color: rgba(55, 61, 63, 0.6);
 }
 @media screen and (min-width: 40em) {
-<<<<<<< HEAD
-  /* line 176 */
-=======
-  /* line 172 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+  /* line 166 */
   .grid-items-lines .grid-item p {
     max-width: 70%;
   }
 }
 @media screen and (min-width: 53.75em) {
-<<<<<<< HEAD
-  /* line 182 */
-=======
-  /* line 178 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+  /* line 172 */
   .grid-items-lines .grid-item-big {
     width: 60%;
     margin: 15px;
   }
 }
 @media screen and (min-width: 40em) {
-<<<<<<< HEAD
-  /* line 187 */
-=======
-  /* line 183 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+  /* line 177 */
   .grid-items-lines .grid-item-big p {
     max-width: 60%;
   }
 }
-<<<<<<< HEAD
-/* line 194 */
-.grid-items-lines .bottom-cover {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 3px;
-  background: #f2f3f4;
-}
-/* line 201 */
-.grid-items-lines .right-cover {
-  position: absolute;
-  right: 0px;
-  height: 100%;
-  width: 4px;
-  background: #f2f3f4;
-}
 
 /***************** STUDENT MENU ******************/
-/* line 212 */
+/* line 186 */
 li.overdue {
   color: #9e1b34;
 }
-/* line 215 */
-=======
-
-/***************** STUDENT MENU ******************/
-/* line 192 */
-li.overdue {
-  color: #9e1b34;
-}
-/* line 194 */
->>>>>>> 4160dfedb9d95fe766ef30c4ff458110228352d2
+/* line 188 */
 li.overdue::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3629,7 +3495,7 @@ li.overdue::before {
 }
 
 /*** Tasks ***/
-/* line 201 */
+/* line 195 */
 dl {
   background-color: white;
   padding: 15px 50px;
@@ -3639,26 +3505,41 @@ dl {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 207 */
+/* line 201 */
 dl:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
+/* line 205 */
+dl::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "  ";
+}
 
 /********* OVERALL STUDENT PAGE STYLES **********/
-/* line 222 */
+/* line 212 */
 h1.page {
   padding-bottom: 1em;
 }
 
 /**************** STUDENT FAQ *******************/
-/* line 228 */
+/* line 218 */
 p.question {
   font-size: 130%;
   font-weight: bold;
 }
 
 /**************** STUDENT PROFILE ***************/
-/* line 234 */
+/* line 225 */
 #field {
   font-weight: bold;
+}
+
+/* line 229 */
+h1.faq {
+  padding-bottom: 1em;
 }

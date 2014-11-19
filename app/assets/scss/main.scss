@@ -201,7 +201,6 @@ dl {
     &:hover {
         box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
     }
-}
 
   &::before {
     @include fa-icon();
