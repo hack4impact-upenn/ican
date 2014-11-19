@@ -224,3 +224,13 @@ li.overdue {
     content: "#{$fa-var-exclamation-circle}\00a0\0020";
   }
 }
+
+/**************** STUDENT FAQ *******************/
+p.question {
+  font-size:130%;
+  font-weight:bold;
+}
+
+h1.faq {
+  padding-bottom:1em;
+}
