@@ -9,5 +9,18 @@
 {% block main %}
 <div class="wrap">
     <h1>Tasks</h1>
+    
+    {% if tasks %}
+    <ul>
+        {% for task in tasks %}
+        <li>
+            <dl class="margins-off">
+                <dt>Task<dt><dd>{{ task.description }}</dd>
+                <dt>Deadline</dt><dd>{{ task.deadline }}</dd>
+            </dl>
+        </li>
+        {% endfor %}
+    {% endif %}
+    
 </div>
 {% endblock %}
