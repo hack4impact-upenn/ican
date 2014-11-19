@@ -58,7 +58,7 @@ def profile():
 
 @students.route('/college')
 def college():
-    return render_template('student/college.html', student=current_user)
+    return render_template('student/college.html', college=current_user.university)
 
 @students.route('/contact', methods=['GET','POST'])
 def contact():

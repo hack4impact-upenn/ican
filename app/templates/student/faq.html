@@ -8,6 +8,15 @@
 
 {% block main %}
 <div class="wrap">
-    <h1>FAQ</h1>
+    <h1 class="faq">Frequently Asked Questions</h1>
+    <ul class="margins-off">
+    {% for item in faqs %}
+        <li>
+          <p class="question">{{ item.question }}<p>
+          <p>{{ item.answer }}</p>
+        </li>
+        <br>
+    {% endfor %}
+    </ul>
 </div>
 {% endblock %}
