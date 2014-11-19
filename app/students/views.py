@@ -49,3 +49,7 @@ def mentor():
 @students.route('/faq')
 def faq():
     return render_template('student/faq.html', faqs=FAQ.query.all())
+
+@students.route('/university')
+def display_university():
+    return render_template('student/university.html', university = student.university)
