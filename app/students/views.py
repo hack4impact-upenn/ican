@@ -1,10 +1,11 @@
 from . import students
 from ..models import User, FAQ, Task
 from .. import db
-from flask import render_template, session, redirect, url_for, current_app
+from flask import render_template, session, redirect, url_for, current_app, flash
 from ..decorators import student_required
 from flask.ext.login import login_required, current_user, login_user
 from forms import SignupForm, ContactForm
+from ..email import send_email
 
 import datetime
 
@@ -26,7 +27,7 @@ def signup():
         student = User.query.filter_by(email=form.email.data).first()
         if student is None:
             student = User(email=form.email.data, name=form.name.data, password=form.password.data, user_role='student')
-            # student.password(form.password.data)
+            # TODO Assign tasks to students based on University
             student.match_with_mentor()
             db.session.add(student)
             db.session.commit()
@@ -49,7 +50,7 @@ def mentor():
 
 @students.route('/faq')
 def faq():
-    return render_template('student/faq.html', faqs=FAQ.query.all())
+    return render_template('student/faq.html', faqs=FAQ.query)
 
 @students.route('/profile')
 def profile():
@@ -59,7 +60,11 @@ def profile():
 def college():
     return render_template('student/college.html', college=current_user.university)
 
-@students.route('/contact')
+@students.route('/contact', methods=['GET','POST'])
 def contact():
-    return render_template('student/contact.html', form=ContactForm())
-
+    form = ContactForm()
+    if form.validate_on_submit():
+        send_email("ali.altaf9@gmail.com", 'A student has reached out!', 'email/contact', email_body=form.message)
+        flash('Your email has been sent to iCAN! They\'ll respond shortly!')
+        return redirect(url_for('.index'))
+    return render_template('student/contact.html', form=form)

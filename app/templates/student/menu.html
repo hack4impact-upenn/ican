@@ -17,9 +17,9 @@
     {% for task in student.tasks.all() %}
       {# Overdue tasks #}
       {% if date.now() > task.deadline %}
-        <li class="overdue">{{ task.description }} due on {{task.deadline.strftime('%b %d, %Y')}}</li>
+        <li class="overdue">{{ task.description }} was due on {{task.deadline.strftime('%b %d, %Y')}}</li>
       {% else %}
-        <li>{{ task.description }} due on {{task.deadline.strftime('%b %d, %Y')}}</li>
+        <li>{{ task.description }} is due on {{task.deadline.strftime('%b %d, %Y')}}</li>
       {% endif %}
     {% endfor %}
     </ul>
