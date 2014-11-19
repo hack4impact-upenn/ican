@@ -197,6 +197,7 @@ li.overdue {
     }
 }
 
+<<<<<<< HEAD
 /*** Tasks ***/
 dl {
     background-color: white;
@@ -208,3 +209,20 @@ dl {
         box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
     }
 }
+=======
+  &::before {
+    @include fa-icon();
+    content: "#{$fa-var-exclamation-circle}\00a0\0020";
+  }
+}
+
+/**************** STUDENT FAQ *******************/
+p.question {
+  font-size:130%;
+  font-weight:bold;
+}
+
+h1.faq {
+  padding-bottom:1em;
+}
+>>>>>>> a87c69bca0deb21cc2e4a78dc970eb51135ee518
