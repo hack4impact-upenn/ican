@@ -1,5 +1,8 @@
 from . import mentors
 from flask import render_template, session, redirect, url_for, current_app
+from flask.ext.login import login_required
+from ..decorators import mentor_required
+from forms import TaskCreationForm
 
 @mentors.route('/')
 def index():
@@ -27,3 +30,10 @@ def signup():
 #             return redirect(url_for('.index'))
 #     return render_template('signup.html',
 #                            form=form)
+
+@mentors.route('/create_tasks', methods=['GET', 'POST'])
+# @login_required
+# @mentor_required
+def create_tasks():
+    form = TaskCreationForm()
+    return render_template('mentor/task_creation.html', form=form)
