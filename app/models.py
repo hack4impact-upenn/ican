@@ -80,6 +80,7 @@ def load_user(user_id):
 class Task(db.Model):
     __tablename__ = 'tasks'
     id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.Text)
     description = db.Column(db.Text)
     deadline = db.Column(db.DateTime)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
@@ -91,6 +92,7 @@ class Task(db.Model):
 class GeneralTask(db.Model):
     __tablename__ = 'general_tasks'
     id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.Text)
     description = db.Column(db.Text)
     deadline = db.Column(db.DateTime)
     university_id = db.Column(db.Integer, db.ForeignKey('universities.id'))
