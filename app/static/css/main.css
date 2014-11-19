@@ -3327,7 +3327,7 @@ body {
  **  GRID
  **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
  ******************************************************************************/
-/* line 61 */
+/* line 60 */
 .wrap {
   max-width: 68em;
   margin-left: auto;
@@ -3341,63 +3341,40 @@ body {
 }
 
 /**** LANDING SPECIFIC ****/
-/* line 66 */
+/* line 65 */
 .overlay {
   position: fixed;
   width: 100%;
   height: 100%;
-  margin: 0;
   top: 0;
   left: 0;
-  z-index: 0;
+  margin: 0;
+  padding-top: 5em;
+  color: #fff;
+  text-align: center;
+  z-index: 30;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 77 */
-.outer {
-  margin: 0;
+/* line 79 */
+.landing {
+  position: fixed;
+  width: 100%;
   height: 100%;
   background: url("../img/landing.jpg") no-repeat 50% 50% fixed;
   background-size: cover;
-  overflow: hidden;
-}
-
-/* line 85 */
-.landing {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
-  position: relative;
-  margin-top: 10em;
-  text-align: center;
-  z-index: 50;
-  color: #fff;
-}
-/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
-.landing:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 85, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/neat/grid/_span-columns.scss */
-.landing:last-child {
-  margin-right: 0;
+  z-index: 0;
 }
 
 /******************************************************************************
  ** FORMS
  ******************************************************************************/
-/* line 101 */
+/* line 94 */
 .help-block::before {
   content: "\2716\00A0\00A0";
 }
 
-/* line 107 */
+/* line 100 */
 .form-wrapper {
   background-color: white;
   border: 5px solid rgba(158, 27, 52, 0.6);
@@ -3418,17 +3395,17 @@ body {
  **  MODULES / LOBOTOMIZED OWLS
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
  ******************************************************************************/
-/* line 123 */
+/* line 116 */
 * + * {
   margin-top: 1.5em;
 }
 
-/* line 127 */
+/* line 120 */
 .compact * + * {
   margin-top: 0.75em;
 }
 
-/* line 131 */
+/* line 124 */
 .margins-off > * {
   margin-top: 0;
 }
@@ -3436,7 +3413,7 @@ body {
 /******************************************************************************
  **  MENU GRID SYSTEM
  ******************************************************************************/
-/* line 143 */
+/* line 136 */
 .grid-items-lines {
   position: relative;
 }
@@ -3446,7 +3423,7 @@ body {
   display: table;
   clear: both;
 }
-/* line 153 */
+/* line 146 */
 .grid-items-lines .grid-item {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3462,51 +3439,51 @@ body {
   cursor: pointer;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 153 */
+  /* line 146 */
   .grid-items-lines .grid-item {
     width: 33.33333%;
   }
 }
-/* line 168 */
+/* line 161 */
 .grid-items-lines .grid-item:hover {
   background: rgba(55, 61, 63, 0.05);
 }
-/* line 172 */
+/* line 165 */
 .grid-items-lines .grid-item img {
   display: block;
   height: 2.5em;
   margin-bottom: 1.2em;
   opacity: .2;
 }
-/* line 178 */
+/* line 171 */
 .grid-items-lines .grid-item h1 {
   color: #373d3f;
   font-size: 1.3em;
   margin-bottom: .4em;
 }
-/* line 183 */
+/* line 176 */
 .grid-items-lines .grid-item p {
   color: rgba(55, 61, 63, 0.6);
 }
 @media screen and (min-width: 40em) {
-  /* line 183 */
+  /* line 176 */
   .grid-items-lines .grid-item p {
     max-width: 70%;
   }
 }
 @media screen and (min-width: 53.75em) {
-  /* line 189 */
+  /* line 182 */
   .grid-items-lines .grid-item-big {
     width: 66.66667%;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 194 */
+  /* line 187 */
   .grid-items-lines .grid-item-big p {
     max-width: 60%;
   }
 }
-/* line 201 */
+/* line 194 */
 .grid-items-lines .bottom-cover {
   position: absolute;
   bottom: 0px;
@@ -3514,7 +3491,7 @@ body {
   height: 3px;
   background: #f2f3f4;
 }
-/* line 208 */
+/* line 201 */
 .grid-items-lines .right-cover {
   position: absolute;
   right: 0px;
@@ -3524,11 +3501,11 @@ body {
 }
 
 /***************** STUDENT MENU ******************/
-/* line 219 */
+/* line 212 */
 li.overdue {
   color: #9e1b34;
 }
-/* line 222 */
+/* line 215 */
 li.overdue::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3539,14 +3516,21 @@ li.overdue::before {
   content: "  ";
 }
 
+/********* OVERALL STUDENT PAGE STYLES **********/
+/* line 222 */
+h1.page {
+  padding-bottom: 1em;
+}
+
 /**************** STUDENT FAQ *******************/
-/* line 229 */
+/* line 228 */
 p.question {
   font-size: 130%;
   font-weight: bold;
 }
 
+/**************** STUDENT PROFILE ***************/
 /* line 234 */
-h1.faq {
-  padding-bottom: 1em;
+#field {
+  font-weight: bold;
 }

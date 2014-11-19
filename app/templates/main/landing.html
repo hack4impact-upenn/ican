@@ -1,15 +1,16 @@
-<div class="overlay">
-</div>
-<div class="outer">
+
   {% extends "partials/base.html" %}
   {% block title %}iCAN{% endblock %}
 
   {% block main %}
+  <div class="outer margins-off">
+  <div class="overlay">
+    <h1 class="landing-title">iCAN Road to College</h1><br>
+    <button type="button" onClick='location.href="/login"'>Login</button>
+    <button type="button" onClick='location.href="/student/signup"'>Student Signup</button>
+    <button type="button" onClick='location.href="/mentor/signup"'>Mentor Signup</button>
+  </div>
     <div class="landing">
-      <h1 class="landing-title">iCAN Road to College</h1><br>
-      <button type="button" onClick='location.href="/login"'>Login</button>
-      <button type="button" onClick='location.href="/student/signup"'>Student Signup</button>
-      <button type="button" onClick='location.href="/mentor/signup"'>Mentor Signup</button>
     </div>
+  </div>
   {% endblock %}
-</div>
