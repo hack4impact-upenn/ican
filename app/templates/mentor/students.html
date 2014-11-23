@@ -9,5 +9,8 @@
 {% block main %}
 <div class="wrap">
   <h1 class="page">My Students</h1>
+  {% for i in current_user.students %}
+    <h3> {{ i.name }} </h3>
+  {% endfor %}
 </div>
 {% endblock %}
