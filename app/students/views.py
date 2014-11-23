@@ -59,14 +59,20 @@ def profile():
 # TODO: add form to confirm student edits -- @Maya
 @students.route('/profile-edit', methods=['GET', 'POST'])
 def profile_edit():
-    form = EditProfileForm()
+    form = EditProfileForm(obj=current_user)
     if form.validate_on_submit():
-        if len(form.name) > 0:
-            current_user.name = form.name
-        if len(form.email) > 0:
-            current_user.email = form.email
-        db.session.add(current_user)
-        flash('Your profile has been updated')
+        current_user.name = form.name.data
+        current_user.email = form.email.data
+        if (form.new_password.data and form.current_password.data):
+            if current_user.verify_password(form.current_password.data):
+                current_user.password = form.new_password.data
+                db.session.add(current_user)
+                flash('Your profile has been updated')
+            else:
+                flash('Invalid current password; password not updated')
+        else:
+            db.session.add(current_user)
+            flash('Your profile has been updated')
         return redirect(url_for('.index'))
     form.name.data = current_user.name
     form.email.data = current_user.email
