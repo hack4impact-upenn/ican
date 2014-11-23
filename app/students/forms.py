@@ -19,3 +19,4 @@ class EditProfileForm(Form):
     email = StringField('Email:', validators=[Email()])
     old_password = StringField('Old Password:')
     new_password = StringField('New Password:')
+    submit = SubmitField('Save')
