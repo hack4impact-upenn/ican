@@ -57,7 +57,7 @@ def profile():
     return render_template('student/profile.html', student=current_user)
 
 # TODO: add form to confirm student edits -- @Maya
-@students.route('/profile-edit' methods=['GET', 'POST'])
+@students.route('/profile-edit', methods=['GET', 'POST'])
 def profile_edit():
     form = EditProfileForm()
     if form.validate_on_submit():
