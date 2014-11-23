@@ -76,3 +76,8 @@ select {
   max-width: 100%;
   width: auto;
 }
+
+input[disabled="disabled"],
+input[readonly="readonly"] {
+    cursor: not-allowed;
+}

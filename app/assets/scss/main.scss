@@ -6,7 +6,6 @@
 @import "base/normalize";
 
 // ----- SASS libraries -----
-
 // handy mixins for autoprefixing, etc.
 @import "bourbon/bourbon";
 
@@ -14,10 +13,10 @@
 @import "base/base";
 
 // lightweight grid system
+$max-width: em(960) !global; // a bit more sensible
 @import "neat/neat";
 
 // ----- Page transitions -----
-
 // for page-switching with jquery.smoothState.js
 //@import "transitions/_transitions.scss";
 
@@ -31,10 +30,8 @@
 html {
     height: 100%;
 }
-
 // ----- Header -----
-
-header {
+ header {
     background-color: $base-accent-color;
     color: white;
     padding: 5px 0;
@@ -44,58 +41,53 @@ header {
         display: inline !important;
     }
 }
-
 // ----- Main -----
-
-body {
+ body {
     background-color: $lilia;
     min-height: 100%;
+     @include clearfix;
 }
-
 /******************************************************************************
  **  GRID
  **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
  ******************************************************************************/
+
 .wrap {
     @include outer-container;
 }
-
 /**** LANDING SPECIFIC ****/
+
 .overlay {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    margin:0;
-    padding-top:5em;
-    color:#fff;
-    text-align:center;
+    margin: 0;
+    padding-top: 5em;
+    color: #fff;
+    text-align: center;
     z-index: 30;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
-
 .landing {
-    position:fixed;
-    width:100%;
+    position: fixed;
+    width: 100%;
     height: 100%;
     background: url("../img/landing.jpg") no-repeat 50% 50% fixed;
     background-size: cover;
-    z-index:0;
+    z-index: 0;
 }
-
-
 /******************************************************************************
  ** FORMS
  ******************************************************************************/
 
 .help-block {
-    &::before {
+    &:before {
         content: "\2716\00A0\00A0";
     }
     @extend %error;
 }
-
 .form-wrapper {
     background-color: white;
     border: 5px solid transparentize($base-accent-color, 0.4);
@@ -104,7 +96,6 @@ body {
     @include span-columns(7);
     @include shift(2.5);
 }
-
 /******************************************************************************
  **  MODULES / LOBOTOMIZED OWLS
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
@@ -113,24 +104,25 @@ body {
 * + * {
     margin-top: 1.5em;
 }
-
 .compact * + * {
     margin-top: 0.75em;
 }
-
 .margins-off > * {
     margin-top: 0;
 }
-
 /******************************************************************************
  **  MENU GRID SYSTEM
  ******************************************************************************/
 
 @mixin grid-item-columns($columns) {
-    width: 90% / 12 * $columns;
-    margin: 15px;
+    width: 100% / 12 * $columns;
+    //    margin-top: 16px;
+    //    margin-right: 8px;
+    //    margin-left: 8px;
+    border-bottom: 15px solid $lilia;
+    border-right: 7.5px solid $lilia;
+    border-left: 7.5px solid $lilia;
 }
-
 .grid-items-lines {
     //    $grid-item-border: 1px solid transparentize($base-font-color, 0.8);
     $grid-item-columns: 4;
@@ -148,14 +140,13 @@ body {
         padding: 2em;
         cursor: pointer;
         background-color: white;
-        box-shadow: 0 0 30px rgba(40, 40, 40, 0.1);
-
-         @include media($large-screen) {
+        //        box-shadow: 0 0 30px rgba(40, 40, 40, 0.1);
+        @include media($large-screen) {
             @include grid-item-columns($grid-item-columns);
         }
-
         &:hover {
-            box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
+            //            box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
+
         }
     }
     .grid-item h1 {
@@ -173,7 +164,6 @@ body {
         @include media($large-screen) {
             @include grid-item-columns($grid-item-big-columns);
         }
-
         p {
             @include media($medium-screen) {
                 max-width: 60%;
@@ -181,51 +171,82 @@ body {
         }
     }
 }
-
 /***************** STUDENT MENU ******************/
+
 li.overdue {
     color: $temple-red;
-    &::before {
+    &:before {
         @include fa-icon;
         content: "#{$fa-var-exclamation-circle}  ";
     }
 }
 
-/*** Tasks ***/
-dl {
+
+/********* OVERALL STUDENT PAGE STYLES **********/
+
+h1.page {
+    padding-bottom: 1em;
+}
+/**************** STUDENT FAQ *******************/
+
+p.question {
+    font-size: 130%;
+    font-weight: bold;
+}
+/**************** STUDENT PROFILE ***************/
+
+#field {
+    font-weight: bold;
+}
+h1.faq {
+    padding-bottom: 1em;
+}
+/**************** STUDENT TASKS *****************/
+
+div.hidden-items {
+    border: 2px solid $heather;
+    padding: 12px 16px;
+    color: $silver;
+    font-weight: 500;
+    font-size: 1.2em;
+    @include transition(all 0.2s ease-in-out);
+
+    &:hover {
+        color: darken($silver, 30%);
+        border-color: darken($silver, 20%);
+    }
+    
+    &:active {
+        background: darken($silver, 20%);
+        color: white;
+    }
+        
+    &::after {
+        @include fa-icon();
+        content: "#{$fa-var-angle-right}";
+        float: right;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+.block {
+    display: block;
     background-color: white;
-    padding: 15px 50px;
     margin-top: 30px;
     box-shadow: 0 0 30px rgba(40, 40, 40, 0.1);
     @include transition(all 0.3s ease-in-out);
     &:hover {
         box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
     }
-
-  &::before {
-    @include fa-icon();
-    content: "#{$fa-var-exclamation-circle}\00a0\0020";
-  }
 }
 
-/********* OVERALL STUDENT PAGE STYLES **********/
-h1.page {
-  padding-bottom:1em;
-}
+.task.block {
+    padding: 30px 50px 40px;
 
-
-/**************** STUDENT FAQ *******************/
-p.question {
-  font-size:130%;
-  font-weight:bold;
-}
-
-
-/**************** STUDENT PROFILE ***************/
-#field {
-  font-weight:bold;
-}
-
-h1.faq {
-  padding-bottom:1em;
+//    h3::before {
+//        @include fa-icon();
+//        content: "#{$fa-var-square-o}\00a0\0020";
+//        font-size: 80%;
+//    }
 }

@@ -8,6 +8,6 @@
 
 {% block main %}
 <div class="wrap">
-    <h1>College</h1>
+    <h1>{{ college.name if college.name else '[College not specified]' }}</h1>
 </div>
 {% endblock %}

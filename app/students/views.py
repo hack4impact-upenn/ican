@@ -56,6 +56,11 @@ def faq():
 def profile():
     return render_template('student/profile.html', student=current_user)
 
+# TODO: add form to confirm student edits -- @Maya
+@students.route('/profile-edit')
+def profile_edit():
+    return render_template('student/profile-edit.html', student=current_user)
+
 @students.route('/college')
 def college():
     return render_template('student/college.html', college=current_user.university)
