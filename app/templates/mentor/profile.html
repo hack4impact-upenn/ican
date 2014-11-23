@@ -1,0 +1,23 @@
+{% extends "partials/base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block header %}
+{% include "partials/mentorheader.html" %}
+{% endblock %}
+
+{% block main %}
+<div class="wrap">
+  <div style="float:right"><button onClick="location.href='profile-edit'">Edit information</button></div>
+  <h1 class="page">Your profile</h1>
+  <fieldset>
+    <label id="name">Name</label>
+    <input id="name" type="text" disabled="disabled" readonly="readonly" value="{{ current_user.name }}">
+
+    <label id="email">Email</label>
+    <input id="email" type="text" disabled="disabled" readonly="readonly" value="{{ current_user.email }}">
+    <label id="password">Password</label>
+    <input id="password" type="password" disabled="disabled" readonly="readonly" value="xxxxxxxxxxxx">
+  </fieldset>
+</div>
+{% endblock %}

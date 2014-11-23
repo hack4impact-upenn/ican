@@ -1,8 +1,8 @@
 from . import mentors
 from flask import render_template, session, redirect, url_for, current_app
-from flask.ext.login import login_required
+from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
-from forms import TaskCreationForm
+from forms import TaskCreationForm, EditProfileForm
 
 @mentors.route('/')
 def index():
@@ -13,8 +13,43 @@ def index():
 def signup():
     return render_template('mentor/signup.html')
 
+# TODO: modify - temporarily added by Annie
+@mentors.route('/profile')
+# @mentors_required
+def profile():
+    return render_template('mentor/profile.html')
 
+@mentors.route('/tasks')
+# @mentors_required
+def tasks():
+    return render_template('mentor/tasks.html')
 
+@mentors.route('/students')
+# @mentors_required
+def students():
+    return render_template('mentor/students.html')
+
+@mentors.route('/profile-edit', methods=['GET', 'POST'])
+def profile_edit():
+    form = EditProfileForm(obj=current_user)
+    if form.validate_on_submit():
+        current_user.name = form.name.data
+        current_user.email = form.email.data
+        if (form.new_password.data and form.current_password.data):
+            if current_user.verify_password(form.current_password.data):
+                current_user.password = form.new_password.data
+                db.session.add(current_user)
+                flash('Your profile has been updated')
+            else:
+                flash('Invalid current password; password not updated')
+        else:
+            db.session.add(current_user)
+            flash('Your profile has been updated')
+        return redirect(url_for('.index'))
+    form.name.data = current_user.name
+    form.email.data = current_user.email
+    return render_template('mentor/profile-edit.html', student=current_user, form=form)
+# END OF TEMPORARY ADD
 
 # @mentors.route('/signup', methods=['GET', 'POST'])
 # def signup():

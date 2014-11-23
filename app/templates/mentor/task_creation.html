@@ -1,16 +1,16 @@
 {% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block title %}Mentor Task Creation{% endblock %}
 
 {% block header %}
-<div class="wrap">
-  iCAN College Checklist
-  <span style="float: right"><a href="/"><i class="fa fa-times-circle"></i>&nbsp; Log out</a></span>
-</div>
+{% include "partials/mentorheader.html" %}
 {% endblock %}
 
 {% block main %}
 <div class="wrap">
   <h1>Create a new task</h1>
+    <div></div> <!--???-->
+    <fieldset>{{ wtf.quick_form(form) }}</fieldset>
 </div>
 {% endblock %}

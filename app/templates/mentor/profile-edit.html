@@ -1,0 +1,17 @@
+{% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Edit Profile{% endblock %}
+
+{% block header %}
+<div class="wrap">
+    <a href="javascript: history.go(-1)"><i class="fa fa-angle-left"></i>&nbsp; Back</a>
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="wrap">
+    <h1 class="page">Edit your profile</h1>
+    <fieldset>{{ wtf.quick_form(form) }}</fieldset>
+</div>
+{% endblock %}
