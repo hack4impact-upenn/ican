@@ -10,7 +10,29 @@
 {% endblock %}
 
 {% block main %}
-    <div class="wrap">
-        <h1> Lol my students</h1>
-    </div>
+<div class="wrap">
+  <h1>Hey there, {{ current_user.name }}.</h1>
+  <div class="grid-items-lines margins-off">
+    <a href="tasks" class="grid-item grid-item-big">
+      <i class="fa fa-check-square-o fa-3x"></i>
+      <h1>All Tasks</h1>
+      <p>What are my students up to?</p>
+    </a>
+    <a href="profile" class="grid-item">
+      <i class="fa fa-user fa-3x"></i>
+      <h1>Your profile</h1>
+      <p>Edit your info.</p>
+    </a>
+    <a href="forum" class="grid-item">
+      <i class="fa fa-comments fa-3x"></i>
+      <h1>Forum</h1>
+      <p>Connect with others!</p>
+    </a>
+    <a href="students" class="grid-item grid-item-big">
+      <i class="fa fa-compass fa-3x"></i>
+      <h1>Your Students</h1>
+      <p>Find out who you're mentoring</p>
+    </a>
+  </div>
+</div>
 {% endblock %}
