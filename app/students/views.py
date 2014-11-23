@@ -60,6 +60,21 @@ def profile():
 def college():
     return render_template('student/college.html', college=current_user.university)
 
+@students.route('/edit')
+def edit_profile():
+    form = EditProfileForm()
+    if form.validate_on_submit():
+        if len(form.name) > 0:
+            current_user.name = form.name
+        if len(form.email) > 0:
+            current_user.email = form.email
+        db.session.add(current_user)
+        flash('Your profile has been updated')
+        return redirect(url_for('.index'))
+    form.name.data = current_user.name
+    form.email.data = current_user.email
+    return render_template('edit_profile.html', form=form) # don't know template yet
+
 @students.route('/contact', methods=['GET','POST'])
 def contact():
     form = ContactForm()

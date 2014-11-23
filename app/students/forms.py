@@ -13,3 +13,7 @@ class SignupForm(Form):
 class ContactForm(Form):
     message = TextAreaField('Enter your message', validators=[Required()])
     submit = SubmitField('Send')
+
+class EditProfileForm(Form):
+    name = StringField('Name')
+    email = StringField('Email', validators=[Email()])
