@@ -11,6 +11,6 @@
 {% block main %}
 <div class="wrap">
     <h1 class="page">Edit your profile</h1>
-    <fieldset><p>Placeholder for form</p></fieldset>
+    <fieldset>{{ wtf.quick_form(form) }}</fieldset>
 </div>
 {% endblock %}
