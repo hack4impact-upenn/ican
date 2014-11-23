@@ -15,5 +15,7 @@ class ContactForm(Form):
     submit = SubmitField('Send')
 
 class EditProfileForm(Form):
-    name = StringField('Name')
-    email = StringField('Email', validators=[Email()])
+    name = StringField('Name:')
+    email = StringField('Email:', validators=[Email()])
+    old_password = StringField('Old Password:')
+    new_password = StringField('New Password:')
