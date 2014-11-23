@@ -8,16 +8,24 @@
 
 {% block main %}
 <div class="wrap">
-    <h1>Tasks</h1>
+    <h1>Your tasks</h1>
+    
+    <div class="hidden-items">
+        View 8 completed tasks
+    </div>
     
     {% if tasks %}
     <ul>
         {% for task in tasks %}
-        <li>
-            <dl class="margins-off">
-                <dt>Task<dt><dd>{{ task.description }}</dd>
-                <dt>Deadline</dt><dd>{{ task.deadline }}</dd>
-            </dl>
+        <li class="task block">
+            
+        
+                    <div style="display:inline-block; margin-right: 20px;"><span style="display:inline-block; border-radius: 100px; width: 75px; height: 75px; background-color: white; border: 2px solid gray; color: gray; text-align: center; line-height:0.3; padding-top:5px;"><h1>1</h1><br>DAY</span></div>
+                    
+                    <div style="display:inline-block"><h3 style="display:inline">{{ task.title }}</h3><br>Due {{ task.deadline }}</div>
+            
+            <hr>
+                {{ task.description }}
         </li>
         {% endfor %}
     {% endif %}

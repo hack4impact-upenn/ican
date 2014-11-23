@@ -17,9 +17,9 @@
     {% for task in student.tasks.all() %}
       {# Overdue tasks #}
       {% if date.now() > task.deadline %}
-        <li class="overdue">{{ task.description }} was due on {{task.deadline.strftime('%b %d, %Y')}}</li>
+        <li class="overdue"><b>{{ task.title }}</b> was due on {{task.deadline.strftime('%b %d, %Y')}}</li>
       {% else %}
-        <li>{{ task.description }} is due on {{task.deadline.strftime('%b %d, %Y')}}</li>
+        <li><b>{{ task.title }}</b> is due on {{task.deadline.strftime('%b %d, %Y')}}</li>
       {% endif %}
     {% endfor %}
     </ul>
@@ -56,18 +56,16 @@
             <h1>Frequently asked questions</h1>
             <p>Find out more information about the iCAN program and preparing for college.</p>
         </a>
-        <a href="contact" class="grid-item">
-            <i class="fa fa-envelope fa-3x"></i>
-            <h1>Contact Us</h1>
-            <p>Get in touch with the iCAN team.</p>
-        </a>
         <a href="forum" class="grid-item">
             <i class="fa fa-comments fa-3x"></i>
             <h1>Forum</h1>
             <p>Connect with your peers!</p>
         </a>
-        <div class="right-cover"></div>
-        <div class="bottom-cover"></div>
+        <a href="contact" class="grid-item">
+            <i class="fa fa-envelope fa-3x"></i>
+            <h1>Contact Us</h1>
+            <p>Get in touch with the iCAN team.</p>
+        </a>
     </div>
 </div>
 {% endblock %}
