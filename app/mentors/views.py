@@ -3,6 +3,7 @@ from flask import render_template, session, redirect, url_for, current_app
 from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
 from forms import TaskCreationForm, EditProfileForm
+from ..models import User
 
 @mentors.route('/')
 def index():
@@ -67,8 +68,14 @@ def profile_edit():
 #                            form=form)
 
 @mentors.route('/create_tasks', methods=['GET', 'POST'])
-# @login_required
-# @mentor_required
+@login_required
+@mentor_required
 def create_tasks():
     form = TaskCreationForm()
+    form.students.choices = [(student.id, student.name) for student in current_user.students]
+    if form.validate_on_submit():
+        pass
+        print form.students.data
+    else:
+       pass
     return render_template('mentor/task_creation.html', form=form)
