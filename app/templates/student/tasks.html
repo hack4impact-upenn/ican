@@ -22,7 +22,7 @@
         
                     <div style="display:inline-block; margin-right: 20px;"><span style="display:inline-block; border-radius: 100px; width: 75px; height: 75px; background-color: white; border: 2px solid gray; color: gray; text-align: center; line-height:0.3; padding-top:5px;"><h1>1</h1><br>DAY</span></div>
                     
-                    <div style="display:inline-block"><h3 style="display:inline">{{ task.title }}</h3><br>Due {{ task.deadline }}</div>
+                    <div style="display:inline-block"><h3 style="display:inline">{{ task.title }}</h3><br>Due {{ task.deadline.strftime('%b %d %Y') }}</div>
             
             <hr>
                 {{ task.description }}
