@@ -4,7 +4,7 @@ from .. import db
 from flask import render_template, session, redirect, url_for, current_app, flash
 from ..decorators import student_required
 from flask.ext.login import login_required, current_user, login_user
-from forms import SignupForm, ContactForm
+from forms import SignupForm, ContactForm, EditProfileForm
 from ..email import send_email
 
 import datetime
@@ -57,7 +57,7 @@ def profile():
     return render_template('student/profile.html', student=current_user)
 
 # TODO: add form to confirm student edits -- @Maya
-@students.route('/profile-edit')
+@students.route('/profile-edit' methods=['GET', 'POST'])
 def profile_edit():
     form = EditProfileForm()
     if form.validate_on_submit():
