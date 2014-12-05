@@ -1,17 +1,15 @@
 from . import mentors
-from flask import render_template, session, redirect, url_for, current_app
+from flask import render_template, session, redirect, url_for, flash, current_app
 from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
-from forms import TaskCreationForm, EditProfileForm
-from ..models import User
-import datetime
+from forms import TaskCreationForm, EditProfileForm, ContactForm
+from ..models import User, Task
 
 import datetime
 
 @mentors.route('/')
 def index():
     return render_template('mentor/menu.html')
-         
 
 @mentors.route('/signup')
 # @mentors_required
@@ -47,7 +45,7 @@ def tasks():
 def students():
     return render_template('mentor/students.html')
 
-@mentors.route('/students/<student_id>')
+@mentors.route('/students/<student_id>', methods=['GET','POST'])
 def student(student_id):
     form = ContactForm()
     student = User.query.get(student_id)
@@ -55,7 +53,7 @@ def student(student_id):
         name = student.name
         flash(name + ' has been sent a message!')
         #TODO Send text to user
-        return render_template('mentor/students.html')
+        return redirect(url_for('students'))
     return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime)
 
 @mentors.route('/profile-edit', methods=['GET', 'POST'])
@@ -79,8 +77,6 @@ def profile_edit():
     form.email.data = current_user.email
     return render_template('mentor/profile-edit.html', student=current_user, form=form)
 
-
-
 @mentors.route('/create_tasks', methods=['GET', 'POST'])
 @login_required
 @mentor_required
@@ -88,8 +84,10 @@ def create_tasks():
     form = TaskCreationForm()
     form.students.choices = [(student.id, student.name) for student in current_user.students]
     if form.validate_on_submit():
-        pass
-        print form.students.data
-    else:
-       pass
+        for student_id in form.students.data:
+            student = User.query.get(student_id)
+            deadline = datetime.datetime(form.deadline.data.year, form.deadline.data.month, form.deadline.data.day)
+            student.add_task(deadline=deadline, description=form.description.data)
+        flash('Added the new tasks!')
+        return redirect(url_for('.index'))
     return render_template('mentor/task_creation.html', form=form)
