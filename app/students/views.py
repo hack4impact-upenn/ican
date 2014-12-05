@@ -45,8 +45,8 @@ def tasks():
     return render_template('student/tasks.html', student=current_user, tasks=ordered_tasks, date=datetime.datetime.now())
 
 @students.route('/task/<task_id>')
-def task_edit():
-    task = Task.get(task_id)
+def task_view(task_id):
+    task = Task.query.get(task_id)
     mark_completed_form = None # todo 
     return render_template('student/task-edit.html', task=task, form=mark_completed_form)
 
