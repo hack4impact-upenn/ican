@@ -1,8 +1,8 @@
 from . import mentors
-from flask import render_template, session, redirect, url_for, current_app
+from flask import render_template, session, redirect, url_for, current_app, flash
 from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
-from forms import TaskCreationForm, EditProfileForm
+from forms import TaskCreationForm, EditProfileForm, ContactForm
 from ..models import User
 
 @mentors.route('/')
@@ -29,6 +29,17 @@ def tasks():
 # @mentors_required
 def students():
     return render_template('mentor/students.html')
+
+@mentors.route('/students/<student_id>')
+def student(student_id):
+    form = ContactForm()
+    student = User.query.get(student_id)
+    if form.validate_on_submit():
+        name = student.name
+        flash(name + ' has been sent a message!')
+        #TODO Send text to user 
+        return render_template('mentors/students.html')
+    return render_template('mentors/overview.html', form=form, student=student)
 
 @mentors.route('/profile-edit', methods=['GET', 'POST'])
 def profile_edit():
