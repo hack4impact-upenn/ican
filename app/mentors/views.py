@@ -13,7 +13,7 @@ def index():
     return render_template('mentor/menu.html')
          
 
-@mentors.route('/signup')
+@mentors.route('/signup', methods=['GET', 'POST'])
 # @mentors_required
 def signup():
     form = SignupForm()
