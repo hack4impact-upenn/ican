@@ -74,11 +74,13 @@ def profile_edit():
             if current_user.verify_password(form.current_password.data):
                 current_user.password = form.new_password.data
                 db.session.add(current_user)
+                db.session.commit()
                 flash('Your profile has been updated')
             else:
                 flash('Invalid current password; password not updated')
         else:
             db.session.add(current_user)
+            db.session.commit()
             flash('Your profile has been updated')
         return redirect(url_for('.index'))
     form.name.data = current_user.name
