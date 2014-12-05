@@ -17,3 +17,4 @@ alembic==0.6.2
 blinker==1.3
 itsdangerous==0.23
 Flask-Assets==0.10
+Twilio==3.6g
