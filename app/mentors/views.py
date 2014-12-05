@@ -37,9 +37,9 @@ def student(student_id):
     if form.validate_on_submit():
         name = student.name
         flash(name + ' has been sent a message!')
-        #TODO Send text to user 
-        return render_template('mentors/students.html')
-    return render_template('mentors/overview.html', form=form, student=student)
+        #TODO Send text to user
+        return render_template('mentor/students.html')
+    return render_template('mentor/overview.html', form=form, student=student)
 
 @mentors.route('/profile-edit', methods=['GET', 'POST'])
 def profile_edit():
