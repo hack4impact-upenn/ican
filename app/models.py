@@ -14,7 +14,7 @@ class User(UserMixin, db.Model):
     mentor_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     university_id = db.Column(db.Integer, db.ForeignKey('universities.id'))
     mentor = db.relationship('User', backref='students', remote_side=[id])
-    tasks = db.relationship('Task', backref='student')
+    tasks = db.relationship('Task', backref='student', lazy='dynamic')
 
     display_phone = db.Column(db.Boolean) # for mentors only, True: display phone & email; False: display just email
 
