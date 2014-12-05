@@ -1,14 +1,14 @@
-"""added bio to user table
+"""empty message
 
-Revision ID: 383f7081b664
-Revises: 1872f7473030
-Create Date: 2014-12-05 01:24:29.315187
+Revision ID: 23be33dc600
+Revises: 43221beb34b1
+Create Date: 2014-12-05 02:15:13.620719
 
 """
 
 # revision identifiers, used by Alembic.
-revision = '383f7081b664'
-down_revision = '1872f7473030'
+revision = '23be33dc600'
+down_revision = '43221beb34b1'
 
 from alembic import op
 import sqlalchemy as sa
