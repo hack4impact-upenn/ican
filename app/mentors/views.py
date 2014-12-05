@@ -2,7 +2,7 @@ from . import mentors
 from flask import render_template, session, redirect, url_for, current_app
 from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
-from forms import TaskCreationForm, EditProfileForm
+from forms import TaskCreationForm, EditProfileForm, ContactForm
 from ..models import User
 import datetime
 
@@ -11,7 +11,7 @@ import datetime
 @mentors.route('/')
 def index():
     return render_template('mentor/menu.html')
-         
+
 
 @mentors.route('/signup')
 # @mentors_required
@@ -45,7 +45,17 @@ def tasks():
 @mentors.route('/students')
 # @mentors_required
 def students():
-    return render_template('mentor/students.html')
+    students = current_user.students
+    student_data = []
+    for student in students:
+        dic = {}
+        total_tasks = len(student.tasks.all())
+        completed_tasks = len(student.tasks.filter_by(completed=True).all())
+        dic['name'] = student.name
+        dic['id'] = student.id
+        dic['percentage'] = 1.0*completed_tasks/total_tasks
+        student_data.append(dic)
+    return render_template('mentor/students.html', students=student_data)
 
 @mentors.route('/students/<student_id>')
 def student(student_id):
