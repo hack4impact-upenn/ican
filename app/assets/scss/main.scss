@@ -194,6 +194,19 @@ p.question {
 h1.faq {
     padding-bottom: 1em;
 }
+
+/**************** STUDENT MENTOR VIEW ***********/
+
+div.mentor-pic {
+  display: block;
+  height: 256px;
+  width: 256px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  background-position: center;
+}
+
 /**************** STUDENT TASKS *****************/
 
 div.hidden-items {
