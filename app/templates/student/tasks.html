@@ -10,7 +10,7 @@
 <div class="wrap">
     <h1>Your tasks</h1>
     
-    <div class="hidden-items" onClick="location.href='/completed'">
+    <div class="hidden-items" onClick="location.href='tasks/completed'">
         View {{ num_completed }} completed tasks
     </div>
     
@@ -28,6 +28,7 @@
                 {{ task.description }}
         </li>
         {% endfor %}
+    </ul>
     {% endif %}
     
 </div>
