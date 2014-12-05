@@ -9,8 +9,13 @@
 {% block main %}
 <div class="wrap">
   <h1 class="page">My Students</h1>
-  {% for i in current_user.students %}
-    <h3> {{ i.name }} </h3>
+  <div class="flex-boxes">
+    {% for i in current_user.students %}
+    <a href="students/{{ i.id }}" class="flex-box">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
+      <h1 class="flex-title">{{ i.name }}</h1>
+    </a>
   {% endfor %}
+  </div>
 </div>
 {% endblock %}

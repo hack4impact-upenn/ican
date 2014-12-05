@@ -217,12 +217,12 @@ div.hidden-items {
         color: darken($silver, 30%);
         border-color: darken($silver, 20%);
     }
-    
+
     &:active {
         background: darken($silver, 20%);
         color: white;
     }
-        
+
     &::after {
         @include fa-icon();
         content: "#{$fa-var-angle-right}";
@@ -257,4 +257,102 @@ div.hidden-items {
     color: white;
     padding: 10px 15px;
     border-radius: 3px;
+}
+
+
+
+
+
+
+/****** MENTOR STYLES *******/
+/*** View Students ***/
+$flex-box-border-color: $medium-gray;
+$flex-box-border: 1px solid $flex-box-border-color;
+$flex-box-background: lighten($light-gray, 10);
+$flex-box-gutter: .4em;
+$flex-box-width: 18em;
+$flex-box-color: transparentize($base-font-color, .3);
+
+.flex-boxes {
+  @include clearfix;
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(stretch);
+  @include flex-wrap(wrap);
+  text-align: center;
+}
+
+.flex-box {
+  @include transition (all 0.2s ease-in-out);
+  @include flex(2 2 15em);
+  @include align-self(stretch);
+  display: block;
+  box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10);
+  border-radius: $base-border-radius;
+  margin: $flex-box-gutter;
+  padding: 2em 2em 3em 2em;
+  background: white;
+
+  &:hover {
+    background: rgba($temple-red, 0.3);
+    .flex-title {
+      color:transparentize($base-font-color, .2);
+    }
+  }
+}
+
+.flex-box img {
+  display: block;
+  opacity: .4;
+  height: 3em;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.flex-box .flex-title {
+  color: $flex-box-color;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+
+.flex-box p {
+  margin: auto;
+  line-height: 1.5em;
+  color: transparentize($flex-box-color, .1);
+}
+
+.flex-box-big {
+  @include flex(1 1 40em);
+}
+
+
+/*** Task Creation Page ***/
+// form headers
+.form-group {
+    margin-top:0;
+    margin-bottom:2em;
+}
+
+// student name label
+.control-label {
+    font-size: 1.5em;
+}
+
+// student name checkbox
+label {
+    display:inline-block;
+    margin-top:0;
+    cursor: pointer;
+}
+
+input[name="students"]:checked + label{
+  color:$temple-red;
+}
+
+//student list
+ul#students {
+  li {
+    margin-top:0;
+  }
 }
