@@ -20,3 +20,6 @@ class EditProfileForm(Form):
     current_password = PasswordField('Current Password:')
     new_password = PasswordField('New Password:')
     submit = SubmitField('Save')
+
+class CompletedTaskForm(Form):
+    completed = SubmitField('I Completed the Task')
