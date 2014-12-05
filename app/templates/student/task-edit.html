@@ -1,0 +1,20 @@
+{% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Task {{ task.name }}{% endblock %}
+
+{% block header %}
+<div class="wrap">
+    <a href="javascript: history.go(-1)"><i class="fa fa-angle-left"></i>&nbsp; Back</a>
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="wrap">
+    <h1 class="page">Edit this task</h1>
+    This is a task name: {{ task.name }}
+    
+    Mark as completed: {{ wtf.form(form) }}
+    {# TODO: mark as incomplete #}
+</div>
+{% endblock %}

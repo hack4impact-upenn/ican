@@ -44,6 +44,8 @@ html {
 // ----- Main -----
  body {
     background-color: $lilia;
+     background-image: url(../../static/img/bg-pattern.png);
+     background-size:300px;
     min-height: 100%;
      @include clearfix;
 }
@@ -239,14 +241,20 @@ div.hidden-items {
     &:hover {
         box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
     }
+    border: $base-border;
 }
 
 .task.block {
     padding: 30px 50px 40px;
+    cursor: pointer;
+}
 
-//    h3::before {
-//        @include fa-icon();
-//        content: "#{$fa-var-square-o}\00a0\0020";
-//        font-size: 80%;
-//    }
+/**** FLASHES ****/
+
+.flash-error {
+    @include outer-container;
+    background-color: $silver;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
 }
