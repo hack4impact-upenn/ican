@@ -3326,6 +3326,8 @@ header a {
 /* line 45 */
 body {
   background-color: #f2f3f4;
+  background-image: url(../../static/img/bg-pattern.png);
+  background-size: 300px;
   min-height: 100%;
 }
 /* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
@@ -3339,7 +3341,7 @@ body:after {
  **  GRID
  **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
  ******************************************************************************/
-/* line 55 */
+/* line 57 */
 .wrap {
   max-width: 60em;
   margin-left: auto;
@@ -3353,7 +3355,7 @@ body:after {
 }
 
 /**** LANDING SPECIFIC ****/
-/* line 60 */
+/* line 62 */
 .overlay {
   position: fixed;
   width: 100%;
@@ -3368,7 +3370,7 @@ body:after {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 73 */
+/* line 75 */
 .landing {
   position: fixed;
   width: 100%;
@@ -3381,12 +3383,12 @@ body:after {
 /******************************************************************************
  ** FORMS
  ******************************************************************************/
-/* line 86 */
+/* line 88 */
 .help-block:before {
   content: "\2716\00A0\00A0";
 }
 
-/* line 91 */
+/* line 93 */
 .form-wrapper {
   background-color: white;
   border: 5px solid rgba(158, 27, 52, 0.6);
@@ -3407,17 +3409,17 @@ body:after {
  **  MODULES / LOBOTOMIZED OWLS
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
  ******************************************************************************/
-/* line 104 */
+/* line 106 */
 * + * {
   margin-top: 1.5em;
 }
 
-/* line 107 */
+/* line 109 */
 .compact * + * {
   margin-top: 0.75em;
 }
 
-/* line 110 */
+/* line 112 */
 .margins-off > * {
   margin-top: 0;
 }
@@ -3425,7 +3427,7 @@ body:after {
 /******************************************************************************
  **  MENU GRID SYSTEM
  ******************************************************************************/
-/* line 126 */
+/* line 128 */
 .grid-items-lines {
   position: relative;
 }
@@ -3435,7 +3437,7 @@ body:after {
   display: table;
   clear: both;
 }
-/* line 134 */
+/* line 136 */
 .grid-items-lines .grid-item {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -3449,7 +3451,7 @@ body:after {
   background-color: white;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 134 */
+  /* line 136 */
   .grid-items-lines .grid-item {
     width: 33.33333%;
     border-bottom: 15px solid #f2f3f4;
@@ -3457,24 +3459,24 @@ body:after {
     border-left: 7.5px solid #f2f3f4;
   }
 }
-/* line 152 */
+/* line 154 */
 .grid-items-lines .grid-item h1 {
   color: #373d3f;
   font-size: 1.3em;
   margin-bottom: .4em;
 }
-/* line 157 */
+/* line 159 */
 .grid-items-lines .grid-item p {
   color: rgba(55, 61, 63, 0.6);
 }
 @media screen and (min-width: 40em) {
-  /* line 157 */
+  /* line 159 */
   .grid-items-lines .grid-item p {
     max-width: 70%;
   }
 }
 @media screen and (min-width: 53.75em) {
-  /* line 163 */
+  /* line 165 */
   .grid-items-lines .grid-item-big {
     width: 66.66667%;
     border-bottom: 15px solid #f2f3f4;
@@ -3483,18 +3485,18 @@ body:after {
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 167 */
+  /* line 169 */
   .grid-items-lines .grid-item-big p {
     max-width: 60%;
   }
 }
 
 /***************** STUDENT MENU ******************/
-/* line 176 */
+/* line 178 */
 li.overdue {
   color: #9e1b34;
 }
-/* line 178 */
+/* line 180 */
 li.overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3506,31 +3508,31 @@ li.overdue:before {
 }
 
 /********* OVERALL STUDENT PAGE STYLES **********/
-/* line 187 */
+/* line 189 */
 h1.page {
   padding-bottom: 1em;
 }
 
 /**************** STUDENT FAQ *******************/
-/* line 192 */
+/* line 194 */
 p.question {
   font-size: 130%;
   font-weight: bold;
 }
 
 /**************** STUDENT PROFILE ***************/
-/* line 198 */
+/* line 200 */
 #field {
   font-weight: bold;
 }
 
-/* line 201 */
+/* line 203 */
 h1.faq {
   padding-bottom: 1em;
 }
 
 /**************** STUDENT TASKS *****************/
-/* line 206 */
+/* line 208 */
 div.hidden-items {
   border: 2px solid #c1c7c9;
   padding: 12px 16px;
@@ -3541,17 +3543,17 @@ div.hidden-items {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 214 */
+/* line 216 */
 div.hidden-items:hover {
   color: #5a6466;
   border-color: #717f82;
 }
-/* line 219 */
+/* line 221 */
 div.hidden-items:active {
   background: #717f82;
   color: white;
 }
-/* line 224 */
+/* line 226 */
 div.hidden-items::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3565,7 +3567,7 @@ div.hidden-items::after {
   font-weight: bold;
 }
 
-/* line 233 */
+/* line 235 */
 .block {
   display: block;
   background-color: white;
@@ -3574,13 +3576,33 @@ div.hidden-items::after {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border: 1px solid #DDD;
 }
-/* line 239 */
+/* line 241 */
 .block:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
 
-/* line 244 */
+/* line 247 */
 .task.block {
   padding: 30px 50px 40px;
+  cursor: pointer;
+}
+
+/**** FLASHES ****/
+/* line 260 */
+.flash-error {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #a7b0b2;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+.flash-error:after {
+  content: "";
+  display: table;
+  clear: both;
 }
