@@ -44,6 +44,12 @@ def tasks():
     ordered_tasks = current_user.tasks.order_by(Task.deadline)
     return render_template('student/tasks.html', student=current_user, tasks=ordered_tasks, date=datetime.datetime.now())
 
+@students.route('/task/<task_id>')
+def task_edit():
+    task = Task.get(task_id)
+    mark_completed_form = None # todo 
+    return render_template('student/task-edit.html', task=task, form=mark_completed_form)
+
 @students.route('/mentor')
 def mentor():
     return render_template('student/mentor.html', student=current_user, mentor=current_user.mentor)
