@@ -2,7 +2,7 @@ from . import mentors
 from flask import render_template, session, redirect, url_for, current_app
 from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
-from forms import TaskCreationForm, EditProfileForm
+from forms import TaskCreationForm, EditProfileForm, SignupForm
 from ..models import User
 import datetime
 
@@ -28,7 +28,7 @@ def signup():
         else:
             flash("This Username/Password is already in use.")
             return redirect(url_for('.index'))
-    return render_template('mentor/signup.html')
+    return render_template('mentor/signup.html', form = form)
 
 # TODO: modify - temporarily added by Annie
 @mentors.route('/profile')
