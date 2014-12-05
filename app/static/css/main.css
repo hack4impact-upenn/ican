@@ -3,7 +3,7 @@
  **  IMPORTS
  ******************************************************************************/
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,300italic,400italic,700italic);
-/* line 45, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 45, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 article,
 aside,
 details,
@@ -18,25 +18,25 @@ summary {
   display: block;
 }
 
-/* line 61, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 61, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 audio,
 canvas,
 video {
   display: inline-block;
 }
 
-/* line 74, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 74, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 84, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 84, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 [hidden], template {
   display: none;
 }
 
-/* line 97, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 97, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 html {
   background: #fff;
   color: #000;
@@ -44,7 +44,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-/* line 109, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 109, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 html,
 button,
 input,
@@ -53,83 +53,83 @@ textarea {
   font-family: sans-serif;
 }
 
-/* line 119, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 119, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 body {
   margin: 0;
 }
 
-/* line 132, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 132, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 a {
   background: transparent;
 }
-/* line 139, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 139, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
-/* line 145, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 145, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 a:hover, a:active {
   outline: 0;
 }
 
-/* line 159, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 159, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 164, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 164, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 169, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 169, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 174, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 174, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 179, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 179, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 184, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 184, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
 }
 
-/* line 192, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 192, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 198, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 198, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 211, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 211, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 217, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 217, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 233, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 233, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 code,
 kbd,
 pre,
@@ -138,30 +138,30 @@ samp {
   font-size: 1em;
 }
 
-/* line 246, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 246, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 254, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 254, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 270, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 270, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 279, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 279, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* line 286, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 286, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -170,46 +170,46 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 294, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 294, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 298, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 298, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 350, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 350, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 img {
   border: 0;
 }
 
-/* line 359, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 359, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 369, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 369, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* line 386, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 386, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 397, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 397, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
 }
 
-/* line 411, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 411, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button,
 input,
 select,
@@ -220,18 +220,18 @@ textarea {
   vertical-align: baseline;
 }
 
-/* line 426, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 426, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button, input {
   line-height: normal;
 }
 
-/* line 435, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 435, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 448, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 448, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -240,42 +240,42 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 461, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 461, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
-/* line 470, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 470, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 479, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 479, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 490, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 490, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 498, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 498, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-/* line 506, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 506, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-/* line 516, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_normalize.scss */
+/* line 516, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_normalize.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
@@ -285,7 +285,7 @@ input[type="checkbox"], input[type="radio"] {
  * http://bitters.bourbon.io
  * Copyright 2013–2014 thoughtbot, inc.
  * MIT License */
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/extends/_button.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/extends/_button.scss */
 a.button,
 button,
 input[type="submit"] {
@@ -300,14 +300,14 @@ input[type="submit"] {
   padding: 0.75em 1em;
   text-decoration: none;
 }
-/* line 13, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/extends/_button.scss */
+/* line 13, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/extends/_button.scss */
 a.button:hover,
 button:hover,
 input[type="submit"]:hover {
   background-color: #5d101e;
   color: white;
 }
-/* line 18, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/extends/_button.scss */
+/* line 18, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/extends/_button.scss */
 a.button:disabled,
 button:disabled,
 input[type="submit"]:disabled {
@@ -315,12 +315,12 @@ input[type="submit"]:disabled {
   opacity: 0.5;
 }
 
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/extends/_errors.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/extends/_errors.scss */
 .help-block {
   color: #96151b;
 }
 
-/* line 6, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 6, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 body {
   -webkit-font-smoothing: antialiased;
   background-color: #f2f3f4;
@@ -330,7 +330,7 @@ body {
   line-height: 1.5;
 }
 
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h1,
 h2,
 h3,
@@ -343,42 +343,42 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 
-/* line 27, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 27, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h1 {
   font-size: 2.25em;
 }
 
-/* line 31, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 31, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h2 {
   font-size: 2em;
 }
 
-/* line 35, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 35, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h3 {
   font-size: 1.75em;
 }
 
-/* line 39, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 39, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h4 {
   font-size: 1.5em;
 }
 
-/* line 43, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 43, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h5 {
   font-size: 1.25em;
 }
 
-/* line 47, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 47, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 h6 {
   font-size: 1em;
 }
 
-/* line 51, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 51, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 p {
   margin: 0 0 0.75em;
 }
 
-/* line 55, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 55, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
@@ -386,17 +386,17 @@ a {
   color: #9e1b34;
   text-decoration: none;
 }
-/* line 60, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 60, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 a:hover {
   color: #5d101e;
 }
-/* line 64, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 64, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 a:active, a:focus {
   color: #5d101e;
   outline: none;
 }
 
-/* line 70, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 70, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 hr {
   border-bottom: 1px solid #DDD;
   border-left: none;
@@ -405,14 +405,14 @@ hr {
   margin: 1.5em 0;
 }
 
-/* line 78, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 78, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 img,
 picture {
   margin: 0;
   max-width: 100%;
 }
 
-/* line 84, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 84, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 blockquote {
   border-left: 2px solid #DDD;
   color: #5b6568;
@@ -420,17 +420,17 @@ blockquote {
   padding-left: 0.75em;
 }
 
-/* line 91, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 91, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 cite {
   color: #727f83;
   font-style: italic;
 }
-/* line 95, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_typography.scss */
+/* line 95, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_typography.scss */
 cite:before {
   content: "\2014 \00A0";
 }
 
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 fieldset {
   background: #f7f7f7;
   border: 1px solid #DDD;
@@ -438,7 +438,7 @@ fieldset {
   padding: 1.5em;
 }
 
-/* line 8, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 8, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 input,
 label,
 select {
@@ -447,21 +447,21 @@ select {
   font-size: 1em;
 }
 
-/* line 16, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 16, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 label {
   font-weight: bold;
   margin-bottom: 0.375em;
 }
-/* line 20, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 20, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 label.required:after {
   content: "*";
 }
-/* line 24, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 24, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 label abbr {
   display: none;
 }
 
-/* line 29, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 29, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 textarea,
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
 select[multiple=multiple] {
@@ -481,13 +481,13 @@ select[multiple=multiple] {
   padding: 0.5em 0.5em;
   width: 100%;
 }
-/* line 44, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 44, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 textarea:hover,
 input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
 select[multiple=multiple]:hover {
   border-color: #c4c4c4;
 }
-/* line 48, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 48, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 textarea:focus,
 input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
 select[multiple=multiple]:focus {
@@ -496,12 +496,12 @@ select[multiple=multiple]:focus {
   outline: none;
 }
 
-/* line 55, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 55, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 59, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 59, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -510,33 +510,33 @@ input[type="search"] {
   appearance: none;
 }
 
-/* line 63, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 63, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
   margin-right: 0.375em;
 }
 
-/* line 69, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 69, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 input[type="file"] {
   padding-bottom: 0.75em;
   width: 100%;
 }
 
-/* line 74, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 74, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 select {
   margin-bottom: 1.5em;
   max-width: 100%;
   width: auto;
 }
 
-/* line 80, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_forms.scss */
+/* line 80, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_forms.scss */
 input[disabled="disabled"],
 input[readonly="readonly"] {
   cursor: not-allowed;
 }
 
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_tables.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_tables.scss */
 table {
   border-collapse: collapse;
   margin: 0.75em 0;
@@ -544,7 +544,7 @@ table {
   width: 100%;
 }
 
-/* line 8, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_tables.scss */
+/* line 8, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_tables.scss */
 th {
   border-bottom: 1px solid #b7b7b7;
   font-weight: bold;
@@ -552,41 +552,41 @@ th {
   text-align: left;
 }
 
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_tables.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_tables.scss */
 td {
   border-bottom: 1px solid #DDD;
   padding: 0.75em 0;
 }
 
-/* line 20, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_tables.scss */
+/* line 20, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_tables.scss */
 tr,
 td,
 th {
   vertical-align: middle;
 }
 
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_lists.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_lists.scss */
 ul,
 ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 20, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_lists.scss */
+/* line 20, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_lists.scss */
 dl {
   margin-bottom: 0.75em;
 }
-/* line 23, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_lists.scss */
+/* line 23, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_lists.scss */
 dl dt {
   font-weight: bold;
   margin-top: 0.75em;
 }
-/* line 28, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_lists.scss */
+/* line 28, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_lists.scss */
 dl dd {
   margin: 0;
 }
 
-/* line 1, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/base/_buttons.scss */
+/* line 1, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/base/_buttons.scss */
 a.button,
 button,
 input[type="submit"] {
@@ -606,14 +606,14 @@ input[type="submit"] {
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
  * MIT License */
-/* line 2, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/neat/grid/_box-sizing.scss */
+/* line 2, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/neat/grid/_box-sizing.scss */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 7, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/neat/grid/_box-sizing.scss */
+/* line 7, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/neat/grid/_box-sizing.scss */
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -633,7 +633,7 @@ html {
   font-weight: normal;
   font-style: normal;
 }
-/* line 4, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_core.scss */
+/* line 4, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_core.scss */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -644,51 +644,51 @@ html {
 }
 
 /* makes the font 33% larger relative to the icon container */
-/* line 5, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_larger.scss */
+/* line 5, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_larger.scss */
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
 
-/* line 10, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_larger.scss */
+/* line 10, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_larger.scss */
 .fa-2x {
   font-size: 2em;
 }
 
-/* line 11, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_larger.scss */
+/* line 11, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_larger.scss */
 .fa-3x {
   font-size: 3em;
 }
 
-/* line 12, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_larger.scss */
+/* line 12, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_larger.scss */
 .fa-4x {
   font-size: 4em;
 }
 
-/* line 13, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_larger.scss */
+/* line 13, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_larger.scss */
 .fa-5x {
   font-size: 5em;
 }
 
-/* line 3, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_fixed-width.scss */
+/* line 3, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_fixed-width.scss */
 .fa-fw {
   width: 1.28571em;
   text-align: center;
 }
 
-/* line 4, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_list.scss */
+/* line 4, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_list.scss */
 .fa-ul {
   padding-left: 0;
   margin-left: 2.14286em;
   list-style-type: none;
 }
-/* line 8, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_list.scss */
+/* line 8, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_list.scss */
 .fa-ul > li {
   position: relative;
 }
 
-/* line 10, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_list.scss */
+/* line 10, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_list.scss */
 .fa-li {
   position: absolute;
   left: -2.14286em;
@@ -696,38 +696,38 @@ html {
   top: 0.14286em;
   text-align: center;
 }
-/* line 16, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_list.scss */
+/* line 16, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_list.scss */
 .fa-li.fa-lg {
   left: -1.85714em;
 }
 
-/* line 4, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_bordered-pulled.scss */
+/* line 4, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_bordered-pulled.scss */
 .fa-border {
   padding: .2em .25em .15em;
   border: solid 0.08em #eee;
   border-radius: .1em;
 }
 
-/* line 10, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_bordered-pulled.scss */
+/* line 10, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_bordered-pulled.scss */
 .pull-right {
   float: right;
 }
 
-/* line 11, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_bordered-pulled.scss */
+/* line 11, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_bordered-pulled.scss */
 .pull-left {
   float: left;
 }
 
-/* line 14, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_bordered-pulled.scss */
+/* line 14, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_bordered-pulled.scss */
 .fa.pull-left {
   margin-right: .3em;
 }
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_bordered-pulled.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_bordered-pulled.scss */
 .fa.pull-right {
   margin-left: .3em;
 }
 
-/* line 4, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_spinning.scss */
+/* line 4, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_spinning.scss */
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
@@ -753,7 +753,7 @@ html {
     transform: rotate(359deg);
   }
 }
-/* line 4, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_rotated-flipped.scss */
+/* line 4, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_rotated-flipped.scss */
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
@@ -761,7 +761,7 @@ html {
   transform: rotate(90deg);
 }
 
-/* line 5, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_rotated-flipped.scss */
+/* line 5, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_rotated-flipped.scss */
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
@@ -769,7 +769,7 @@ html {
   transform: rotate(180deg);
 }
 
-/* line 6, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_rotated-flipped.scss */
+/* line 6, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_rotated-flipped.scss */
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
@@ -777,7 +777,7 @@ html {
   transform: rotate(270deg);
 }
 
-/* line 8, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_rotated-flipped.scss */
+/* line 8, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_rotated-flipped.scss */
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
@@ -785,7 +785,7 @@ html {
   transform: scale(-1, 1);
 }
 
-/* line 9, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_rotated-flipped.scss */
+/* line 9, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_rotated-flipped.scss */
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
@@ -793,7 +793,7 @@ html {
   transform: scale(1, -1);
 }
 
-/* line 14, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_rotated-flipped.scss */
+/* line 14, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_rotated-flipped.scss */
 :root .fa-rotate-90,
 :root .fa-rotate-180,
 :root .fa-rotate-270,
@@ -802,7 +802,7 @@ html {
   filter: none;
 }
 
-/* line 4, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_stacked.scss */
+/* line 4, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_stacked.scss */
 .fa-stack {
   position: relative;
   display: inline-block;
@@ -812,7 +812,7 @@ html {
   vertical-align: middle;
 }
 
-/* line 12, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_stacked.scss */
+/* line 12, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_stacked.scss */
 .fa-stack-1x, .fa-stack-2x {
   position: absolute;
   left: 0;
@@ -820,1603 +820,1603 @@ html {
   text-align: center;
 }
 
-/* line 18, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_stacked.scss */
+/* line 18, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_stacked.scss */
 .fa-stack-1x {
   line-height: inherit;
 }
 
-/* line 19, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_stacked.scss */
+/* line 19, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_stacked.scss */
 .fa-stack-2x {
   font-size: 2em;
 }
 
-/* line 20, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_stacked.scss */
+/* line 20, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_stacked.scss */
 .fa-inverse {
   color: #fff;
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
-/* line 4, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 4, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-glass:before {
   content: "";
 }
 
-/* line 5, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 5, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-music:before {
   content: "";
 }
 
-/* line 6, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 6, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-search:before {
   content: "";
 }
 
-/* line 7, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 7, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-envelope-o:before {
   content: "";
 }
 
-/* line 8, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 8, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-heart:before {
   content: "";
 }
 
-/* line 9, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 9, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-star:before {
   content: "";
 }
 
-/* line 10, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 10, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-star-o:before {
   content: "";
 }
 
-/* line 11, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 11, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-user:before {
   content: "";
 }
 
-/* line 12, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 12, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-film:before {
   content: "";
 }
 
-/* line 13, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 13, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-th-large:before {
   content: "";
 }
 
-/* line 14, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 14, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-th:before {
   content: "";
 }
 
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-th-list:before {
   content: "";
 }
 
-/* line 16, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 16, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-check:before {
   content: "";
 }
 
-/* line 17, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 17, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-remove:before,
 .fa-close:before,
 .fa-times:before {
   content: "";
 }
 
-/* line 20, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 20, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-search-plus:before {
   content: "";
 }
 
-/* line 21, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 21, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-search-minus:before {
   content: "";
 }
 
-/* line 22, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 22, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-power-off:before {
   content: "";
 }
 
-/* line 23, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 23, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-signal:before {
   content: "";
 }
 
-/* line 24, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 24, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-gear:before,
 .fa-cog:before {
   content: "";
 }
 
-/* line 26, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 26, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-trash-o:before {
   content: "";
 }
 
-/* line 27, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 27, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-home:before {
   content: "";
 }
 
-/* line 28, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 28, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-o:before {
   content: "";
 }
 
-/* line 29, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 29, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-clock-o:before {
   content: "";
 }
 
-/* line 30, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 30, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-road:before {
   content: "";
 }
 
-/* line 31, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 31, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-download:before {
   content: "";
 }
 
-/* line 32, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 32, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-circle-o-down:before {
   content: "";
 }
 
-/* line 33, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 33, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-circle-o-up:before {
   content: "";
 }
 
-/* line 34, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 34, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-inbox:before {
   content: "";
 }
 
-/* line 35, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 35, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-play-circle-o:before {
   content: "";
 }
 
-/* line 36, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 36, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-rotate-right:before,
 .fa-repeat:before {
   content: "";
 }
 
-/* line 38, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 38, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-refresh:before {
   content: "";
 }
 
-/* line 39, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 39, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-list-alt:before {
   content: "";
 }
 
-/* line 40, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 40, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-lock:before {
   content: "";
 }
 
-/* line 41, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 41, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-flag:before {
   content: "";
 }
 
-/* line 42, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 42, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-headphones:before {
   content: "";
 }
 
-/* line 43, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 43, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-volume-off:before {
   content: "";
 }
 
-/* line 44, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 44, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-volume-down:before {
   content: "";
 }
 
-/* line 45, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 45, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-volume-up:before {
   content: "";
 }
 
-/* line 46, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 46, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-qrcode:before {
   content: "";
 }
 
-/* line 47, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 47, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-barcode:before {
   content: "";
 }
 
-/* line 48, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 48, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-tag:before {
   content: "";
 }
 
-/* line 49, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 49, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-tags:before {
   content: "";
 }
 
-/* line 50, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 50, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-book:before {
   content: "";
 }
 
-/* line 51, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 51, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bookmark:before {
   content: "";
 }
 
-/* line 52, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 52, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-print:before {
   content: "";
 }
 
-/* line 53, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 53, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-camera:before {
   content: "";
 }
 
-/* line 54, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 54, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-font:before {
   content: "";
 }
 
-/* line 55, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 55, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bold:before {
   content: "";
 }
 
-/* line 56, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 56, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-italic:before {
   content: "";
 }
 
-/* line 57, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 57, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-text-height:before {
   content: "";
 }
 
-/* line 58, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 58, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-text-width:before {
   content: "";
 }
 
-/* line 59, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 59, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-align-left:before {
   content: "";
 }
 
-/* line 60, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 60, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-align-center:before {
   content: "";
 }
 
-/* line 61, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 61, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-align-right:before {
   content: "";
 }
 
-/* line 62, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 62, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-align-justify:before {
   content: "";
 }
 
-/* line 63, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 63, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-list:before {
   content: "";
 }
 
-/* line 64, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 64, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-dedent:before,
 .fa-outdent:before {
   content: "";
 }
 
-/* line 66, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 66, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-indent:before {
   content: "";
 }
 
-/* line 67, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 67, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-video-camera:before {
   content: "";
 }
 
-/* line 68, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 68, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-photo:before,
 .fa-image:before,
 .fa-picture-o:before {
   content: "";
 }
 
-/* line 71, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 71, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-pencil:before {
   content: "";
 }
 
-/* line 72, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 72, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-map-marker:before {
   content: "";
 }
 
-/* line 73, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 73, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-adjust:before {
   content: "";
 }
 
-/* line 74, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 74, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-tint:before {
   content: "";
 }
 
-/* line 75, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 75, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-edit:before,
 .fa-pencil-square-o:before {
   content: "";
 }
 
-/* line 77, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 77, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-share-square-o:before {
   content: "";
 }
 
-/* line 78, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 78, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-check-square-o:before {
   content: "";
 }
 
-/* line 79, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 79, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrows:before {
   content: "";
 }
 
-/* line 80, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 80, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-step-backward:before {
   content: "";
 }
 
-/* line 81, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 81, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-fast-backward:before {
   content: "";
 }
 
-/* line 82, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 82, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-backward:before {
   content: "";
 }
 
-/* line 83, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 83, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-play:before {
   content: "";
 }
 
-/* line 84, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 84, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-pause:before {
   content: "";
 }
 
-/* line 85, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 85, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-stop:before {
   content: "";
 }
 
-/* line 86, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 86, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-forward:before {
   content: "";
 }
 
-/* line 87, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 87, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-fast-forward:before {
   content: "";
 }
 
-/* line 88, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 88, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-step-forward:before {
   content: "";
 }
 
-/* line 89, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 89, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-eject:before {
   content: "";
 }
 
-/* line 90, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 90, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-chevron-left:before {
   content: "";
 }
 
-/* line 91, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 91, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-chevron-right:before {
   content: "";
 }
 
-/* line 92, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 92, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-plus-circle:before {
   content: "";
 }
 
-/* line 93, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 93, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-minus-circle:before {
   content: "";
 }
 
-/* line 94, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 94, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-times-circle:before {
   content: "";
 }
 
-/* line 95, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 95, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-check-circle:before {
   content: "";
 }
 
-/* line 96, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 96, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-question-circle:before {
   content: "";
 }
 
-/* line 97, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 97, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-info-circle:before {
   content: "";
 }
 
-/* line 98, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 98, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-crosshairs:before {
   content: "";
 }
 
-/* line 99, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 99, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-times-circle-o:before {
   content: "";
 }
 
-/* line 100, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 100, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-check-circle-o:before {
   content: "";
 }
 
-/* line 101, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 101, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-ban:before {
   content: "";
 }
 
-/* line 102, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 102, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-left:before {
   content: "";
 }
 
-/* line 103, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 103, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-right:before {
   content: "";
 }
 
-/* line 104, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 104, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-up:before {
   content: "";
 }
 
-/* line 105, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 105, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-down:before {
   content: "";
 }
 
-/* line 106, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 106, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-mail-forward:before,
 .fa-share:before {
   content: "";
 }
 
-/* line 108, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 108, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-expand:before {
   content: "";
 }
 
-/* line 109, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 109, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-compress:before {
   content: "";
 }
 
-/* line 110, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 110, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-plus:before {
   content: "";
 }
 
-/* line 111, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 111, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-minus:before {
   content: "";
 }
 
-/* line 112, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 112, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-asterisk:before {
   content: "";
 }
 
-/* line 113, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 113, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-exclamation-circle:before {
   content: "";
 }
 
-/* line 114, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 114, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-gift:before {
   content: "";
 }
 
-/* line 115, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 115, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-leaf:before {
   content: "";
 }
 
-/* line 116, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 116, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-fire:before {
   content: "";
 }
 
-/* line 117, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 117, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-eye:before {
   content: "";
 }
 
-/* line 118, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 118, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-eye-slash:before {
   content: "";
 }
 
-/* line 119, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 119, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-warning:before,
 .fa-exclamation-triangle:before {
   content: "";
 }
 
-/* line 121, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 121, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-plane:before {
   content: "";
 }
 
-/* line 122, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 122, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-calendar:before {
   content: "";
 }
 
-/* line 123, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 123, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-random:before {
   content: "";
 }
 
-/* line 124, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 124, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-comment:before {
   content: "";
 }
 
-/* line 125, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 125, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-magnet:before {
   content: "";
 }
 
-/* line 126, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 126, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-chevron-up:before {
   content: "";
 }
 
-/* line 127, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 127, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-chevron-down:before {
   content: "";
 }
 
-/* line 128, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 128, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-retweet:before {
   content: "";
 }
 
-/* line 129, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 129, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-shopping-cart:before {
   content: "";
 }
 
-/* line 130, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 130, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-folder:before {
   content: "";
 }
 
-/* line 131, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 131, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-folder-open:before {
   content: "";
 }
 
-/* line 132, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 132, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrows-v:before {
   content: "";
 }
 
-/* line 133, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 133, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrows-h:before {
   content: "";
 }
 
-/* line 134, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 134, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bar-chart-o:before,
 .fa-bar-chart:before {
   content: "";
 }
 
-/* line 136, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 136, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-twitter-square:before {
   content: "";
 }
 
-/* line 137, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 137, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-facebook-square:before {
   content: "";
 }
 
-/* line 138, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 138, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-camera-retro:before {
   content: "";
 }
 
-/* line 139, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 139, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-key:before {
   content: "";
 }
 
-/* line 140, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 140, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-gears:before,
 .fa-cogs:before {
   content: "";
 }
 
-/* line 142, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 142, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-comments:before {
   content: "";
 }
 
-/* line 143, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 143, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-thumbs-o-up:before {
   content: "";
 }
 
-/* line 144, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 144, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-thumbs-o-down:before {
   content: "";
 }
 
-/* line 145, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 145, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-star-half:before {
   content: "";
 }
 
-/* line 146, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 146, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-heart-o:before {
   content: "";
 }
 
-/* line 147, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 147, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sign-out:before {
   content: "";
 }
 
-/* line 148, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 148, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-linkedin-square:before {
   content: "";
 }
 
-/* line 149, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 149, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-thumb-tack:before {
   content: "";
 }
 
-/* line 150, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 150, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-external-link:before {
   content: "";
 }
 
-/* line 151, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 151, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sign-in:before {
   content: "";
 }
 
-/* line 152, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 152, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-trophy:before {
   content: "";
 }
 
-/* line 153, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 153, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-github-square:before {
   content: "";
 }
 
-/* line 154, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 154, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-upload:before {
   content: "";
 }
 
-/* line 155, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 155, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-lemon-o:before {
   content: "";
 }
 
-/* line 156, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 156, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-phone:before {
   content: "";
 }
 
-/* line 157, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 157, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-square-o:before {
   content: "";
 }
 
-/* line 158, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 158, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bookmark-o:before {
   content: "";
 }
 
-/* line 159, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 159, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-phone-square:before {
   content: "";
 }
 
-/* line 160, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 160, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-twitter:before {
   content: "";
 }
 
-/* line 161, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 161, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-facebook:before {
   content: "";
 }
 
-/* line 162, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 162, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-github:before {
   content: "";
 }
 
-/* line 163, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 163, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-unlock:before {
   content: "";
 }
 
-/* line 164, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 164, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-credit-card:before {
   content: "";
 }
 
-/* line 165, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 165, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-rss:before {
   content: "";
 }
 
-/* line 166, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 166, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-hdd-o:before {
   content: "";
 }
 
-/* line 167, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 167, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bullhorn:before {
   content: "";
 }
 
-/* line 168, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 168, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bell:before {
   content: "";
 }
 
-/* line 169, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 169, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-certificate:before {
   content: "";
 }
 
-/* line 170, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 170, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-hand-o-right:before {
   content: "";
 }
 
-/* line 171, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 171, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-hand-o-left:before {
   content: "";
 }
 
-/* line 172, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 172, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-hand-o-up:before {
   content: "";
 }
 
-/* line 173, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 173, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-hand-o-down:before {
   content: "";
 }
 
-/* line 174, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 174, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-circle-left:before {
   content: "";
 }
 
-/* line 175, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 175, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-circle-right:before {
   content: "";
 }
 
-/* line 176, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 176, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-circle-up:before {
   content: "";
 }
 
-/* line 177, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 177, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-circle-down:before {
   content: "";
 }
 
-/* line 178, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 178, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-globe:before {
   content: "";
 }
 
-/* line 179, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 179, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-wrench:before {
   content: "";
 }
 
-/* line 180, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 180, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-tasks:before {
   content: "";
 }
 
-/* line 181, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 181, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-filter:before {
   content: "";
 }
 
-/* line 182, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 182, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-briefcase:before {
   content: "";
 }
 
-/* line 183, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 183, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrows-alt:before {
   content: "";
 }
 
-/* line 184, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 184, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-group:before,
 .fa-users:before {
   content: "";
 }
 
-/* line 186, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 186, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-chain:before,
 .fa-link:before {
   content: "";
 }
 
-/* line 188, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 188, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cloud:before {
   content: "";
 }
 
-/* line 189, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 189, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-flask:before {
   content: "";
 }
 
-/* line 190, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 190, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cut:before,
 .fa-scissors:before {
   content: "";
 }
 
-/* line 192, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 192, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-copy:before,
 .fa-files-o:before {
   content: "";
 }
 
-/* line 194, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 194, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-paperclip:before {
   content: "";
 }
 
-/* line 195, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 195, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-save:before,
 .fa-floppy-o:before {
   content: "";
 }
 
-/* line 197, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 197, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-square:before {
   content: "";
 }
 
-/* line 198, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 198, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
   content: "";
 }
 
-/* line 201, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 201, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-list-ul:before {
   content: "";
 }
 
-/* line 202, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 202, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-list-ol:before {
   content: "";
 }
 
-/* line 203, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 203, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-strikethrough:before {
   content: "";
 }
 
-/* line 204, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 204, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-underline:before {
   content: "";
 }
 
-/* line 205, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 205, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-table:before {
   content: "";
 }
 
-/* line 206, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 206, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-magic:before {
   content: "";
 }
 
-/* line 207, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 207, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-truck:before {
   content: "";
 }
 
-/* line 208, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 208, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-pinterest:before {
   content: "";
 }
 
-/* line 209, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 209, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-pinterest-square:before {
   content: "";
 }
 
-/* line 210, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 210, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-google-plus-square:before {
   content: "";
 }
 
-/* line 211, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 211, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-google-plus:before {
   content: "";
 }
 
-/* line 212, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 212, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-money:before {
   content: "";
 }
 
-/* line 213, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 213, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-caret-down:before {
   content: "";
 }
 
-/* line 214, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 214, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-caret-up:before {
   content: "";
 }
 
-/* line 215, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 215, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-caret-left:before {
   content: "";
 }
 
-/* line 216, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 216, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-caret-right:before {
   content: "";
 }
 
-/* line 217, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 217, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-columns:before {
   content: "";
 }
 
-/* line 218, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 218, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-unsorted:before,
 .fa-sort:before {
   content: "";
 }
 
-/* line 220, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 220, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sort-down:before,
 .fa-sort-desc:before {
   content: "";
 }
 
-/* line 222, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 222, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sort-up:before,
 .fa-sort-asc:before {
   content: "";
 }
 
-/* line 224, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 224, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-envelope:before {
   content: "";
 }
 
-/* line 225, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 225, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-linkedin:before {
   content: "";
 }
 
-/* line 226, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 226, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-rotate-left:before,
 .fa-undo:before {
   content: "";
 }
 
-/* line 228, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 228, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-legal:before,
 .fa-gavel:before {
   content: "";
 }
 
-/* line 230, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 230, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-dashboard:before,
 .fa-tachometer:before {
   content: "";
 }
 
-/* line 232, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 232, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-comment-o:before {
   content: "";
 }
 
-/* line 233, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 233, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-comments-o:before {
   content: "";
 }
 
-/* line 234, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 234, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-flash:before,
 .fa-bolt:before {
   content: "";
 }
 
-/* line 236, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 236, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sitemap:before {
   content: "";
 }
 
-/* line 237, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 237, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-umbrella:before {
   content: "";
 }
 
-/* line 238, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 238, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-paste:before,
 .fa-clipboard:before {
   content: "";
 }
 
-/* line 240, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 240, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-lightbulb-o:before {
   content: "";
 }
 
-/* line 241, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 241, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-exchange:before {
   content: "";
 }
 
-/* line 242, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 242, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cloud-download:before {
   content: "";
 }
 
-/* line 243, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 243, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cloud-upload:before {
   content: "";
 }
 
-/* line 244, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 244, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-user-md:before {
   content: "";
 }
 
-/* line 245, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 245, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-stethoscope:before {
   content: "";
 }
 
-/* line 246, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 246, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-suitcase:before {
   content: "";
 }
 
-/* line 247, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 247, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bell-o:before {
   content: "";
 }
 
-/* line 248, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 248, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-coffee:before {
   content: "";
 }
 
-/* line 249, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 249, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cutlery:before {
   content: "";
 }
 
-/* line 250, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 250, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-text-o:before {
   content: "";
 }
 
-/* line 251, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 251, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-building-o:before {
   content: "";
 }
 
-/* line 252, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 252, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-hospital-o:before {
   content: "";
 }
 
-/* line 253, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 253, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-ambulance:before {
   content: "";
 }
 
-/* line 254, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 254, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-medkit:before {
   content: "";
 }
 
-/* line 255, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 255, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-fighter-jet:before {
   content: "";
 }
 
-/* line 256, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 256, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-beer:before {
   content: "";
 }
 
-/* line 257, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 257, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-h-square:before {
   content: "";
 }
 
-/* line 258, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 258, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-plus-square:before {
   content: "";
 }
 
-/* line 259, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 259, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-angle-double-left:before {
   content: "";
 }
 
-/* line 260, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 260, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-angle-double-right:before {
   content: "";
 }
 
-/* line 261, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 261, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-angle-double-up:before {
   content: "";
 }
 
-/* line 262, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 262, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-angle-double-down:before {
   content: "";
 }
 
-/* line 263, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 263, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-angle-left:before {
   content: "";
 }
 
-/* line 264, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 264, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-angle-right:before {
   content: "";
 }
 
-/* line 265, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 265, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-angle-up:before {
   content: "";
 }
 
-/* line 266, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 266, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-angle-down:before {
   content: "";
 }
 
-/* line 267, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 267, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-desktop:before {
   content: "";
 }
 
-/* line 268, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 268, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-laptop:before {
   content: "";
 }
 
-/* line 269, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 269, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-tablet:before {
   content: "";
 }
 
-/* line 270, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 270, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-mobile-phone:before,
 .fa-mobile:before {
   content: "";
 }
 
-/* line 272, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 272, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-circle-o:before {
   content: "";
 }
 
-/* line 273, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 273, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-quote-left:before {
   content: "";
 }
 
-/* line 274, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 274, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-quote-right:before {
   content: "";
 }
 
-/* line 275, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 275, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-spinner:before {
   content: "";
 }
 
-/* line 276, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 276, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-circle:before {
   content: "";
 }
 
-/* line 277, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 277, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-mail-reply:before,
 .fa-reply:before {
   content: "";
 }
 
-/* line 279, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 279, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-github-alt:before {
   content: "";
 }
 
-/* line 280, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 280, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-folder-o:before {
   content: "";
 }
 
-/* line 281, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 281, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-folder-open-o:before {
   content: "";
 }
 
-/* line 282, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 282, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-smile-o:before {
   content: "";
 }
 
-/* line 283, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 283, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-frown-o:before {
   content: "";
 }
 
-/* line 284, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 284, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-meh-o:before {
   content: "";
 }
 
-/* line 285, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 285, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-gamepad:before {
   content: "";
 }
 
-/* line 286, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 286, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-keyboard-o:before {
   content: "";
 }
 
-/* line 287, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 287, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-flag-o:before {
   content: "";
 }
 
-/* line 288, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 288, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-flag-checkered:before {
   content: "";
 }
 
-/* line 289, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 289, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-terminal:before {
   content: "";
 }
 
-/* line 290, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 290, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-code:before {
   content: "";
 }
 
-/* line 291, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 291, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-mail-reply-all:before,
 .fa-reply-all:before {
   content: "";
 }
 
-/* line 293, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 293, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-star-half-empty:before,
 .fa-star-half-full:before,
 .fa-star-half-o:before {
   content: "";
 }
 
-/* line 296, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 296, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-location-arrow:before {
   content: "";
 }
 
-/* line 297, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 297, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-crop:before {
   content: "";
 }
 
-/* line 298, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 298, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-code-fork:before {
   content: "";
 }
 
-/* line 299, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 299, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-unlink:before,
 .fa-chain-broken:before {
   content: "";
 }
 
-/* line 301, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 301, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-question:before {
   content: "";
 }
 
-/* line 302, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 302, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-info:before {
   content: "";
 }
 
-/* line 303, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 303, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-exclamation:before {
   content: "";
 }
 
-/* line 304, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 304, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-superscript:before {
   content: "";
 }
 
-/* line 305, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 305, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-subscript:before {
   content: "";
 }
 
-/* line 306, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 306, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-eraser:before {
   content: "";
 }
 
-/* line 307, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 307, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-puzzle-piece:before {
   content: "";
 }
 
-/* line 308, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 308, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-microphone:before {
   content: "";
 }
 
-/* line 309, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 309, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-microphone-slash:before {
   content: "";
 }
 
-/* line 310, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 310, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-shield:before {
   content: "";
 }
 
-/* line 311, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 311, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-calendar-o:before {
   content: "";
 }
 
-/* line 312, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 312, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-fire-extinguisher:before {
   content: "";
 }
 
-/* line 313, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 313, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-rocket:before {
   content: "";
 }
 
-/* line 314, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 314, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-maxcdn:before {
   content: "";
 }
 
-/* line 315, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 315, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-chevron-circle-left:before {
   content: "";
 }
 
-/* line 316, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 316, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-chevron-circle-right:before {
   content: "";
 }
 
-/* line 317, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 317, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-chevron-circle-up:before {
   content: "";
 }
 
-/* line 318, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 318, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-chevron-circle-down:before {
   content: "";
 }
 
-/* line 319, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 319, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-html5:before {
   content: "";
 }
 
-/* line 320, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 320, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-css3:before {
   content: "";
 }
 
-/* line 321, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 321, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-anchor:before {
   content: "";
 }
 
-/* line 322, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 322, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-unlock-alt:before {
   content: "";
 }
 
-/* line 323, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 323, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bullseye:before {
   content: "";
 }
 
-/* line 324, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 324, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-ellipsis-h:before {
   content: "";
 }
 
-/* line 325, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 325, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-ellipsis-v:before {
   content: "";
 }
 
-/* line 326, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 326, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-rss-square:before {
   content: "";
 }
 
-/* line 327, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 327, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-play-circle:before {
   content: "";
 }
 
-/* line 328, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 328, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-ticket:before {
   content: "";
 }
 
-/* line 329, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 329, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-minus-square:before {
   content: "";
 }
 
-/* line 330, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 330, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-minus-square-o:before {
   content: "";
 }
 
-/* line 331, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 331, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-level-up:before {
   content: "";
 }
 
-/* line 332, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 332, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-level-down:before {
   content: "";
 }
 
-/* line 333, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 333, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-check-square:before {
   content: "";
 }
 
-/* line 334, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 334, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-pencil-square:before {
   content: "";
 }
 
-/* line 335, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 335, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-external-link-square:before {
   content: "";
 }
 
-/* line 336, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 336, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-share-square:before {
   content: "";
 }
 
-/* line 337, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 337, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-compass:before {
   content: "";
 }
 
-/* line 338, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 338, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-toggle-down:before,
 .fa-caret-square-o-down:before {
   content: "";
 }
 
-/* line 340, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 340, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-toggle-up:before,
 .fa-caret-square-o-up:before {
   content: "";
 }
 
-/* line 342, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 342, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-toggle-right:before,
 .fa-caret-square-o-right:before {
   content: "";
 }
 
-/* line 344, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 344, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-euro:before,
 .fa-eur:before {
   content: "";
 }
 
-/* line 346, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 346, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-gbp:before {
   content: "";
 }
 
-/* line 347, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 347, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-dollar:before,
 .fa-usd:before {
   content: "";
 }
 
-/* line 349, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 349, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-rupee:before,
 .fa-inr:before {
   content: "";
 }
 
-/* line 351, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 351, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cny:before,
 .fa-rmb:before,
 .fa-yen:before,
@@ -2424,573 +2424,573 @@ html {
   content: "";
 }
 
-/* line 355, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 355, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-ruble:before,
 .fa-rouble:before,
 .fa-rub:before {
   content: "";
 }
 
-/* line 358, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 358, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-won:before,
 .fa-krw:before {
   content: "";
 }
 
-/* line 360, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 360, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bitcoin:before,
 .fa-btc:before {
   content: "";
 }
 
-/* line 362, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 362, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file:before {
   content: "";
 }
 
-/* line 363, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 363, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-text:before {
   content: "";
 }
 
-/* line 364, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 364, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sort-alpha-asc:before {
   content: "";
 }
 
-/* line 365, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 365, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sort-alpha-desc:before {
   content: "";
 }
 
-/* line 366, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 366, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sort-amount-asc:before {
   content: "";
 }
 
-/* line 367, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 367, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sort-amount-desc:before {
   content: "";
 }
 
-/* line 368, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 368, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sort-numeric-asc:before {
   content: "";
 }
 
-/* line 369, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 369, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sort-numeric-desc:before {
   content: "";
 }
 
-/* line 370, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 370, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-thumbs-up:before {
   content: "";
 }
 
-/* line 371, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 371, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-thumbs-down:before {
   content: "";
 }
 
-/* line 372, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 372, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-youtube-square:before {
   content: "";
 }
 
-/* line 373, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 373, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-youtube:before {
   content: "";
 }
 
-/* line 374, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 374, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-xing:before {
   content: "";
 }
 
-/* line 375, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 375, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-xing-square:before {
   content: "";
 }
 
-/* line 376, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 376, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-youtube-play:before {
   content: "";
 }
 
-/* line 377, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 377, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-dropbox:before {
   content: "";
 }
 
-/* line 378, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 378, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-stack-overflow:before {
   content: "";
 }
 
-/* line 379, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 379, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-instagram:before {
   content: "";
 }
 
-/* line 380, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 380, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-flickr:before {
   content: "";
 }
 
-/* line 381, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 381, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-adn:before {
   content: "";
 }
 
-/* line 382, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 382, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bitbucket:before {
   content: "";
 }
 
-/* line 383, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 383, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bitbucket-square:before {
   content: "";
 }
 
-/* line 384, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 384, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-tumblr:before {
   content: "";
 }
 
-/* line 385, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 385, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-tumblr-square:before {
   content: "";
 }
 
-/* line 386, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 386, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-long-arrow-down:before {
   content: "";
 }
 
-/* line 387, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 387, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-long-arrow-up:before {
   content: "";
 }
 
-/* line 388, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 388, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-long-arrow-left:before {
   content: "";
 }
 
-/* line 389, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 389, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-long-arrow-right:before {
   content: "";
 }
 
-/* line 390, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 390, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-apple:before {
   content: "";
 }
 
-/* line 391, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 391, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-windows:before {
   content: "";
 }
 
-/* line 392, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 392, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-android:before {
   content: "";
 }
 
-/* line 393, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 393, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-linux:before {
   content: "";
 }
 
-/* line 394, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 394, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-dribbble:before {
   content: "";
 }
 
-/* line 395, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 395, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-skype:before {
   content: "";
 }
 
-/* line 396, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 396, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-foursquare:before {
   content: "";
 }
 
-/* line 397, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 397, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-trello:before {
   content: "";
 }
 
-/* line 398, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 398, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-female:before {
   content: "";
 }
 
-/* line 399, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 399, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-male:before {
   content: "";
 }
 
-/* line 400, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 400, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-gittip:before {
   content: "";
 }
 
-/* line 401, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 401, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sun-o:before {
   content: "";
 }
 
-/* line 402, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 402, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-moon-o:before {
   content: "";
 }
 
-/* line 403, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 403, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-archive:before {
   content: "";
 }
 
-/* line 404, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 404, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bug:before {
   content: "";
 }
 
-/* line 405, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 405, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-vk:before {
   content: "";
 }
 
-/* line 406, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 406, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-weibo:before {
   content: "";
 }
 
-/* line 407, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 407, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-renren:before {
   content: "";
 }
 
-/* line 408, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 408, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-pagelines:before {
   content: "";
 }
 
-/* line 409, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 409, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-stack-exchange:before {
   content: "";
 }
 
-/* line 410, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 410, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-circle-o-right:before {
   content: "";
 }
 
-/* line 411, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 411, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-arrow-circle-o-left:before {
   content: "";
 }
 
-/* line 412, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 412, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-toggle-left:before,
 .fa-caret-square-o-left:before {
   content: "";
 }
 
-/* line 414, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 414, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-dot-circle-o:before {
   content: "";
 }
 
-/* line 415, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 415, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-wheelchair:before {
   content: "";
 }
 
-/* line 416, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 416, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-vimeo-square:before {
   content: "";
 }
 
-/* line 417, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 417, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-turkish-lira:before,
 .fa-try:before {
   content: "";
 }
 
-/* line 419, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 419, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-plus-square-o:before {
   content: "";
 }
 
-/* line 420, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 420, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-space-shuttle:before {
   content: "";
 }
 
-/* line 421, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 421, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-slack:before {
   content: "";
 }
 
-/* line 422, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 422, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-envelope-square:before {
   content: "";
 }
 
-/* line 423, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 423, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-wordpress:before {
   content: "";
 }
 
-/* line 424, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 424, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-openid:before {
   content: "";
 }
 
-/* line 425, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 425, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-institution:before,
 .fa-bank:before,
 .fa-university:before {
   content: "";
 }
 
-/* line 428, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 428, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-mortar-board:before,
 .fa-graduation-cap:before {
   content: "";
 }
 
-/* line 430, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 430, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-yahoo:before {
   content: "";
 }
 
-/* line 431, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 431, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-google:before {
   content: "";
 }
 
-/* line 432, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 432, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-reddit:before {
   content: "";
 }
 
-/* line 433, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 433, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-reddit-square:before {
   content: "";
 }
 
-/* line 434, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 434, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-stumbleupon-circle:before {
   content: "";
 }
 
-/* line 435, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 435, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-stumbleupon:before {
   content: "";
 }
 
-/* line 436, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 436, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-delicious:before {
   content: "";
 }
 
-/* line 437, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 437, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-digg:before {
   content: "";
 }
 
-/* line 438, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 438, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-pied-piper:before {
   content: "";
 }
 
-/* line 439, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 439, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-pied-piper-alt:before {
   content: "";
 }
 
-/* line 440, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 440, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-drupal:before {
   content: "";
 }
 
-/* line 441, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 441, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-joomla:before {
   content: "";
 }
 
-/* line 442, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 442, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-language:before {
   content: "";
 }
 
-/* line 443, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 443, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-fax:before {
   content: "";
 }
 
-/* line 444, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 444, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-building:before {
   content: "";
 }
 
-/* line 445, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 445, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-child:before {
   content: "";
 }
 
-/* line 446, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 446, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-paw:before {
   content: "";
 }
 
-/* line 447, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 447, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-spoon:before {
   content: "";
 }
 
-/* line 448, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 448, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cube:before {
   content: "";
 }
 
-/* line 449, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 449, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cubes:before {
   content: "";
 }
 
-/* line 450, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 450, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-behance:before {
   content: "";
 }
 
-/* line 451, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 451, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-behance-square:before {
   content: "";
 }
 
-/* line 452, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 452, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-steam:before {
   content: "";
 }
 
-/* line 453, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 453, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-steam-square:before {
   content: "";
 }
 
-/* line 454, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 454, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-recycle:before {
   content: "";
 }
 
-/* line 455, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 455, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-automobile:before,
 .fa-car:before {
   content: "";
 }
 
-/* line 457, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 457, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cab:before,
 .fa-taxi:before {
   content: "";
 }
 
-/* line 459, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 459, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-tree:before {
   content: "";
 }
 
-/* line 460, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 460, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-spotify:before {
   content: "";
 }
 
-/* line 461, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 461, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-deviantart:before {
   content: "";
 }
 
-/* line 462, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 462, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-soundcloud:before {
   content: "";
 }
 
-/* line 463, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 463, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-database:before {
   content: "";
 }
 
-/* line 464, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 464, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-pdf-o:before {
   content: "";
 }
 
-/* line 465, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 465, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-word-o:before {
   content: "";
 }
 
-/* line 466, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 466, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-excel-o:before {
   content: "";
 }
 
-/* line 467, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 467, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-powerpoint-o:before {
   content: "";
 }
 
-/* line 468, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 468, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-photo-o:before,
 .fa-file-picture-o:before,
 .fa-file-image-o:before {
   content: "";
 }
 
-/* line 471, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 471, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-zip-o:before,
 .fa-file-archive-o:before {
   content: "";
 }
 
-/* line 473, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 473, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-sound-o:before,
 .fa-file-audio-o:before {
   content: "";
 }
 
-/* line 475, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 475, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-movie-o:before,
 .fa-file-video-o:before {
   content: "";
 }
 
-/* line 477, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 477, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-file-code-o:before {
   content: "";
 }
 
-/* line 478, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 478, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-vine:before {
   content: "";
 }
 
-/* line 479, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 479, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-codepen:before {
   content: "";
 }
 
-/* line 480, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 480, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-jsfiddle:before {
   content: "";
 }
 
-/* line 481, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 481, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-life-bouy:before,
 .fa-life-buoy:before,
 .fa-life-saver:before,
@@ -2999,305 +2999,305 @@ html {
   content: "";
 }
 
-/* line 486, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 486, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-circle-o-notch:before {
   content: "";
 }
 
-/* line 487, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 487, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-ra:before,
 .fa-rebel:before {
   content: "";
 }
 
-/* line 489, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 489, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-ge:before,
 .fa-empire:before {
   content: "";
 }
 
-/* line 491, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 491, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-git-square:before {
   content: "";
 }
 
-/* line 492, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 492, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-git:before {
   content: "";
 }
 
-/* line 493, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 493, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-hacker-news:before {
   content: "";
 }
 
-/* line 494, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 494, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-tencent-weibo:before {
   content: "";
 }
 
-/* line 495, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 495, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-qq:before {
   content: "";
 }
 
-/* line 496, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 496, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-wechat:before,
 .fa-weixin:before {
   content: "";
 }
 
-/* line 498, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 498, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-send:before,
 .fa-paper-plane:before {
   content: "";
 }
 
-/* line 500, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 500, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-send-o:before,
 .fa-paper-plane-o:before {
   content: "";
 }
 
-/* line 502, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 502, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-history:before {
   content: "";
 }
 
-/* line 503, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 503, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-circle-thin:before {
   content: "";
 }
 
-/* line 504, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 504, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-header:before {
   content: "";
 }
 
-/* line 505, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 505, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-paragraph:before {
   content: "";
 }
 
-/* line 506, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 506, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-sliders:before {
   content: "";
 }
 
-/* line 507, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 507, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-share-alt:before {
   content: "";
 }
 
-/* line 508, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 508, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-share-alt-square:before {
   content: "";
 }
 
-/* line 509, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 509, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bomb:before {
   content: "";
 }
 
-/* line 510, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 510, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-soccer-ball-o:before,
 .fa-futbol-o:before {
   content: "";
 }
 
-/* line 512, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 512, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-tty:before {
   content: "";
 }
 
-/* line 513, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 513, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-binoculars:before {
   content: "";
 }
 
-/* line 514, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 514, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-plug:before {
   content: "";
 }
 
-/* line 515, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 515, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-slideshare:before {
   content: "";
 }
 
-/* line 516, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 516, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-twitch:before {
   content: "";
 }
 
-/* line 517, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 517, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-yelp:before {
   content: "";
 }
 
-/* line 518, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 518, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-newspaper-o:before {
   content: "";
 }
 
-/* line 519, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 519, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-wifi:before {
   content: "";
 }
 
-/* line 520, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 520, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-calculator:before {
   content: "";
 }
 
-/* line 521, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 521, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-paypal:before {
   content: "";
 }
 
-/* line 522, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 522, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-google-wallet:before {
   content: "";
 }
 
-/* line 523, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 523, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cc-visa:before {
   content: "";
 }
 
-/* line 524, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 524, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cc-mastercard:before {
   content: "";
 }
 
-/* line 525, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 525, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cc-discover:before {
   content: "";
 }
 
-/* line 526, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 526, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cc-amex:before {
   content: "";
 }
 
-/* line 527, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 527, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cc-paypal:before {
   content: "";
 }
 
-/* line 528, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 528, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cc-stripe:before {
   content: "";
 }
 
-/* line 529, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 529, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bell-slash:before {
   content: "";
 }
 
-/* line 530, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 530, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bell-slash-o:before {
   content: "";
 }
 
-/* line 531, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 531, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-trash:before {
   content: "";
 }
 
-/* line 532, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 532, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-copyright:before {
   content: "";
 }
 
-/* line 533, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 533, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-at:before {
   content: "";
 }
 
-/* line 534, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 534, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-eyedropper:before {
   content: "";
 }
 
-/* line 535, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 535, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-paint-brush:before {
   content: "";
 }
 
-/* line 536, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 536, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-birthday-cake:before {
   content: "";
 }
 
-/* line 537, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 537, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-area-chart:before {
   content: "";
 }
 
-/* line 538, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 538, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-pie-chart:before {
   content: "";
 }
 
-/* line 539, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 539, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-line-chart:before {
   content: "";
 }
 
-/* line 540, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 540, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-lastfm:before {
   content: "";
 }
 
-/* line 541, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 541, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-lastfm-square:before {
   content: "";
 }
 
-/* line 542, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 542, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-toggle-off:before {
   content: "";
 }
 
-/* line 543, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 543, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-toggle-on:before {
   content: "";
 }
 
-/* line 544, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 544, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bicycle:before {
   content: "";
 }
 
-/* line 545, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 545, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-bus:before {
   content: "";
 }
 
-/* line 546, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 546, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-ioxhost:before {
   content: "";
 }
 
-/* line 547, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 547, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-angellist:before {
   content: "";
 }
 
-/* line 548, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 548, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-cc:before {
   content: "";
 }
 
-/* line 549, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 549, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-shekel:before,
 .fa-sheqel:before,
 .fa-ils:before {
   content: "";
 }
 
-/* line 552, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/icons/_icons.scss */
+/* line 552, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/icons/_icons.scss */
 .fa-meanpath:before {
   content: "";
 }
@@ -3330,7 +3330,7 @@ body {
   background-size: 300px;
   min-height: 100%;
 }
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
 body:after {
   content: "";
   display: table;
@@ -3347,7 +3347,7 @@ body:after {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
 .wrap:after {
   content: "";
   display: table;
@@ -3400,7 +3400,7 @@ body:after {
   width: 57.35098%;
   margin-left: 21.32451%;
 }
-/* line 85, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/neat/grid/_span-columns.scss */
+/* line 85, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/neat/grid/_span-columns.scss */
 .form-wrapper:last-child {
   margin-right: 0;
 }
@@ -3431,7 +3431,7 @@ body:after {
 .grid-items-lines {
   position: relative;
 }
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
 .grid-items-lines:after {
   content: "";
   display: table;
@@ -3590,7 +3590,7 @@ div.hidden-items::after {
 }
 
 /**** FLASHES ****/
-/* line 260 */
+/* line 254 */
 .flash-error {
   max-width: 60em;
   margin-left: auto;
@@ -3600,9 +3600,150 @@ div.hidden-items::after {
   padding: 10px 15px;
   border-radius: 3px;
 }
-/* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
 .flash-error:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/****** MENTOR STYLES *******/
+/*** View Students ***/
+/* line 276 */
+.flex-boxes {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+}
+/* line 15, /Users/anniemeng/Documents/PROJECTS/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
+.flex-boxes:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 285 */
+.flex-box {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  box-flex: 2;
+  -webkit-flex: 2 2 15em;
+  -moz-flex: 2 2 15em;
+  -ms-flex: 2 2 15em;
+  flex: 2 2 15em;
+  -webkit-align-self: stretch;
+  -moz-align-self: stretch;
+  align-self: stretch;
+  -ms-flex-item-align: stretch;
+  display: block;
+  box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
+  border-radius: 3px;
+  margin: 0.4em;
+  padding: 2em 2em 3em 2em;
+  background: white;
+}
+/* line 296 */
+.flex-box:hover {
+  background: rgba(158, 27, 52, 0.3);
+}
+/* line 298 */
+.flex-box:hover .flex-title {
+  color: rgba(55, 61, 63, 0.8);
+}
+
+/* line 304 */
+.flex-box img {
+  display: block;
+  opacity: .4;
+  height: 3em;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+/* line 312 */
+.flex-box .flex-title {
+  color: rgba(55, 61, 63, 0.7);
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+
+/* line 319 */
+.flex-box p {
+  margin: auto;
+  line-height: 1.5em;
+  color: rgba(55, 61, 63, 0.6);
+}
+
+/* line 325 */
+.flex-box-big {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 40em;
+  -moz-flex: 1 1 40em;
+  -ms-flex: 1 1 40em;
+  flex: 1 1 40em;
+}
+
+/*** Task Creation Page ***/
+/* line 332 */
+.form-group {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+/* line 338 */
+.control-label {
+  font-size: 1.5em;
+}
+
+/* line 343 */
+label {
+  display: inline-block;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+/* line 349 */
+input[name="students"]:checked + label {
+  color: #9e1b34;
+}
+
+/* line 355 */
+ul#students li {
+  margin-top: 0;
 }

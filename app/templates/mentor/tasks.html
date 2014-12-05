@@ -1,6 +1,6 @@
 {% extends "partials/base.html" %}
 
-{% block title %}Profile{% endblock %}
+{% block title %}Tasks{% endblock %}
 
 {% block header %}
 {% include "partials/mentorheader.html" %}
@@ -9,5 +9,10 @@
 {% block main %}
 <div class="wrap">
   <h1 class="page">Student Task Overview</h1>
+  {% for i in current_user.students %}
+    {% for task in i.tasks %}
+      <p>{{ task.title }} due on {{ task.deadline.strftime('%b %d %Y')}} </p>
+    {% endfor %}
+  {% endfor %}
 </div>
 {% endblock %}
