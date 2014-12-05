@@ -95,7 +95,7 @@ class Task(db.Model):
     description = db.Column(db.Text)
     deadline = db.Column(db.DateTime)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    completed = db.Column(db.Boolean)
+    completed = db.Column(db.Boolean, default=False)
 
     def __repr__(self):
         return '<Task %r>' % self.id
