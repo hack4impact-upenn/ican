@@ -3,7 +3,7 @@ from flask import render_template, session, redirect, url_for, current_app
 from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
 from forms import TaskCreationForm, EditProfileForm, SignupForm
-from ..models import User
+from ..models import User, University
 import datetime
 
 import datetime
@@ -17,11 +17,14 @@ def index():
 # @mentors_required
 def signup():
     form = SignupForm()
+    form.university.choices = [(u.id,u.name) for u in University.query.all()]
     if form.validate_on_submit():
         userTest = User.query.filter_by(email=form.email.data).first()
         if userTest is None:
+            u = University.query.get(form.university.data)
             user = User(email=form.email.data,
                         username=form.username.data,
+                        university=u,
                      password=form.password.data)
             db.session.add(user)
             db.session.commit()

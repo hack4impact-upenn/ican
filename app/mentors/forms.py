@@ -1,5 +1,5 @@
 from flask.ext.wtf import Form
-from wtforms import StringField, SubmitField, PasswordField, TextAreaField, TextField, DateField,SelectMultipleField, widgets
+from wtforms import StringField, SubmitField, PasswordField, TextAreaField, TextField, DateField,SelectMultipleField, widgets, SelectField
 from wtforms.validators import Required, Email, EqualTo
 
 class MultiCheckboxField(SelectMultipleField):
@@ -29,6 +29,7 @@ class EditProfileForm(Form):
 class SignupForm(Form):
     name = StringField('What is your name?', validators=[Required()])
     email = StringField('What is your email?', validators=[Required(), Email()])
+    university = SelectField('Which college are you going to?', validators=[Required()], coerce=int)
     password = PasswordField('Enter a password:', validators=[Required(), EqualTo('password2', message='Passwords must match') ])
     password2 = PasswordField('Confirm password', validators=[Required()])
     submit = SubmitField('Sign up')
