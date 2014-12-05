@@ -1,5 +1,5 @@
 from . import mentors
-from flask import render_template, session, redirect, url_for, current_app
+from flask import render_template, session, redirect, url_for, current_app, flash
 from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
 from forms import TaskCreationForm, EditProfileForm, SignupForm, ContactForm
