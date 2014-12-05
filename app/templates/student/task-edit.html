@@ -4,17 +4,25 @@
 {% block title %}Task {{ task.name }}{% endblock %}
 
 {% block header %}
-<div class="wrap">
-    <a href="javascript: history.go(-1)"><i class="fa fa-angle-left"></i>&nbsp; Back</a>
-</div>
+    <div class="wrap">
+        <a href="javascript: history.go(-1)"><i class="fa fa-angle-left"></i>&nbsp; Back</a>
+    </div>
 {% endblock %}
 
 {% block main %}
-<div class="wrap">
-    <h1 class="page">Edit this task</h1>
-    This is a task name: {{ task.title }}<br>
-    Task description: {{ task.description }}
-    
-    Mark as completed: <fieldset>{{ wtf.quick_form(form) }}</fieldset>
-</div>
+    <div class="wrap">
+        <h1 class="page">Edit this task</h1>
+
+        <div class="task block" style="cursor: auto">
+            <h3>{{ task.title | default('[No task title]') }}</h3>
+            <h5>Due {{ task.deadline.strftime('%b %d %Y') }}</h5>
+            <hr>
+
+            <h5>Description</h5>
+
+            <p>{{ task.description }}</p>
+
+            {{ wtf.quick_form(form) }}
+        </div>
+    </div>
 {% endblock %}
