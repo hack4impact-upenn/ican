@@ -45,8 +45,9 @@ def profile():
 @mentors.route('/tasks')
 # @mentors_required
 def tasks():
-    taskList = self.get_all_tasks_list()
-    return render_template('mentor/tasks.html', tasks = taskList, date=datetime.datetime.now())
+    taskList = current_user.get_all_tasks_list()
+    students = current_user.students
+    return render_template('mentor/tasks.html', students=students, User=User, tasks=taskList, date=datetime.datetime.now())
 
 @mentors.route('/students')
 # @mentors_required

@@ -377,3 +377,44 @@ ul#students {
     margin-top:0;
   }
 }
+
+
+/*** All tasks page ****/
+.all-tasks {
+    margin-bottom: 2em;
+}
+
+.all-tasks-li {
+    list-style-type:none;
+    padding: 1em;
+    background: white;
+    box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10);
+}
+
+.all-tasks-li-overdue {
+  color: $temple-red;
+  &:before {
+    @include fa-icon;
+    content: "#{$fa-var-exclamation-circle}  ";
+  }
+}
+
+// filtering
+#filter {
+    margin:0;
+    margin-bottom:2em;
+}
+
+.filter-l {
+    cursor:pointer;
+    padding: 0 1em;
+    font-weight:normal;
+}
+
+.filter-i {
+    display:none !important;
+}
+
+.filter-i:checked + label{
+  color:$temple-red;
+}

@@ -3805,3 +3805,55 @@ input[name="students"]:checked + label {
 ul#students li {
   margin-top: 0;
 }
+
+/*** All tasks page ****/
+/* line 383 */
+.all-tasks {
+  margin-bottom: 2em;
+}
+
+/* line 387 */
+.all-tasks-li {
+  list-style-type: none;
+  padding: 1em;
+  background: white;
+  box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
+}
+
+/* line 394 */
+.all-tasks-li-overdue {
+  color: #9e1b34;
+}
+/* line 396 */
+.all-tasks-li-overdue:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "  ";
+}
+
+/* line 403 */
+#filter {
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+/* line 408 */
+.filter-l {
+  cursor: pointer;
+  padding: 0 1em;
+  font-weight: normal;
+}
+
+/* line 414 */
+.filter-i {
+  display: none !important;
+}
+
+/* line 418 */
+.filter-i:checked + label {
+  color: #9e1b34;
+}
