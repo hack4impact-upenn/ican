@@ -9,6 +9,19 @@
 {% block main %}
 <div class="wrap">
   <h1 class="page">Student Task Overview</h1>
+  <div class="dropdown">
+    <div class="dropdown-container">
+      <p class="dropdown-description">Filter</p>
+      <p class="dropdown-button">Pick a student</p>
+      <ul class="dropdown-menu dropdown-select">
+        <li onclick="filter(-1)"> All </li>
+        {% for student in students %}
+        <li onclick="filter('{{ student.id }}')"> {{ student.name }} </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <!--
   <div id="filter">
   <b>Filter:</b>
   <input id="all" name="stud" type="radio" class="filter-i" value="all">
@@ -17,7 +30,7 @@
     <input id="{{ student.id }}" name="stud" type="radio" class="filter-i" value="{{ student.name }}">
     <label onclick="filter('{{ student.id }}')" for="{{ student.id }}" class="filter-l">{{ student.name }}</label>
   {% endfor %}
-  </div>
+</div>-->
 
   <ul class ="all-tasks">
   {% for task in tasks %}
@@ -32,6 +45,20 @@
 {% endblock %}
 
 {% block scripts %}
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".dropdown-button").click(function() {
+    $(".dropdown-menu").toggleClass("show-menu");
+    $(".dropdown-menu > li").click(function(){
+      $(".dropdown-menu").removeClass("show-menu");
+    });
+    /*$(".dropdown-menu.dropdown-select > li").click(function() {
+      $(".dropdown-button").html($(this).html());
+    });*/
+  });
+});
+</script>
+
 <script type="text/javascript">
   function filter(id) {
     html = "";
