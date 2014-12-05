@@ -62,6 +62,7 @@ class User(UserMixin, db.Model):
                     min_mentor = m
             self.mentor = min_mentor
 
+
     def add_task(self, description, deadline):
         '''
         Adds task to list of student tasks in order of deadline from closest -> furthest
@@ -87,6 +88,12 @@ class Task(db.Model):
 
     def __repr__(self):
         return '<Task %r>' % self.id
+    
+    def complete_task(self):
+        self.completed = True
+        db.session.add(self)
+        db.session.commit()
+
 
 
 class GeneralTask(db.Model):
