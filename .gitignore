@@ -56,3 +56,6 @@ target/
 #Webassets
 .webassets-cache/
 .sass-cache/
+
+#PyCharm
+.idea/
