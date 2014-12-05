@@ -27,5 +27,5 @@ class EditProfileForm(Form):
     submit = SubmitField('Save')
 
 class ContactForm(Form):
-    text = TextField()
+    text = TextField("Send a text")
     submit = SubmitField('Contact')

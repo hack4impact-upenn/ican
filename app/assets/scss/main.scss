@@ -321,12 +321,17 @@ $flex-box-color: transparentize($base-font-color, .3);
 }
 
 .overview-title {
-  margin-bottom:0.5em;
+  margin:0.5em 0;
+  margin-top:1em;
 }
 
 .overview-task, .overview-overdue {
   list-style-type:none;
   margin-top:0;
+  margin-bottom:0.5em;
+  padding: 1em;
+  background: white;
+  box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10);
 }
 
 .overview-overdue {
@@ -335,6 +340,10 @@ $flex-box-color: transparentize($base-font-color, .3);
     @include fa-icon;
     content: "#{$fa-var-exclamation-circle}  ";
   }
+}
+
+fieldset {
+  margin-bottom:2em;
 }
 
 /*** Task Creation Page ***/
