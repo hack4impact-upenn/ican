@@ -1,6 +1,6 @@
 from flask.ext.wtf import Form
 from wtforms import StringField, SubmitField, PasswordField, TextAreaField, TextField, DateField,SelectMultipleField, widgets
-from wtforms.validators import Required, Email
+from wtforms.validators import Required, Email, EqualTo
 
 class MultiCheckboxField(SelectMultipleField):
     """
@@ -15,7 +15,7 @@ class MultiCheckboxField(SelectMultipleField):
 class TaskCreationForm(Form):
     students = MultiCheckboxField("Students", coerce=int)
     description = TextField('Task Description')
-    deadline = DateField('When is this task due? (YYYY-MM-DD)')
+    deadline = DateField('When is this task due?')
     submit = SubmitField('Create Tasks')
 
 # TODO: TEMPORARY - added by Annie
@@ -26,6 +26,10 @@ class EditProfileForm(Form):
     new_password = PasswordField('New Password:')
     submit = SubmitField('Save')
 
-class ContactForm(Form):
-    text = TextField()
-    submit = SubmitField('Contact')
+class SignupForm(Form):
+    name = StringField('What is your name?', validators=[Required()])
+    email = StringField('What is your email?', validators=[Required(), Email()])
+    password = PasswordField('Enter a password:', validators=[Required(), EqualTo('password2', message='Passwords must match') ])
+    password2 = PasswordField('Confirm password', validators=[Required()])
+    submit = SubmitField('Sign up')
+

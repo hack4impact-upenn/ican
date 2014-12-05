@@ -100,3 +100,5 @@ class UserModelTestCase(unittest.TestCase):
         m3.students.append(User())
         s.match_with_mentor()
         self.assertTrue(s.mentor.name == m4.name)
+
+    

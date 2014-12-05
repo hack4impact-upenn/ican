@@ -1,17 +1,32 @@
 from . import mentors
-from flask import render_template, session, redirect, url_for, current_app, flash
+from flask import render_template, session, redirect, url_for, current_app
 from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
-from forms import TaskCreationForm, EditProfileForm, ContactForm
+from forms import TaskCreationForm, EditProfileForm
 from ..models import User
+
+import datetime
 
 @mentors.route('/')
 def index():
     return render_template('mentor/menu.html')
+         
 
 @mentors.route('/signup')
 # @mentors_required
 def signup():
+    form = SignupForm()
+    if form.validate_on_submit():
+        userTest = User.query.filter_by(email=form.email.data).first()
+        if userTest is None:
+            user = User(email=form.email.data,
+                        username=form.username.data,
+                     password=form.password.data)
+            db.session.add(user)
+            db.session.commit()
+        else:
+            flash("This Username/Password is already in use.")
+            return redirect(url_for('.index'))
     return render_template('mentor/signup.html')
 
 # TODO: modify - temporarily added by Annie
@@ -23,7 +38,8 @@ def profile():
 @mentors.route('/tasks')
 # @mentors_required
 def tasks():
-    return render_template('mentor/tasks.html')
+    taskList = self.get_all_tasks_list()
+    return render_template('mentor/tasks.html', tasks = taskList, date=datetime.datetime.now())
 
 @mentors.route('/students')
 # @mentors_required
@@ -61,22 +77,8 @@ def profile_edit():
     form.name.data = current_user.name
     form.email.data = current_user.email
     return render_template('mentor/profile-edit.html', student=current_user, form=form)
-# END OF TEMPORARY ADD
 
-# @mentors.route('/signup', methods=['GET', 'POST'])
-# def signup():
-#     form = SignupForm()
-#     if form.validate_on_submit():
-#         mentor = Mentors.query.filter_by(email=form.email.data).first()
-#         if mentor is None:
-#             mentor = Mentor(email=form.email.data, name=form.name.data)
-#             db.session.add(mentor)
-#             return redirect(url_for('.index'))
-#         else:
-#             #throw some error and rerender form
-#             return redirect(url_for('.index'))
-#     return render_template('signup.html',
-#                            form=form)
+
 
 @mentors.route('/create_tasks', methods=['GET', 'POST'])
 @login_required
