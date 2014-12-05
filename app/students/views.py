@@ -1,5 +1,5 @@
 from . import students
-from ..models import User, FAQ, Task, University
+from ..models import User, FAQ, Task, University, GeneralTask
 from .. import db
 from flask import render_template, session, redirect, url_for, current_app, flash
 from ..decorators import student_required
@@ -15,10 +15,8 @@ import datetime
 def index():
     # name = student.name
     # tasks = student.tasks.all()
-    print "*****"
-    print current_user.tasks
-    print "*****"
-    return render_template('student/menu.html', student=current_user, date=datetime.datetime, tasks=[])
+    ordered_tasks = current_user.tasks.filter_by(completed=False).order_by(Task.deadline).all()
+    return render_template('student/menu.html', student=current_user, date=datetime.datetime, tasks=ordered_tasks)
 
 @students.route('/signup', methods=['GET', 'POST'])
 def signup():
@@ -27,10 +25,15 @@ def signup():
     if form.validate_on_submit():
         student = User.query.filter_by(email=form.email.data).first()
         if student is None:
-            print 
             u = University.query.get(form.university.data)
             student = User(email=form.email.data, name=form.name.data, university=u, password=form.password.data, user_role='student')
             # TODO Assign tasks to students based on University
+            general_tasks = GeneralTask.query.all();
+            for gt in general_tasks:
+                if (gt.university_id == u.id) or (gt.university_id is None):
+                        new_task = Task(title=gt.title, description=gt.description, deadline=gt.deadline, user_id=student.id)
+                        student.tasks.append(new_task)
+
             student.match_with_mentor()
             db.session.add(student)
             db.session.commit()
@@ -44,7 +47,7 @@ def signup():
 
 @students.route('/tasks')
 def tasks():
-    ordered_tasks = current_user.tasks.order_by(Task.deadline).filter_by(completed = False)
+    ordered_tasks = current_user.tasks.filter_by(completed=False).order_by(Task.deadline).all()
     return render_template('student/tasks.html', student=current_user, tasks=ordered_tasks, date=datetime.datetime.now())
 
 @students.route('/task/<task_id>', methods=['GET', 'POST'])

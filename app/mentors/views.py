@@ -25,6 +25,7 @@ def signup():
             user = User(email=form.email.data,
                         name=form.name.data,
                         university=u,
+                        bio=form.bio.data,
                         password=form.password.data,
                         user_role = "mentor")
             db.session.add(user)
