@@ -6,6 +6,8 @@ from ..models import User, Task, University
 from forms import TaskCreationForm, EditProfileForm, SignupForm, ContactForm
 from ..import db
 
+from twilio.rest import TwilioRestClient
+
 import datetime
 
 @mentors.route('/')
@@ -72,7 +74,10 @@ def student(student_id):
     if form.validate_on_submit():
         name = student.name
         flash(name + ' has been sent a message!')
-        #TODO Send text to user
+        account_sid = ""
+        auth_token = ""
+        client = TwilioRestClient(account_sid, auth_token)
+        message = client.messages.create(body=form.text.data, to="2407515073", from_="+12406541172")
         return redirect(url_for('students'))
     return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime)
 
