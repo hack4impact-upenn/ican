@@ -4,22 +4,17 @@
 
 // ----- CSS reset -----
 @import "base/normalize";
-
 // ----- SASS libraries -----
 // handy mixins for autoprefixing, etc.
 @import "bourbon/bourbon";
-
 // base styles, see esp. base/_variables.scss
 @import "base/base";
-
 // lightweight grid system
-$max-width: em(960) !global; // a bit more sensible
+$max-width:em(960) !global; // a bit more sensible
 @import "neat/neat";
-
 // ----- Page transitions -----
 // for page-switching with jquery.smoothState.js
 //@import "transitions/_transitions.scss";
-
 // ----- Icon font -----
 @import "icons/font-awesome";
 
@@ -44,10 +39,10 @@ html {
 // ----- Main -----
  body {
     background-color: $lilia;
-     background-image: url(../../static/img/bg-pattern.png);
-     background-size:300px;
+    background-image: url(../../static/img/bg-pattern.png);
+    background-size: 300px;
     min-height: 100%;
-     @include clearfix;
+    @include clearfix;
 }
 /******************************************************************************
  **  GRID
@@ -117,20 +112,16 @@ html {
  ******************************************************************************/
 
 @mixin grid-item-columns($columns) {
-    width: 100% / 12 * $columns;
-    //    margin-top: 16px;
-    //    margin-right: 8px;
-    //    margin-left: 8px;
-    border-bottom: 15px solid $lilia;
-    border-right: 7.5px solid $lilia;
-    border-left: 7.5px solid $lilia;
+    width: 100% / 13 * $columns;
+    margin-top: 16px;
+    margin-right: 16px;
+    //margin-left: 8px;
 }
 .grid-items-lines {
-    //    $grid-item-border: 1px solid transparentize($base-font-color, 0.8);
     $grid-item-columns: 4;
     $grid-item-big-columns: 8;
     $grid-item-color: $base-font-color;
-    $grid-item-height: 14em;
+    $grid-item-height: 13em;
     @include clearfix;
     position: relative;
     .grid-item {
@@ -147,9 +138,9 @@ html {
             @include grid-item-columns($grid-item-columns);
         }
         &:hover {
-            //            box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
-
+            box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
         }
+        border:$base-border;
     }
     .grid-item h1 {
         color: $grid-item-color;
@@ -182,8 +173,6 @@ li.overdue {
         content: "#{$fa-var-exclamation-circle}  ";
     }
 }
-
-
 /********* OVERALL STUDENT PAGE STYLES **********/
 
 h1.page {
@@ -212,7 +201,6 @@ div.hidden-items {
     font-weight: 500;
     font-size: 1.2em;
     @include transition(all 0.2s ease-in-out);
-
     &:hover {
         color: darken($silver, 30%);
         border-color: darken($silver, 20%);
@@ -222,7 +210,6 @@ div.hidden-items {
         background: darken($silver, 20%);
         color: white;
     }
-
     &::after {
         @include fa-icon();
         content: "#{$fa-var-angle-right}";
@@ -231,7 +218,6 @@ div.hidden-items {
         font-weight: bold;
     }
 }
-
 .block {
     display: block;
     background-color: white;
@@ -241,22 +227,24 @@ div.hidden-items {
     &:hover {
         box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
     }
-    border: $base-border;
+    border:$base-border;
 }
-
 .task.block {
     padding: 30px 50px 40px;
     cursor: pointer;
 }
-
 /**** FLASHES ****/
 
 .flash-error {
     @include outer-container;
-    background-color: $silver;
+    background-color: darken($silver, 20%);
     color: white;
     padding: 10px 15px;
     border-radius: 3px;
+    &::before {
+        @include fa-icon();
+        content: "#{$fa-var-info-circle}  ";
+    }
 }
 
 
