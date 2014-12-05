@@ -28,7 +28,7 @@ def signup():
             u = University.query.get(form.university.data)
             student = User(email=form.email.data, name=form.name.data, university=u, password=form.password.data, user_role='student')
             # TODO Assign tasks to students based on University
-            general_tasks = GeneralTask.query.all();
+            general_tasks = GeneralTask.query.all()
             for gt in general_tasks:
                 if (gt.university_id == u.id) or (gt.university_id is None):
                         new_task = Task(title=gt.title, description=gt.description, deadline=gt.deadline, user_id=student.id)
@@ -48,7 +48,17 @@ def signup():
 @students.route('/tasks')
 def tasks():
     ordered_tasks = current_user.tasks.filter_by(completed=False).order_by(Task.deadline).all()
-    return render_template('student/tasks.html', student=current_user, tasks=ordered_tasks, date=datetime.datetime.now())
+    num_completed = current_user.tasks.filter_by(completed=True).count()
+    return render_template('student/tasks.html',
+                           student=current_user,
+                           tasks=ordered_tasks,
+                           num_completed=num_completed,
+                           date=datetime.datetime.now())
+
+@students.route('/tasks/completed')
+def completed_tasks():
+    ordered_tasks = current_user.tasks.filter_by(completed=True).order_by(Task.deadline).all()
+    return render_template('student/tasks-completed.html', tasks=ordered_tasks, student=current_user)
 
 @students.route('/task/<task_id>', methods=['GET', 'POST'])
 def task_view(task_id):

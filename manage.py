@@ -49,7 +49,7 @@ def populate():
   maya = User(name="Maya Ebsworth", email="maya@gmail.com", password="password", user_role="student", university=temple)
   maya.mentor = annie
 
-  ayush = User(name="Ayush Goel", email="ayush@gmail.com", password="password", user_role="student", university=temple)
+  ayush = User(name="Ayush Goyal", email="ayush@gmail.com", password="password", user_role="student", university=temple)
   ayush.mentor = annie
 
   #assign tasks to students

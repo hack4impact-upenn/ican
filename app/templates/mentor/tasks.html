@@ -10,10 +10,12 @@
 <div class="wrap">
   <h1 class="page">Student Task Overview</h1>
   <div id="filter">
-  Filter:
+  <b>Filter:</b>
+  <input id="all" name="stud" type="radio" class="filter-i" value="all">
+  <label onclick="filter(-1)" for="all" class="filter-l">All</label>
   {% for student in students %}
-    <input id="{{ student.id }}" type="checkbox" class="filter-i" value="{{ student.name }}">
-    <label for="{{ student.id }}" class="filter-l">{{ student.name }}</label>
+    <input id="{{ student.id }}" name="stud" type="radio" class="filter-i" value="{{ student.name }}">
+    <label onclick="filter('{{ student.id }}')" for="{{ student.id }}" class="filter-l">{{ student.name }}</label>
   {% endfor %}
   </div>
 
@@ -27,4 +29,33 @@
   {% endfor %}
   </ul>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+  function filter(id) {
+    html = "";
+    if (id == -1) {
+      {% for task in tasks %}
+        {% if date.now() > task.deadline %}
+          html += "<li class='all-tasks-li all-tasks-li-overdue'><b>{{ User.query.get(task.user_id).name }}:</b> {{ task.title }} was due on {{task.deadline.strftime('%b %d, %Y')}}</li>"
+        {% else %}
+          html += "<li class='all-tasks-li'><b>{{ User.query.get(task.user_id).name }}:</b> {{ task.title }} due on {{ task.deadline.strftime('%b %d %Y')}}</li>"
+        {% endif %}
+      {% endfor %}
+    } else {
+      id = parseInt(id);
+      {% for task in tasks %}
+        if ({{task.user_id}} === id) {
+          {% if date.now() > task.deadline %}
+            html += "<li class='all-tasks-li all-tasks-li-overdue'><b>{{ User.query.get(task.user_id).name }}:</b> {{ task.title }} was due on {{task.deadline.strftime('%b %d, %Y')}}</li>"
+          {% else %}
+            html += "<li class='all-tasks-li'><b>{{ User.query.get(task.user_id).name }}:</b> {{ task.title }} due on {{ task.deadline.strftime('%b %d %Y')}}</li>"
+          {% endif %}
+        }
+      {% endfor %}
+    }
+    $(".all-tasks").html(html);
+  }
+</script>
 {% endblock %}

@@ -1,0 +1,28 @@
+{% extends "partials/base.html" %}
+
+{% block title %}Tasks{% endblock %}
+
+{% block header %}
+<div class="wrap">
+    <a href="javascript: history.go(-1)"><i class="fa fa-angle-left"></i>&nbsp; Back</a>
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="wrap">
+    <h1>Completed tasks</h1>
+    
+    {% if tasks %}
+    <ul>
+        {% for task in tasks %}
+        <li class="task block" onClick="location.href='task/{{ task.id }}'">
+            <div style="display:inline-block"><h3 style="display:inline">{{ task.title }}</h3><br>Due {{ task.deadline.strftime('%b %d %Y') }}</div>
+            <hr>
+            {{ task.description }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    
+</div>
+{% endblock %}
