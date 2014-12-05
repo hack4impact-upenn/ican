@@ -47,7 +47,7 @@ def tasks():
 @students.route('/task/<task_id>')
 def task_view(task_id):
     task = Task.query.get(task_id)
-    mark_completed_form = None # todo 
+    mark_completed_form = CompletedTaskForm() # todo 
     return render_template('student/task-edit.html', task=task, form=mark_completed_form)
 
 @students.route('/mentor')
