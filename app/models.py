@@ -63,12 +63,12 @@ class User(UserMixin, db.Model):
             self.mentor = min_mentor
 
     def get_all_tasks_list(self):
-        studentList = current_user.students 
-        student_dict = dict()
+        studentList = self.students 
         taskList = []
         for student in studentList:
-            taskList.extend(student.tasks)
-        return taskList.order_by(Task.deadline)
+            taskList += student.tasks.all()
+        taskList.sort(key=lambda r: r.deadline)
+        return taskList
 
 
     def add_task(self, description, deadline):
@@ -77,6 +77,8 @@ class User(UserMixin, db.Model):
         so tasks are already sorted when they are displayed
         '''
         new_task = Task(deadline=deadline, description=description, user_id=self.id)
+        self.tasks.append(new_task)
+        db.session.add(self)
         db.session.add(new_task)
         db.session.commit()
 
