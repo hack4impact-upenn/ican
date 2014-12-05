@@ -2,9 +2,8 @@ from . import mentors
 from flask import render_template, session, redirect, url_for, current_app
 from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
-from forms import TaskCreationForm, EditProfileForm, ContactForm
-from ..models import User
-import datetime
+from forms import TaskCreationForm, EditProfileForm, SignupForm
+from ..models import User, University
 
 import datetime
 
@@ -13,22 +12,25 @@ def index():
     return render_template('mentor/menu.html')
 
 
-@mentors.route('/signup')
+@mentors.route('/signup', methods=['GET', 'POST'])
 # @mentors_required
 def signup():
     form = SignupForm()
+    form.university.choices = [(u.id,u.name) for u in University.query.all()]
     if form.validate_on_submit():
         userTest = User.query.filter_by(email=form.email.data).first()
         if userTest is None:
+            u = University.query.get(form.university.data)
             user = User(email=form.email.data,
                         username=form.username.data,
+                        university=u,
                      password=form.password.data)
             db.session.add(user)
             db.session.commit()
         else:
             flash("This Username/Password is already in use.")
             return redirect(url_for('.index'))
-    return render_template('mentor/signup.html')
+    return render_template('mentor/signup.html', form = form)
 
 # TODO: modify - temporarily added by Annie
 @mentors.route('/profile')

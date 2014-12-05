@@ -1,5 +1,5 @@
 from . import students
-from ..models import User, FAQ, Task
+from ..models import User, FAQ, Task, University
 from .. import db
 from flask import render_template, session, redirect, url_for, current_app, flash
 from ..decorators import student_required
@@ -23,10 +23,13 @@ def index():
 @students.route('/signup', methods=['GET', 'POST'])
 def signup():
     form = SignupForm()
+    form.university.choices = [(u.id,u.name) for u in University.query.all()]
     if form.validate_on_submit():
         student = User.query.filter_by(email=form.email.data).first()
         if student is None:
-            student = User(email=form.email.data, name=form.name.data, password=form.password.data, user_role='student')
+            print 
+            u = University.query.get(form.university.data)
+            student = User(email=form.email.data, name=form.name.data, university=u, password=form.password.data, user_role='student')
             # TODO Assign tasks to students based on University
             student.match_with_mentor()
             db.session.add(student)
@@ -41,7 +44,7 @@ def signup():
 
 @students.route('/tasks')
 def tasks():
-    ordered_tasks = current_user.tasks.order_by(Task.deadline)#.filter_by(Task.completed is False)
+    ordered_tasks = current_user.tasks.order_by(Task.deadline).filter_by(completed = False)
     return render_template('student/tasks.html', student=current_user, tasks=ordered_tasks, date=datetime.datetime.now())
 
 @students.route('/task/<task_id>', methods=['GET', 'POST'])
