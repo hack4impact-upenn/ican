@@ -49,7 +49,7 @@ class User(UserMixin, db.Model):
         university = self.university
         possible_mentors = []
         if university:
-            possible_mentors = [m for m in university.users.all() if m.user_role == 'mentor']
+            possible_mentors = [m for m in university.users if m.user_role == 'mentor']
         if (university is None or len(possible_mentors) == 0):
             #possible_mentors = [m for m in User.query.all() if m.user_role == 'mentor']
             possible_mentors = User.query.filter_by(user_role='mentor').all()
