@@ -3495,8 +3495,9 @@ body:after {
 /* line 178 */
 li.overdue {
   color: #9e1b34;
+  list-style-type: none;
 }
-/* line 180 */
+/* line 181 */
 li.overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3508,31 +3509,31 @@ li.overdue:before {
 }
 
 /********* OVERALL STUDENT PAGE STYLES **********/
-/* line 189 */
+/* line 190 */
 h1.page {
   padding-bottom: 1em;
 }
 
 /**************** STUDENT FAQ *******************/
-/* line 194 */
+/* line 195 */
 p.question {
   font-size: 130%;
   font-weight: bold;
 }
 
 /**************** STUDENT PROFILE ***************/
-/* line 200 */
+/* line 201 */
 #field {
   font-weight: bold;
 }
 
-/* line 203 */
+/* line 204 */
 h1.faq {
   padding-bottom: 1em;
 }
 
 /**************** STUDENT TASKS *****************/
-/* line 208 */
+/* line 209 */
 div.hidden-items {
   border: 2px solid #c1c7c9;
   padding: 12px 16px;
@@ -3543,17 +3544,17 @@ div.hidden-items {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 216 */
+/* line 217 */
 div.hidden-items:hover {
   color: #5a6466;
   border-color: #717f82;
 }
-/* line 221 */
+/* line 222 */
 div.hidden-items:active {
   background: #717f82;
   color: white;
 }
-/* line 226 */
+/* line 227 */
 div.hidden-items::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3567,7 +3568,7 @@ div.hidden-items::after {
   font-weight: bold;
 }
 
-/* line 235 */
+/* line 236 */
 .block {
   display: block;
   background-color: white;
@@ -3578,19 +3579,19 @@ div.hidden-items::after {
   transition: all 0.3s ease-in-out;
   border: 1px solid #DDD;
 }
-/* line 241 */
+/* line 242 */
 .block:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
 
-/* line 247 */
+/* line 248 */
 .task.block {
   padding: 30px 50px 40px;
   cursor: pointer;
 }
 
 /**** FLASHES ****/
-/* line 254 */
+/* line 255 */
 .flash-error {
   max-width: 60em;
   margin-left: auto;
@@ -3609,7 +3610,7 @@ div.hidden-items::after {
 
 /****** MENTOR STYLES *******/
 /*** View Students ***/
-/* line 276 */
+/* line 277 */
 .flex-boxes {
   display: -webkit-box;
   display: -moz-box;
@@ -3652,7 +3653,7 @@ div.hidden-items::after {
   clear: both;
 }
 
-/* line 285 */
+/* line 286 */
 .flex-box {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3675,16 +3676,16 @@ div.hidden-items::after {
   padding: 2em 2em 3em 2em;
   background: white;
 }
-/* line 296 */
+/* line 297 */
 .flex-box:hover {
   background: rgba(158, 27, 52, 0.3);
 }
-/* line 298 */
+/* line 299 */
 .flex-box:hover .flex-title {
   color: rgba(55, 61, 63, 0.8);
 }
 
-/* line 304 */
+/* line 305 */
 .flex-box img {
   display: block;
   opacity: .4;
@@ -3693,7 +3694,7 @@ div.hidden-items::after {
   margin-bottom: 2em;
 }
 
-/* line 312 */
+/* line 313 */
 .flex-box .flex-title {
   color: rgba(55, 61, 63, 0.7);
   font-weight: 500;
@@ -3701,14 +3702,14 @@ div.hidden-items::after {
   margin-bottom: .5em;
 }
 
-/* line 319 */
+/* line 320 */
 .flex-box p {
   margin: auto;
   line-height: 1.5em;
   color: rgba(55, 61, 63, 0.6);
 }
 
-/* line 325 */
+/* line 326 */
 .flex-box-big {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -3719,31 +3720,63 @@ div.hidden-items::after {
   flex: 1 1 40em;
 }
 
+/*** Specific student ***/
+/* line 331 */
+.overview-name {
+  margin-bottom: 1em;
+}
+
+/* line 335 */
+.overview-title {
+  margin-bottom: 0.5em;
+}
+
+/* line 339 */
+.overview-task, .overview-overdue {
+  list-style-type: none;
+  margin-top: 0;
+}
+
+/* line 344 */
+.overview-overdue {
+  color: #9e1b34;
+}
+/* line 346 */
+.overview-overdue:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "  ";
+}
+
 /*** Task Creation Page ***/
-/* line 332 */
+/* line 354 */
 .form-group {
   margin-top: 0;
   margin-bottom: 2em;
 }
 
-/* line 338 */
+/* line 360 */
 .control-label {
   font-size: 1.5em;
 }
 
-/* line 343 */
+/* line 365 */
 label {
   display: inline-block;
   margin-top: 0;
   cursor: pointer;
 }
 
-/* line 349 */
+/* line 371 */
 input[name="students"]:checked + label {
   color: #9e1b34;
 }
 
-/* line 355 */
+/* line 377 */
 ul#students li {
   margin-top: 0;
 }

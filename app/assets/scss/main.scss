@@ -177,6 +177,7 @@ html {
 
 li.overdue {
     color: $temple-red;
+    list-style-type:none;
     &:before {
         @include fa-icon;
         content: "#{$fa-var-exclamation-circle}  ";
@@ -326,6 +327,27 @@ $flex-box-color: transparentize($base-font-color, .3);
   @include flex(1 1 40em);
 }
 
+/*** Specific student ***/
+.overview-name {
+    margin-bottom:1em;
+}
+
+.overview-title {
+  margin-bottom:0.5em;
+}
+
+.overview-task, .overview-overdue {
+  list-style-type:none;
+  margin-top:0;
+}
+
+.overview-overdue {
+  color: $temple-red;
+  &:before {
+    @include fa-icon;
+    content: "#{$fa-var-exclamation-circle}  ";
+  }
+}
 
 /*** Task Creation Page ***/
 // form headers
