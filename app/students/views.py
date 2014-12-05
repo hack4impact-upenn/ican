@@ -44,7 +44,7 @@ def signup():
 
 @students.route('/tasks')
 def tasks():
-    ordered_tasks = current_user.tasks.order_by(Task.deadline)#.filter_by(Task.completed is False)
+    ordered_tasks = current_user.tasks.order_by(Task.deadline).filter_by(completed = False)
     return render_template('student/tasks.html', student=current_user, tasks=ordered_tasks, date=datetime.datetime.now())
 
 @students.route('/task/<task_id>', methods=['GET', 'POST'])
