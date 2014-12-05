@@ -22,4 +22,4 @@ class EditProfileForm(Form):
     submit = SubmitField('Save')
 
 class CompletedTaskForm(Form):
-    completed = SubmitField('I Completed the Task')
+    completed = SubmitField('Mark as completed')

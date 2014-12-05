@@ -3305,25 +3305,25 @@ html {
 /******************************************************************************
  **  BASE STYLES
  ******************************************************************************/
-/* line 30 */
+/* line 25 */
 html {
   height: 100%;
 }
 
-/* line 34 */
+/* line 29 */
 header {
   background-color: #9e1b34;
   color: white;
   padding: 5px 0;
 }
-/* line 38 */
+/* line 33 */
 header a {
   color: white;
   font-weight: bold;
   display: inline !important;
 }
 
-/* line 45 */
+/* line 40 */
 body {
   background-color: #f2f3f4;
   background-image: url(../../static/img/bg-pattern.png);
@@ -3341,7 +3341,7 @@ body:after {
  **  GRID
  **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
  ******************************************************************************/
-/* line 57 */
+/* line 52 */
 .wrap {
   max-width: 60em;
   margin-left: auto;
@@ -3355,7 +3355,7 @@ body:after {
 }
 
 /**** LANDING SPECIFIC ****/
-/* line 62 */
+/* line 57 */
 .overlay {
   position: fixed;
   width: 100%;
@@ -3370,7 +3370,7 @@ body:after {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 75 */
+/* line 70 */
 .landing {
   position: fixed;
   width: 100%;
@@ -3383,12 +3383,12 @@ body:after {
 /******************************************************************************
  ** FORMS
  ******************************************************************************/
-/* line 88 */
+/* line 83 */
 .help-block:before {
   content: "\2716\00A0\00A0";
 }
 
-/* line 93 */
+/* line 88 */
 .form-wrapper {
   background-color: white;
   border: 5px solid rgba(158, 27, 52, 0.6);
@@ -3409,17 +3409,17 @@ body:after {
  **  MODULES / LOBOTOMIZED OWLS
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
  ******************************************************************************/
-/* line 106 */
+/* line 101 */
 * + * {
   margin-top: 1.5em;
 }
 
-/* line 109 */
+/* line 104 */
 .compact * + * {
   margin-top: 0.75em;
 }
 
-/* line 112 */
+/* line 107 */
 .margins-off > * {
   margin-top: 0;
 }
@@ -3427,7 +3427,7 @@ body:after {
 /******************************************************************************
  **  MENU GRID SYSTEM
  ******************************************************************************/
-/* line 128 */
+/* line 120 */
 .grid-items-lines {
   position: relative;
 }
@@ -3437,66 +3437,70 @@ body:after {
   display: table;
   clear: both;
 }
-/* line 136 */
+/* line 127 */
 .grid-items-lines .grid-item {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  height: 14em;
+  height: 13em;
   width: 80%;
   overflow: hidden;
   float: left;
   padding: 2em;
   cursor: pointer;
   background-color: white;
+  border: 1px solid #DDD;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 136 */
+  /* line 127 */
   .grid-items-lines .grid-item {
-    width: 33.33333%;
-    border-bottom: 15px solid #f2f3f4;
-    border-right: 7.5px solid #f2f3f4;
-    border-left: 7.5px solid #f2f3f4;
+    width: 30.76923%;
+    margin-top: 16px;
+    margin-right: 16px;
   }
 }
-/* line 154 */
+/* line 140 */
+.grid-items-lines .grid-item:hover {
+  box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
+}
+/* line 145 */
 .grid-items-lines .grid-item h1 {
   color: #373d3f;
   font-size: 1.3em;
   margin-bottom: .4em;
 }
-/* line 159 */
+/* line 150 */
 .grid-items-lines .grid-item p {
   color: rgba(55, 61, 63, 0.6);
 }
 @media screen and (min-width: 40em) {
-  /* line 159 */
+  /* line 150 */
   .grid-items-lines .grid-item p {
     max-width: 70%;
   }
 }
 @media screen and (min-width: 53.75em) {
-  /* line 165 */
+  /* line 156 */
   .grid-items-lines .grid-item-big {
-    width: 66.66667%;
-    border-bottom: 15px solid #f2f3f4;
-    border-right: 7.5px solid #f2f3f4;
-    border-left: 7.5px solid #f2f3f4;
+    width: 61.53846%;
+    margin-top: 16px;
+    margin-right: 16px;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 169 */
+  /* line 160 */
   .grid-items-lines .grid-item-big p {
     max-width: 60%;
   }
 }
 
 /***************** STUDENT MENU ******************/
-/* line 178 */
+/* line 169 */
 li.overdue {
   color: #9e1b34;
+  list-style-type: none;
 }
-/* line 180 */
+/* line 172 */
 li.overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3508,31 +3512,31 @@ li.overdue:before {
 }
 
 /********* OVERALL STUDENT PAGE STYLES **********/
-/* line 189 */
+/* line 179 */
 h1.page {
   padding-bottom: 1em;
 }
 
 /**************** STUDENT FAQ *******************/
-/* line 194 */
+/* line 184 */
 p.question {
   font-size: 130%;
   font-weight: bold;
 }
 
 /**************** STUDENT PROFILE ***************/
-/* line 200 */
+/* line 190 */
 #field {
   font-weight: bold;
 }
 
-/* line 203 */
+/* line 193 */
 h1.faq {
   padding-bottom: 1em;
 }
 
 /**************** STUDENT TASKS *****************/
-/* line 208 */
+/* line 198 */
 div.hidden-items {
   border: 2px solid #c1c7c9;
   padding: 12px 16px;
@@ -3543,17 +3547,17 @@ div.hidden-items {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 216 */
+/* line 205 */
 div.hidden-items:hover {
   color: #5a6466;
   border-color: #717f82;
 }
-/* line 221 */
+/* line 210 */
 div.hidden-items:active {
   background: #717f82;
   color: white;
 }
-/* line 226 */
+/* line 214 */
 div.hidden-items::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3567,7 +3571,7 @@ div.hidden-items::after {
   font-weight: bold;
 }
 
-/* line 235 */
+/* line 222 */
 .block {
   display: block;
   background-color: white;
@@ -3578,24 +3582,24 @@ div.hidden-items::after {
   transition: all 0.3s ease-in-out;
   border: 1px solid #DDD;
 }
-/* line 241 */
+/* line 228 */
 .block:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
 
-/* line 247 */
+/* line 233 */
 .task.block {
   padding: 30px 50px 40px;
   cursor: pointer;
 }
 
 /**** FLASHES ****/
-/* line 254 */
+/* line 239 */
 .flash-error {
   max-width: 60em;
   margin-left: auto;
   margin-right: auto;
-  background-color: #a7b0b2;
+  background-color: #717f82;
   color: white;
   padding: 10px 15px;
   border-radius: 3px;
@@ -3606,10 +3610,20 @@ div.hidden-items::after {
   display: table;
   clear: both;
 }
+/* line 245 */
+.flash-error::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "  ";
+}
 
 /****** MENTOR STYLES *******/
 /*** View Students ***/
-/* line 276 */
+/* line 265 */
 .flex-boxes {
   display: -webkit-box;
   display: -moz-box;
@@ -3652,7 +3666,7 @@ div.hidden-items::after {
   clear: both;
 }
 
-/* line 285 */
+/* line 274 */
 .flex-box {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3675,16 +3689,16 @@ div.hidden-items::after {
   padding: 2em 2em 3em 2em;
   background: white;
 }
-/* line 296 */
+/* line 285 */
 .flex-box:hover {
   background: rgba(158, 27, 52, 0.3);
 }
-/* line 298 */
+/* line 287 */
 .flex-box:hover .flex-title {
   color: rgba(55, 61, 63, 0.8);
 }
 
-/* line 304 */
+/* line 293 */
 .flex-box img {
   display: block;
   opacity: .4;
@@ -3693,7 +3707,7 @@ div.hidden-items::after {
   margin-bottom: 2em;
 }
 
-/* line 312 */
+/* line 301 */
 .flex-box .flex-title {
   color: rgba(55, 61, 63, 0.7);
   font-weight: 500;
@@ -3701,14 +3715,14 @@ div.hidden-items::after {
   margin-bottom: .5em;
 }
 
-/* line 319 */
+/* line 308 */
 .flex-box p {
   margin: auto;
   line-height: 1.5em;
   color: rgba(55, 61, 63, 0.6);
 }
 
-/* line 325 */
+/* line 314 */
 .flex-box-big {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -3719,31 +3733,73 @@ div.hidden-items::after {
   flex: 1 1 40em;
 }
 
+/*** Specific student ***/
+/* line 319 */
+.overview-name {
+  margin-bottom: 1em;
+}
+
+/* line 323 */
+.overview-title {
+  margin: 0.5em 0;
+  margin-top: 1em;
+}
+
+/* line 328 */
+.overview-task, .overview-overdue {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  background: white;
+  box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
+}
+
+/* line 337 */
+.overview-overdue {
+  color: #9e1b34;
+}
+/* line 339 */
+.overview-overdue:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "  ";
+}
+
+/* line 345 */
+fieldset {
+  margin-bottom: 2em;
+}
+
 /*** Task Creation Page ***/
-/* line 332 */
+/* line 351 */
 .form-group {
   margin-top: 0;
   margin-bottom: 2em;
 }
 
-/* line 338 */
+/* line 357 */
 .control-label {
   font-size: 1.5em;
 }
 
-/* line 343 */
+/* line 362 */
 label {
   display: inline-block;
   margin-top: 0;
   cursor: pointer;
 }
 
-/* line 349 */
+/* line 368 */
 input[name="students"]:checked + label {
   color: #9e1b34;
 }
 
-/* line 355 */
+/* line 374 */
 ul#students li {
   margin-top: 0;
 }

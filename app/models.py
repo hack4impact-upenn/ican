@@ -62,6 +62,14 @@ class User(UserMixin, db.Model):
                     min_mentor = m
             self.mentor = min_mentor
 
+    def get_all_tasks_list(self):
+        studentList = current_user.students 
+        student_dict = dict()
+        taskList = []
+        for student in studentList:
+            taskList.extend(student.tasks)
+        return taskList.order_by(Task.deadline)
+
 
     def add_task(self, description, deadline):
         '''
@@ -85,10 +93,11 @@ class Task(db.Model):
     description = db.Column(db.Text)
     deadline = db.Column(db.DateTime)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    completed = db.Column(db.Boolean)
 
     def __repr__(self):
         return '<Task %r>' % self.id
-    
+
     def complete_task(self):
         self.completed = True
         db.session.add(self)

@@ -1,13 +1,28 @@
 {% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block title %}Profile{% endblock %}
 
 {% block header %}
-{% include "partials/mentorheader.html" %}
+<div class="wrap margins-off">
+  <a href="/mentor/students"><i class="fa fa-angle-left"></i>&nbsp; Back</a>
+  <span style="float: right"><a href="/"><i class="fa fa-times-circle"></i>&nbsp; Log out</a></span>
+  <div style="clear: both;"></div>
+</div>
 {% endblock %}
 
 {% block main %}
 <div class="wrap">
-
+  <h1 class="overview-name">{{ student.name }}</h1>
+  <h2 class="overview-title">Tasks</h2>
+  {% for task in student.tasks %}
+    {% if date.now() > task.deadline %}
+    <li class="overview-overdue overvew-task"><b>{{ task.title }}</b> was due on {{task.deadline.strftime('%b %d, %Y')}}</li>
+    {% else %}
+    <li class="overview-task"><b>{{ task.title }}</b> is due on {{task.deadline.strftime('%b %d, %Y')}}</li>
+    {% endif %}
+  {% endfor %}
+  <h2 class="overview-title">Contact</h2>
+  <fieldset>{{ wtf.quick_form(form) }}</fieldset>
 </div>
 {% endblock %}
