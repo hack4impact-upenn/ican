@@ -4,7 +4,7 @@ from .. import db
 from flask import render_template, session, redirect, url_for, current_app, flash
 from ..decorators import student_required
 from flask.ext.login import login_required, current_user, login_user
-from forms import SignupForm, ContactForm, EditProfileForm
+from forms import SignupForm, ContactForm, EditProfileForm, CompletedTaskForm
 from ..email import send_email
 
 import datetime
@@ -41,15 +41,18 @@ def signup():
 
 @students.route('/tasks')
 def tasks():
-    ordered_tasks = current_user.tasks.order_by(Task.deadline)
+    ordered_tasks = current_user.tasks.order_by(Task.deadline)#.filter_by(Task.completed is False)
     return render_template('student/tasks.html', student=current_user, tasks=ordered_tasks, date=datetime.datetime.now())
 
-@students.route('/task/<task_id>')
+@students.route('/task/<task_id>', methods=['GET', 'POST'])
 def task_view(task_id):
     task = Task.query.get(task_id)
-    mark_completed_form = None # todo
-    mark_completed_form = CompletedTaskForm() # todo
-    return render_template('student/task-edit.html', task=task, form=mark_completed_form)
+    form = CompletedTaskForm()
+    if form.validate_on_submit():
+        task.complete_task()
+        flash('You have completed ' + task.title)
+        return redirect(url_for('.index'))
+    return render_template('student/task-edit.html', task=task, form=form)
 
 @students.route('/mentor')
 def mentor():
