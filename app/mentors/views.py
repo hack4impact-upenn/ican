@@ -2,8 +2,8 @@ from . import mentors
 from flask import render_template, session, redirect, url_for, flash, current_app
 from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
-from forms import TaskCreationForm, EditProfileForm, ContactForm
-from ..models import User, Task
+from ..models import User, Task, University
+from forms import TaskCreationForm, EditProfileForm, SignupForm, ContactForm
 
 import datetime
 
@@ -11,22 +11,26 @@ import datetime
 def index():
     return render_template('mentor/menu.html')
 
-@mentors.route('/signup')
+
+@mentors.route('/signup', methods=['GET', 'POST'])
 # @mentors_required
 def signup():
     form = SignupForm()
+    form.university.choices = [(u.id,u.name) for u in University.query.all()]
     if form.validate_on_submit():
         userTest = User.query.filter_by(email=form.email.data).first()
         if userTest is None:
+            u = University.query.get(form.university.data)
             user = User(email=form.email.data,
-                        username=form.username.data,
+                        name=form.name.data,
+                        university=u,
                      password=form.password.data)
             db.session.add(user)
             db.session.commit()
         else:
             flash("This Username/Password is already in use.")
             return redirect(url_for('.index'))
-    return render_template('mentor/signup.html')
+    return render_template('mentor/signup.html', form = form)
 
 # TODO: modify - temporarily added by Annie
 @mentors.route('/profile')
@@ -43,7 +47,17 @@ def tasks():
 @mentors.route('/students')
 # @mentors_required
 def students():
-    return render_template('mentor/students.html')
+    students = current_user.students
+    student_data = []
+    for student in students:
+        dic = {}
+        total_tasks = len(student.tasks.all())
+        completed_tasks = len(student.tasks.filter_by(completed=True).all())
+        dic['name'] = student.name
+        dic['id'] = student.id
+        dic['percentage'] = 1.0*completed_tasks/total_tasks
+        student_data.append(dic)
+    return render_template('mentor/students.html', students=student_data)
 
 @mentors.route('/students/<student_id>', methods=['GET','POST'])
 def student(student_id):

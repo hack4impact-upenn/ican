@@ -3699,15 +3699,17 @@ div.hidden-items::after {
 }
 
 /* line 293 */
-.flex-box img {
-  display: block;
-  opacity: .4;
-  height: 3em;
+.prog > div {
+  text-align: center;
   margin: auto;
-  margin-bottom: 2em;
 }
 
-/* line 301 */
+/* line 298 */
+.prog {
+  padding-bottom: 1.5em;
+}
+
+/* line 303 */
 .flex-box .flex-title {
   color: rgba(55, 61, 63, 0.7);
   font-weight: 500;
@@ -3715,14 +3717,14 @@ div.hidden-items::after {
   margin-bottom: .5em;
 }
 
-/* line 308 */
+/* line 310 */
 .flex-box p {
   margin: auto;
   line-height: 1.5em;
   color: rgba(55, 61, 63, 0.6);
 }
 
-/* line 314 */
+/* line 316 */
 .flex-box-big {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -3734,18 +3736,18 @@ div.hidden-items::after {
 }
 
 /*** Specific student ***/
-/* line 319 */
+/* line 321 */
 .overview-name {
   margin-bottom: 1em;
 }
 
-/* line 323 */
+/* line 325 */
 .overview-title {
   margin: 0.5em 0;
   margin-top: 1em;
 }
 
-/* line 328 */
+/* line 330 */
 .overview-task, .overview-overdue {
   list-style-type: none;
   margin-top: 0;
@@ -3755,11 +3757,11 @@ div.hidden-items::after {
   box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
 }
 
-/* line 337 */
+/* line 339 */
 .overview-overdue {
   color: #9e1b34;
 }
-/* line 339 */
+/* line 341 */
 .overview-overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3770,36 +3772,36 @@ div.hidden-items::after {
   content: "  ";
 }
 
-/* line 345 */
+/* line 347 */
 fieldset {
   margin-bottom: 2em;
 }
 
 /*** Task Creation Page ***/
-/* line 351 */
+/* line 353 */
 .form-group {
   margin-top: 0;
   margin-bottom: 2em;
 }
 
-/* line 357 */
+/* line 359 */
 .control-label {
   font-size: 1.5em;
 }
 
-/* line 362 */
+/* line 364 */
 label {
   display: inline-block;
   margin-top: 0;
   cursor: pointer;
 }
 
-/* line 368 */
+/* line 370 */
 input[name="students"]:checked + label {
   color: #9e1b34;
 }
 
-/* line 374 */
+/* line 376 */
 ul#students li {
   margin-top: 0;
 }

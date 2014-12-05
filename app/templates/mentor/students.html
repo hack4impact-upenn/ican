@@ -10,12 +10,26 @@
 <div class="wrap">
   <h1 class="page">My Students</h1>
   <div class="flex-boxes">
-    {% for i in current_user.students %}
-    <a href="students/{{ i.id }}" class="flex-box">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
-      <h1 class="flex-title">{{ i.name }}</h1>
+    {% for student in students %}
+    <a href="students/{{ student['id'] }}" class="flex-box">
+      <div id="{{ student['id'] }}" class="prog" alt="">
+      </div>
+      <h1 class="flex-title">{{ student['name'] }}</h1>
     </a>
   {% endfor %}
   </div>
 </div>
 {% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+{% for student in students %}
+  $("#{{ student['id'] }}").percentageLoader({
+      width:100,
+      height:100,
+      progress: {{student['percentage']}}
+    });
+{% endfor %}
+</script>
+{% endblock %}
+

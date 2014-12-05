@@ -5,6 +5,9 @@
     {% block head %}
     <meta charset="utf-8">{% assets "css_main" %}
     <link rel="stylesheet" href="{{ ASSET_URL }}">{% endassets %}
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdn.rawgit.com/weblinc/jquery.smoothState.js/master/jquery.smoothState.js"></script>
+    <script src="../../static/js/jquery.percentageloader-0.1.js"></script>
     <title>{% block title %}{% endblock %} - iCAN</title>
     {% endblock %}
 </head>
@@ -28,14 +31,12 @@
             {% endwith %}
 
             {% block main %}{% endblock %}
+            {% block scripts %}{% endblock %}
         </main>
 
     </div>
     <!-- scripts -->
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdn.rawgit.com/weblinc/jquery.smoothState.js/master/jquery.smoothState.js"></script>
     <script>
-        ;
         (function ($) {
             'use strict';
             var $body = $('html, body'),
