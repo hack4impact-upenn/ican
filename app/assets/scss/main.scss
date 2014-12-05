@@ -37,12 +37,11 @@ html {
     }
 }
 // ----- Main -----
- body {
-    background-color: $lilia;
-    background-image: url(../../static/img/bg-pattern.png);
-    background-size: 300px;
-    min-height: 100%;
-    @include clearfix;
+body {
+  background: $lilia url(../../static/img/bg-pattern.png);
+  background-size: 300px;
+  min-height: 100%;
+  @include clearfix;
 }
 /******************************************************************************
  **  GRID
@@ -178,6 +177,8 @@ li.overdue {
 
 h1.page {
     padding-bottom: 1em;
+    margin-left:0.5em;
+    margin-right:0.5em;
 }
 /**************** STUDENT FAQ *******************/
 
@@ -201,6 +202,7 @@ div.hidden-items {
     color: $silver;
     font-weight: 500;
     font-size: 1.2em;
+    cursor: pointer;
     @include transition(all 0.2s ease-in-out);
     &:hover {
         color: darken($silver, 30%);
@@ -323,8 +325,7 @@ $flex-box-color: transparentize($base-font-color, .3);
 }
 
 .overview-title {
-  margin:0.5em 0;
-  margin-top:1em;
+  margin: 1em 0 0.5em;
 }
 
 .overview-task, .overview-overdue {
@@ -382,6 +383,8 @@ ul#students {
 /*** All tasks page ****/
 .all-tasks {
     margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right:1em;
 }
 
 .all-tasks-li {
@@ -401,7 +404,7 @@ ul#students {
 
 // filtering
 #filter {
-    margin:0;
+    margin: 0 1em;
     margin-bottom:2em;
 }
 

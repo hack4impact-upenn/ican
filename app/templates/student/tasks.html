@@ -10,8 +10,8 @@
 <div class="wrap">
     <h1>Your tasks</h1>
     
-    <div class="hidden-items">
-        View 8 completed tasks
+    <div class="hidden-items" onClick="location.href='/completed'">
+        View {{ num_completed }} completed tasks
     </div>
     
     {% if tasks %}
