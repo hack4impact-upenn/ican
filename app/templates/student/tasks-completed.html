@@ -15,7 +15,7 @@
     {% if tasks %}
     <ul>
         {% for task in tasks %}
-        <li class="task block" onClick="location.href='task/{{ task.id }}'">
+        <li class="task block" onClick="location.href='completed/{{ task.id }}'">
             <div style="display:inline-block"><h3 style="display:inline">{{ task.title }}</h3><br>Due {{ task.deadline.strftime('%b %d %Y') }}</div>
             <hr>
             {{ task.description }}
