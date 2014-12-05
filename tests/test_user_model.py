@@ -2,7 +2,10 @@ import unittest
 import time
 from datetime import datetime
 from app import create_app, db
-from app.models import User, University
+from app.models import User, University, Task
+
+
+
 
 
 class UserModelTestCase(unittest.TestCase):
@@ -102,3 +105,25 @@ class UserModelTestCase(unittest.TestCase):
         self.assertTrue(s.mentor.name == m4.name)
 
     
+    def test_get_student_list_for_mentor(self):
+        u1 = User(name="ali", email="alialtaf@gmail.com", password="hello", user_role="student")
+        u2 = User(name="ayush", email="ayushGoyal@gmail.com", password="bye", user_role="student")
+        u3 = User(name="maya", email="mayab@gmail.com", password = "no", user_role= "mentor")
+        t1 = Task(description="Apply for Housing", deadline= datetime(2002, 12,5), completed = False)
+        t2 = Task(description="Apply for Scholarship", deadline= datetime.today(), completed = False)
+        t3 = Task(description="Apply for Dining", deadline= datetime(2002, 12,5), completed = False)
+        t4 = Task(description="Apply for classes", deadline= datetime.today(), completed = False)
+        u1.add_task("Apply for Housing",datetime(2001, 12,5))
+        u1.add_task("Apply for Scholarship",datetime.today())
+        u2.add_task("Apply for Dining",datetime(2002, 12,5))
+        u2.add_task("Apply for classes",datetime.today())
+        db.session.add(u1)
+        db.session.add(u2)
+        db.session.add(u3)
+        db.session.commit()
+        u1.match_with_mentor()
+        u2.match_with_mentor()
+        taskList = u3.get_all_tasks_list()
+        print "dsfadsfasdfasdf!!!!!!!!!!!!"
+        print len(taskList)
+        self.assertTrue(len(taskList) == 4 and taskList[0].deadline == datetime(2001, 12,5))
