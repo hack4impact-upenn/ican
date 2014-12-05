@@ -25,3 +25,7 @@ class EditProfileForm(Form):
     current_password = PasswordField('Current Password:')
     new_password = PasswordField('New Password:')
     submit = SubmitField('Save')
+
+class ContactForm(Form):
+    text = TextField()
+    submit = SubmitField('Contact')
