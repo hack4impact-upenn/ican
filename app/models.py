@@ -63,7 +63,7 @@ class User(UserMixin, db.Model):
             self.mentor = min_mentor
 
     def get_all_tasks_list(self):
-        studentList = self.students 
+        studentList = self.students
         taskList = []
         for student in studentList:
             taskList += student.tasks.all()

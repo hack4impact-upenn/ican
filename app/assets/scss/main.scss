@@ -290,13 +290,15 @@ $flex-box-color: transparentize($base-font-color, .3);
   }
 }
 
-.flex-box img {
-  display: block;
-  opacity: .4;
-  height: 3em;
-  margin: auto;
-  margin-bottom: 2em;
+.prog > div {
+  text-align:center;
+  margin:auto;
 }
+
+.prog {
+  padding-bottom:1.5em;
+}
+
 
 .flex-box .flex-title {
   color: $flex-box-color;
