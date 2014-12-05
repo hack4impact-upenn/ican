@@ -23,7 +23,7 @@ def signup():
         if userTest is None:
             u = University.query.get(form.university.data)
             user = User(email=form.email.data,
-                        username=form.username.data,
+                        name=form.name.data,
                         university=u,
                      password=form.password.data)
             db.session.add(user)
