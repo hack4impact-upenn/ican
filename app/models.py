@@ -97,7 +97,7 @@ class Task(db.Model):
 
     def __repr__(self):
         return '<Task %r>' % self.id
-    
+
     def complete_task(self):
         self.completed = True
         db.session.add(self)

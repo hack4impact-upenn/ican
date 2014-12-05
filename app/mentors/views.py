@@ -4,6 +4,7 @@ from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
 from forms import TaskCreationForm, EditProfileForm
 from ..models import User
+import datetime
 
 import datetime
 
@@ -55,7 +56,7 @@ def student(student_id):
         flash(name + ' has been sent a message!')
         #TODO Send text to user
         return render_template('mentor/students.html')
-    return render_template('mentor/overview.html', form=form, student=student)
+    return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime)
 
 @mentors.route('/profile-edit', methods=['GET', 'POST'])
 def profile_edit():
