@@ -4,6 +4,7 @@ from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
 from ..models import User, Task, University
 from forms import TaskCreationForm, EditProfileForm, SignupForm, ContactForm
+from ..import db
 
 import datetime
 
@@ -19,17 +20,20 @@ def signup():
     form.university.choices = [(u.id,u.name) for u in University.query.all()]
     if form.validate_on_submit():
         userTest = User.query.filter_by(email=form.email.data).first()
-        if userTest is None:
+        if not userTest:
             u = University.query.get(form.university.data)
             user = User(email=form.email.data,
                         name=form.name.data,
                         university=u,
-                     password=form.password.data)
+                        password=form.password.data,
+                        user_role = "mentor")
             db.session.add(user)
             db.session.commit()
+            login_user(user)
+            return redirect(url_for('.index'))
         else:
             flash("This Username/Password is already in use.")
-            return redirect(url_for('.index'))
+            return redirect(url_for('.signup'))
     return render_template('mentor/signup.html', form = form)
 
 # TODO: modify - temporarily added by Annie
