@@ -15,10 +15,8 @@ import datetime
 def index():
     # name = student.name
     # tasks = student.tasks.all()
-    print "*****"
-    print current_user.tasks
-    print "*****"
-    return render_template('student/menu.html', student=current_user, date=datetime.datetime, tasks=[])
+    ordered_tasks = current_user.tasks.filter_by(completed=False).order_by(Task.deadline).all()
+    return render_template('student/menu.html', student=current_user, date=datetime.datetime, tasks=ordered_tasks)
 
 @students.route('/signup', methods=['GET', 'POST'])
 def signup():
@@ -44,7 +42,7 @@ def signup():
 
 @students.route('/tasks')
 def tasks():
-    ordered_tasks = current_user.tasks.order_by(Task.deadline).filter_by(completed = False)
+    ordered_tasks = current_user.tasks.filter_by(completed=False).order_by(Task.deadline).all()
     return render_template('student/tasks.html', student=current_user, tasks=ordered_tasks, date=datetime.datetime.now())
 
 @students.route('/task/<task_id>', methods=['GET', 'POST'])

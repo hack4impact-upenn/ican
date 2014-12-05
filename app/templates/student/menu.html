@@ -12,9 +12,9 @@
 {% block main %}
 <div class="wrap">
     <h1>Hey there, {{ student.name }}.</h1>
-    <h3>You have {{student.tasks.all()|length}} task{{'s' if student.tasks.all()|length != 1}}.</h3>
+    <h3>You have {{tasks|length}} task{{'s' if tasks|length != 1}}.</h3>
     <ul class="margins-off">
-    {% for task in student.tasks.all() %}
+    {% for task in tasks %}
       {# Overdue tasks #}
       {% if date.now() > task.deadline %}
         <li class="overdue"><b>{{ task.title }}</b> was due on {{task.deadline.strftime('%b %d, %Y')}}</li>
