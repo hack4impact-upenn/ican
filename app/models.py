@@ -1,7 +1,9 @@
 from . import db, login_manager
+from flask import request
 from flask.ext.login import UserMixin, login_required
 from datetime import timedelta
 from werkzeug.security import generate_password_hash, check_password_hash
+import hashlib
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
@@ -16,8 +18,8 @@ class User(UserMixin, db.Model):
     mentor = db.relationship('User', backref='students', remote_side=[id])
     bio = db.Column(db.String(64), index=True)
     tasks = db.relationship('Task', backref='student', lazy='dynamic')
-
     display_phone = db.Column(db.Boolean) # for mentors only, True: display phone & email; False: display just email
+    avatar_hash = db.Column(db.String(32))
 
     def __init__(self, **kwargs):
         super(User, self).__init__(**kwargs)
@@ -82,6 +84,16 @@ class User(UserMixin, db.Model):
         db.session.add(self)
         db.session.add(new_task)
         db.session.commit()
+
+    def gravatar(self, size=100, default='identicon', rating='g'):
+        if request.is_secure:
+            url = 'https://secure.gravatar.com/avatar'
+        else:
+            url = 'http://www.gravatar.com/avatar'
+        hash = self.avatar_hash or hashlib.md5(
+            self.email.encode('utf-8')).hexdigest()
+        return '{url}/{hash}?s={size}&d={default}&r={rating}'.format(
+            url=url, hash=hash, size=size, default=default, rating=rating)
 
 
 @login_manager.user_loader

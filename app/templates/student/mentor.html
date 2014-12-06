@@ -13,7 +13,7 @@
         </div>
         {% if mentor %}
             <div class="mentor-pic" style="background-image:
-                url('https://newevolutiondesigns.com/images/freebies/cat-wallpaper-2.jpg')">
+                url('{{ mentor.gravatar(size=256) |default('https://newevolutiondesigns.com/images/freebies/cat-wallpaper-2.jpg')}}')">
             </div>
 
         <div class="module">
@@ -27,7 +27,7 @@
             {% if mentor.display_phone %}<dt>Phone number</dt><dd>{{ mentor.phone }}</dd>{% endif %}
         </dl>
         </div>
-        
+
         {% else %}
         <p>Check back later to find out more about your mentor.</p>
         {% endif %}
