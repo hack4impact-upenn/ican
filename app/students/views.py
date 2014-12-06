@@ -4,7 +4,7 @@ from .. import db
 from flask import render_template, session, redirect, url_for, current_app, flash
 from ..decorators import student_required
 from flask.ext.login import login_required, current_user, login_user
-from forms import SignupForm, ContactForm, EditProfileForm, CompletedTaskForm
+from forms import SignupForm, ContactForm, EditProfileForm, CompletedTaskForm, UncompletedTaskForm
 from ..email import send_email
 
 import datetime
@@ -42,8 +42,7 @@ def signup():
         else:
             #throw some error and rerender form
             return redirect(url_for('.index'))
-    return render_template('student/signup.html',
-                            form=form)
+    return render_template('student/signup.html', form=form)
 
 @students.route('/tasks')
 def tasks():
@@ -67,6 +66,16 @@ def task_view(task_id):
     if form.validate_on_submit():
         task.complete_task()
         flash('You have completed ' + task.title)
+        return redirect(url_for('.index'))
+    return render_template('student/task-edit.html', task=task, form=form)
+
+@students.route('/tasks/completed/<task_id>', methods=['GET', 'POST'])
+def completed_view(task_id):
+    task = Task.query.get(task_id)
+    form = UncompletedTaskForm()
+    if form.validate_on_submit():
+        task.uncomplete_task()
+        flash(task.title + ' has been marked as incomplete')
         return redirect(url_for('.index'))
     return render_template('student/task-edit.html', task=task, form=form)
 

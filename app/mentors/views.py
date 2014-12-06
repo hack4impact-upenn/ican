@@ -48,7 +48,7 @@ def profile():
 @mentors.route('/tasks')
 # @mentors_required
 def tasks():
-    taskList = current_user.get_all_tasks_list()
+    taskList = [i for i in current_user.get_all_tasks_list() if i.completed is False]
     students = current_user.students
     return render_template('mentor/tasks.html', students=students, User=User, tasks=taskList, date=datetime.datetime.now())
 
@@ -77,7 +77,7 @@ def student(student_id):
         account_sid = ""
         auth_token = ""
         client = TwilioRestClient(account_sid, auth_token)
-        message = client.messages.create(body=form.text.data, to="2407515073", from_="+12406541172")
+        message = client.messages.create(body=form.text.data, to="2407515073", from_="+14845882099")
         return redirect(url_for('students'))
     return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime)
 

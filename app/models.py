@@ -118,6 +118,11 @@ class Task(db.Model):
         db.session.add(self)
         db.session.commit()
 
+    def uncomplete_task(self):
+        self.completed = False
+        db.session.add(self)
+        db.session.commit()
+
 
 
 class GeneralTask(db.Model):

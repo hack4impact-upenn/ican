@@ -23,3 +23,6 @@ class EditProfileForm(Form):
 
 class CompletedTaskForm(Form):
     completed = SubmitField('Mark as completed')
+
+class UncompletedTaskForm(Form):
+    completed = SubmitField('Mark as incomplete')
