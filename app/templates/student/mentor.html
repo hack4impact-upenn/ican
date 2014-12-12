@@ -15,21 +15,17 @@
             <div class="mentor-pic" style="background-image:
                 url('{{ mentor.gravatar(size=256) | default('https://newevolutiondesigns.com/images/freebies/cat-wallpaper-2.jpg')}}')">
             </div>
-
-            <div class="module">
-                <h4>About me</h4>
-                <p>{# {{mentor.bio}} #}</p>
-            </div>
-            <div class="module">
-                <h4>How to contact me</h4>
-                <dl>
-                    <dt>Email address</dt>
-                    <dd>{{ mentor.email }}</dd>
-                    {% if mentor.display_phone %}
-                        <dt>Phone number</dt>
-                        <dd>{{ mentor.phone }}</dd>{% endif %}
-                </dl>
-            </div>
+        <div class="module">
+        <h4>About me</h4>
+        <p>{{mentor.bio}}</p>
+        </div>
+        <div class="module">
+        <h4>How to contact me</h4>
+        <dl>
+            <dt>Email address</dt><dd>{{ mentor.email }}</dd>
+            {% if mentor.display_phone %}<dt>Phone number</dt><dd>{{ mentor.phone }}</dd>{% endif %}
+        </dl>
+        </div>
 
         {% else %}
             <p>Check back later to find out more about your mentor.</p>

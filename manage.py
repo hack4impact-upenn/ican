@@ -40,16 +40,16 @@ def populate():
   gt_4 = GeneralTask(title="Speak to Advisor", description="WOOOOOOOOOO!!!!!", deadline=datetime.datetime(2014,12,7), university=temple)
 
   #create mentor
-  annie = User(name="Annie Meng", email="annie@gmail.com", password="password", user_role="mentor", university=temple)
+  annie = User(name="Annie Meng", email="anniezmeng@gmail.com", password="password", user_role="mentor", university=temple, bio="Lorem ipsum dolor sit amet praesent. Libero vehicula turpis. Neque fermentum augue rutrum accumsan eget pretium sapien eu. Sed sed similique sed turpis suscipit rhoncus justo sapien faucibus commodo nibh. Velit aliquet pellentesque turpis eget in. Arcu eu nec. Nulla sollicitudin quis. In placerat eleifend vestibulum animi nullam amet ipsum lorem et a habitant. Feugiat pellentesque inceptos. Nulla vel cursus. Pulvinar pede augue amet nibh tempus. Leo at sollicitudin. Sit amet quo. Viverra integer nullam felis bibendum lectus. Nulla accumsan ut curabitur velit sollicitudin nam nisl felis. Aliquam aenean exercitation diam facilisis mauris. Nulla sit sollicitudin morbi sit commodo arcu.")
 
-  #create students 
-  max_mc = User(name="Max McCarthy", email="max@gmail.com", password="password", user_role="student",university=temple)
+  #create students
+  max_mc = User(name="Max McCarthy", email="maxllmcc@icloud.com", password="password", user_role="student",university=temple)
   max_mc.mentor = annie
 
-  maya = User(name="Maya Ebsworth", email="maya@gmail.com", password="password", user_role="student", university=temple)
+  maya = User(name="Maya Ebsworth", email="maya.ebsworth@gmail.com", password="password", user_role="student", university=temple)
   maya.mentor = annie
 
-  ayush = User(name="Ayush Goyal", email="ayush@gmail.com", password="password", user_role="student", university=temple)
+  ayush = User(name="Ayush Goyal", email="ayush.goy01@gmail.com", password="password", user_role="student", university=temple)
   ayush.mentor = annie
 
   #assign tasks to students
@@ -79,7 +79,7 @@ def populate():
   db.session.add(max_mc)
   db.session.add(maya)
   db.session.add(ayush)
-  
+
   db.session.add(gt_1)
   db.session.add(gt_2)
   db.session.add(gt_3)
@@ -94,7 +94,7 @@ def populate():
   db.session.add(maya_2)
   db.session.add(maya_3)
   db.session.add(maya_4)
-  
+
   db.session.add(ayush_1)
   db.session.add(ayush_2)
   db.session.add(ayush_3)
