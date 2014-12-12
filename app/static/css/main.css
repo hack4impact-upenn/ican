@@ -3305,25 +3305,25 @@ html {
 /******************************************************************************
  **  BASE STYLES
  ******************************************************************************/
-/* line 25 */
+/* line 26 */
 html {
   height: 100%;
 }
 
-/* line 29 */
+/* line 31 */
 header {
   background-color: #9e1b34;
   color: white;
   padding: 5px 0;
 }
-/* line 33 */
+/* line 35 */
 header a {
   color: white;
   font-weight: bold;
   display: inline !important;
 }
 
-/* line 40 */
+/* line 43 */
 body {
   background: #f2f3f4 url(../../static/img/bg-pattern.png);
   background-size: 300px;
@@ -3340,7 +3340,7 @@ body:after {
  **  GRID
  **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
  ******************************************************************************/
-/* line 51 */
+/* line 55 */
 .wrap {
   max-width: 60em;
   margin-left: auto;
@@ -3360,7 +3360,11 @@ body:after {
   }
 }
 /**** LANDING SPECIFIC ****/
+<<<<<<< HEAD
 /* line 64 */
+=======
+/* line 61 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .overlay {
   position: fixed;
   width: 100%;
@@ -3375,7 +3379,11 @@ body:after {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+<<<<<<< HEAD
 /* line 77 */
+=======
+/* line 75 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .landing {
   position: fixed;
   width: 100%;
@@ -3388,7 +3396,11 @@ body:after {
 /******************************************************************************
  ** FORMS
  ******************************************************************************/
+<<<<<<< HEAD
 /* line 90 */
+=======
+/* line 89 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .help-block:before {
   content: "\2716\00A0\00A0";
 }
@@ -3414,17 +3426,29 @@ body:after {
  **  MODULES / LOBOTOMIZED OWLS
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
  ******************************************************************************/
+<<<<<<< HEAD
 /* line 108 */
+=======
+/* line 109 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 * + * {
   margin-top: 1.5em;
 }
 
+<<<<<<< HEAD
 /* line 111 */
+=======
+/* line 113 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .compact * + * {
   margin-top: 0.75em;
 }
 
+<<<<<<< HEAD
 /* line 114 */
+=======
+/* line 117 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .margins-off > * {
   margin-top: 0;
 }
@@ -3432,7 +3456,11 @@ body:after {
 /******************************************************************************
  **  MENU GRID SYSTEM
  ******************************************************************************/
+<<<<<<< HEAD
 /* line 127 */
+=======
+/* line 132 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .grid-items-lines {
   position: relative;
 }
@@ -3442,7 +3470,11 @@ body:after {
   display: table;
   clear: both;
 }
+<<<<<<< HEAD
 /* line 134 */
+=======
+/* line 139 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .grid-items-lines .grid-item {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -3457,35 +3489,59 @@ body:after {
   border: 1px solid #DDD;
 }
 @media screen and (min-width: 53.75em) {
+<<<<<<< HEAD
   /* line 134 */
+=======
+  /* line 139 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
   .grid-items-lines .grid-item {
     width: 30.76923%;
     margin-top: 16px;
     margin-right: 16px;
   }
 }
+<<<<<<< HEAD
 /* line 147 */
 .grid-items-lines .grid-item:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
 /* line 152 */
+=======
+/* line 152 */
+.grid-items-lines .grid-item:hover {
+  box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
+}
+/* line 157 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .grid-items-lines .grid-item h1 {
   color: #373d3f;
   font-size: 1.3em;
   margin-bottom: .4em;
 }
+<<<<<<< HEAD
 /* line 157 */
+=======
+/* line 162 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .grid-items-lines .grid-item p {
   color: rgba(55, 61, 63, 0.6);
 }
 @media screen and (min-width: 40em) {
+<<<<<<< HEAD
   /* line 157 */
+=======
+  /* line 162 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
   .grid-items-lines .grid-item p {
     max-width: 70%;
   }
 }
 @media screen and (min-width: 53.75em) {
+<<<<<<< HEAD
   /* line 163 */
+=======
+  /* line 168 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
   .grid-items-lines .grid-item-big {
     width: 61.53846%;
     margin-top: 16px;
@@ -3493,19 +3549,31 @@ body:after {
   }
 }
 @media screen and (min-width: 40em) {
+<<<<<<< HEAD
   /* line 167 */
+=======
+  /* line 172 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
   .grid-items-lines .grid-item-big p {
     max-width: 60%;
   }
 }
 
 /***************** STUDENT MENU ******************/
+<<<<<<< HEAD
 /* line 176 */
+=======
+/* line 182 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 li.overdue {
   color: #9e1b34;
   list-style-type: none;
 }
+<<<<<<< HEAD
 /* line 179 */
+=======
+/* line 185 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 li.overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3517,6 +3585,7 @@ li.overdue:before {
 }
 
 /********* OVERALL STUDENT PAGE STYLES **********/
+<<<<<<< HEAD
 /* line 186 */
 h1.page {
   padding-bottom: 1em;
@@ -3546,24 +3615,40 @@ h1.page {
 }
 /**************** STUDENT FAQ *******************/
 /* line 210 */
+=======
+/**************** STUDENT FAQ *******************/
+/* line 199 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 p.question {
   font-size: 130%;
   font-weight: bold;
 }
 
 /**************** STUDENT PROFILE ***************/
+<<<<<<< HEAD
 /* line 216 */
+=======
+/* line 206 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 #field {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* line 219 */
+=======
+/* line 210 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 h1.faq {
   padding-bottom: 1em;
 }
 
 /**************** STUDENT MENTOR VIEW ***********/
+<<<<<<< HEAD
 /* line 225 */
+=======
+/* line 216 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 div.mentor-pic {
   display: block;
   height: 256px;
@@ -3575,7 +3660,11 @@ div.mentor-pic {
 }
 
 /**************** STUDENT TASKS *****************/
+<<<<<<< HEAD
 /* line 237 */
+=======
+/* line 228 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 div.hidden-items {
   border: 2px solid #c1c7c9;
   padding: 12px 16px;
@@ -3587,17 +3676,29 @@ div.hidden-items {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+<<<<<<< HEAD
 /* line 245 */
+=======
+/* line 236 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 div.hidden-items:hover {
   color: #5a6466;
   border-color: #717f82;
 }
+<<<<<<< HEAD
 /* line 250 */
+=======
+/* line 241 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 div.hidden-items:active {
   background: #717f82;
   color: white;
 }
+<<<<<<< HEAD
 /* line 254 */
+=======
+/* line 245 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 div.hidden-items::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3611,7 +3712,11 @@ div.hidden-items::after {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* line 262 */
+=======
+/* line 254 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .block {
   display: block;
   background-color: white;
@@ -3622,19 +3727,31 @@ div.hidden-items::after {
   transition: all 0.3s ease-in-out;
   border: 1px solid #DDD;
 }
+<<<<<<< HEAD
 /* line 268 */
+=======
+/* line 260 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .block:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
 
+<<<<<<< HEAD
 /* line 273 */
+=======
+/* line 266 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .task.block {
   padding: 30px 50px 40px;
   cursor: pointer;
 }
 
 /**** FLASHES ****/
+<<<<<<< HEAD
 /* line 279 */
+=======
+/* line 273 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .flash-error {
   max-width: 60em;
   margin-left: auto;
@@ -3650,7 +3767,11 @@ div.hidden-items::after {
   display: table;
   clear: both;
 }
+<<<<<<< HEAD
 /* line 285 */
+=======
+/* line 279 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .flash-error::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3663,7 +3784,11 @@ div.hidden-items::after {
 
 /****** MENTOR STYLES *******/
 /*** View Students ***/
+<<<<<<< HEAD
 /* line 305 */
+=======
+/* line 294 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .flex-boxes {
   -webkit-box-pack: center;
   -moz-box-pack: center;
@@ -3692,7 +3817,11 @@ div.hidden-items::after {
   clear: both;
 }
 
+<<<<<<< HEAD
 /* line 314 */
+=======
+/* line 303 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .flex-box {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3711,15 +3840,24 @@ div.hidden-items::after {
   min-width: 31%;
   float: left;
 }
+<<<<<<< HEAD
 /* line 328 */
 .flex-box:hover {
   background: rgba(158, 27, 52, 0.3);
 }
 /* line 330 */
+=======
+/* line 314 */
+.flex-box:hover {
+  background: rgba(158, 27, 52, 0.3);
+}
+/* line 316 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .flex-box:hover .flex-title {
   color: rgba(55, 61, 63, 0.8);
 }
 
+<<<<<<< HEAD
 @media (max-width: 685px) {
   /* line 339 */
   .flex-boxes {
@@ -3745,17 +3883,28 @@ div.hidden-items::after {
   }
 }
 /* line 360 */
+=======
+/* line 322 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .prog > div {
   text-align: center;
   margin: auto;
 }
 
+<<<<<<< HEAD
 /* line 365 */
+=======
+/* line 327 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .prog {
   padding-bottom: 1.5em;
 }
 
+<<<<<<< HEAD
 /* line 370 */
+=======
+/* line 331 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .flex-box .flex-title {
   color: rgba(55, 61, 63, 0.7);
   font-weight: 500;
@@ -3763,25 +3912,53 @@ div.hidden-items::after {
   margin-bottom: .5em;
 }
 
+<<<<<<< HEAD
 /* line 377 */
+=======
+/* line 338 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .flex-box p {
   margin: auto;
   line-height: 1.5em;
   color: rgba(55, 61, 63, 0.6);
 }
 
+<<<<<<< HEAD
 /*** Specific student ***/
 /* line 384 */
+=======
+/* line 344 */
+.flex-box-big {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 40em;
+  -moz-flex: 1 1 40em;
+  -ms-flex: 1 1 40em;
+  flex: 1 1 40em;
+}
+
+/*** Specific student ***/
+/* line 349 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .overview-name {
   margin-bottom: 1em;
 }
 
+<<<<<<< HEAD
 /* line 388 */
+=======
+/* line 353 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .overview-title {
   margin: 1em 0 0.5em;
 }
 
+<<<<<<< HEAD
 /* line 392 */
+=======
+/* line 357 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .overview-task, .overview-overdue {
   list-style-type: none;
   margin-top: 0;
@@ -3791,11 +3968,19 @@ div.hidden-items::after {
   box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
 }
 
+<<<<<<< HEAD
 /* line 401 */
 .overview-overdue {
   color: #9e1b34;
 }
 /* line 403 */
+=======
+/* line 366 */
+.overview-overdue {
+  color: #9e1b34;
+}
+/* line 368 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .overview-overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3806,49 +3991,81 @@ div.hidden-items::after {
   content: "  ";
 }
 
+<<<<<<< HEAD
 /* line 409 */
+=======
+/* line 374 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 fieldset {
   margin-bottom: 2em;
 }
 
 /*** Task Creation Page ***/
+<<<<<<< HEAD
 /* line 415 */
+=======
+/* line 380 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .form-group {
   margin-top: 0;
   margin-bottom: 2em;
 }
 
+<<<<<<< HEAD
 /* line 421 */
+=======
+/* line 386 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .control-label {
   font-size: 1.5em;
 }
 
+<<<<<<< HEAD
 /* line 426 */
+=======
+/* line 391 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 label {
   display: inline-block;
   margin-top: 0;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* line 432 */
+=======
+/* line 397 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 input[name="students"]:checked + label {
   color: #9e1b34;
 }
 
+<<<<<<< HEAD
 /* line 438 */
+=======
+/* line 403 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 ul#students li {
   margin-top: 0;
 }
 
 /*** All tasks page ****/
+<<<<<<< HEAD
 /* line 445 */
+=======
+/* line 409 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .all-tasks {
   margin-bottom: 2em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
+<<<<<<< HEAD
 /* line 451 */
+=======
+/* line 415 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .all-tasks-li {
   list-style-type: none;
   padding: 1em;
@@ -3856,11 +4073,19 @@ ul#students li {
   box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
 }
 
+<<<<<<< HEAD
 /* line 458 */
 .all-tasks-li-overdue {
   color: #9e1b34;
 }
 /* line 460 */
+=======
+/* line 422 */
+.all-tasks-li-overdue {
+  color: #9e1b34;
+}
+/* line 424 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .all-tasks-li-overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3871,43 +4096,91 @@ ul#students li {
   content: "  ";
 }
 
+<<<<<<< HEAD
 /* line 467 */
+=======
+/* line 430 */
+.round-countdown {
+  display: inline-block;
+  border-radius: 100px;
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border: 2px solid gray;
+  color: gray;
+  text-align: center;
+  line-height: 0.3;
+  padding-top: 5px;
+}
+/* line 442 */
+.round-countdown.overdue {
+  background-color: #9e1b34;
+  border-color: #9e1b34;
+  color: white;
+}
+
+/* line 450 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 #filter {
   margin: 0 1em;
   margin-bottom: 2em;
 }
 
+<<<<<<< HEAD
 /* line 472 */
+=======
+/* line 455 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .filter-l {
   cursor: pointer;
   padding: 0 1em;
   font-weight: normal;
 }
 
+<<<<<<< HEAD
 /* line 478 */
+=======
+/* line 461 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .filter-i {
   display: none !important;
 }
 
+<<<<<<< HEAD
 /* line 482 */
+=======
+/* line 465 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .filter-i:checked + label {
   color: #9e1b34;
 }
 
+<<<<<<< HEAD
 /* line 499 */
+=======
+/* line 481 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown {
   margin-top: 0;
   margin-bottom: 2em;
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* line 505 */
+=======
+/* line 487 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown-container {
   display: inline-block;
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 510 */
+=======
+/* line 492 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown-description {
   background: #f2f3f4;
   border-bottom-left-radius: 3px;
@@ -3923,13 +4196,21 @@ ul#students li {
   padding: 0 0.5em 0 1em;
 }
 @media screen and (min-width: 53.75em) {
+<<<<<<< HEAD
   /* line 510 */
+=======
+  /* line 492 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
   .dropdown-description {
     font-size: 1em;
   }
 }
 
+<<<<<<< HEAD
 /* line 529 */
+=======
+/* line 511 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown-button {
   background: #f2f3f4;
   border-bottom-right-radius: 3px;
@@ -3947,19 +4228,31 @@ ul#students li {
   position: relative;
 }
 @media screen and (min-width: 53.75em) {
+<<<<<<< HEAD
   /* line 529 */
+=======
+  /* line 511 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
   .dropdown-button {
     font-size: 1em;
     padding: 0 2.5em 0 0.5em;
   }
 }
 
+<<<<<<< HEAD
 /* line 551 */
+=======
+/* line 533 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown-button:hover {
   background-color: #DDD;
 }
 
+<<<<<<< HEAD
 /* line 555 */
+=======
+/* line 537 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown-button:after {
   color: #373d3f;
   content: "\25BE";
@@ -3969,7 +4262,11 @@ ul#students li {
   top: 0;
 }
 
+<<<<<<< HEAD
 /* line 564 */
+=======
+/* line 546 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown-menu {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3989,7 +4286,11 @@ ul#students li {
   z-index: 99999;
 }
 
+<<<<<<< HEAD
 /* line 581 */
+=======
+/* line 563 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown-menu li {
   border-bottom: 1px solid silver;
   color: #373d3f;
@@ -3997,25 +4298,41 @@ ul#students li {
   padding: 0.5em;
 }
 
+<<<<<<< HEAD
 /* line 588 */
+=======
+/* line 570 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown-menu li:hover {
   background: #DDD;
 }
 
+<<<<<<< HEAD
 /* line 592 */
+=======
+/* line 574 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown-menu li:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
+<<<<<<< HEAD
 /* line 597 */
+=======
+/* line 579 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .dropdown-menu li:last-child {
   border: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
+<<<<<<< HEAD
 /* line 603 */
+=======
+/* line 585 */
+>>>>>>> fb68740c904cc77e41922cb959b79e2de97932e6
 .show-menu {
   display: block;
 }
