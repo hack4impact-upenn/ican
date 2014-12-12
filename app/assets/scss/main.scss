@@ -600,7 +600,7 @@ $dropdown-arrow-top-distance: 0;
   color: $dropdown-color;
   cursor: pointer;
   display: none;
-  overflow: show;
+  overflow: visible;
   position: absolute;
   right: 0;
   top: $dropdown-distance-from-menu;
