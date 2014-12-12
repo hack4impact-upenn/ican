@@ -40,7 +40,7 @@ def signup():
             login_user(student)
             return redirect(url_for('.index'))
         else:
-            #throw some error and rerender form
+            # throw some error and rerender form
             return redirect(url_for('.index'))
     return render_template('student/signup.html', form=form)
 
@@ -48,9 +48,12 @@ def signup():
 def tasks():
     ordered_tasks = current_user.tasks.filter_by(completed=False).order_by(Task.deadline).all()
     num_completed = current_user.tasks.filter_by(completed=True).count()
+    days_until_due = map(lambda t: (t.deadline - datetime.datetime.now()).days, ordered_tasks)
+    task_list = zip(ordered_tasks, days_until_due)
+    print days_until_due
     return render_template('student/tasks.html',
                            student=current_user,
-                           tasks=ordered_tasks,
+                           tasks=task_list,
                            num_completed=num_completed,
                            date=datetime.datetime.now())
 
