@@ -74,12 +74,12 @@ class User(UserMixin, db.Model):
         return taskList
 
 
-    def add_task(self, description, deadline):
+    def add_task(self, description, deadline, title):
         '''
         Adds task to list of student tasks in order of deadline from closest -> furthest
         so tasks are already sorted when they are displayed
         '''
-        new_task = Task(deadline=deadline, description=description, user_id=self.id)
+        new_task = Task(deadline=deadline, description=description, user_id=self.id, title=title)
         self.tasks.append(new_task)
         db.session.add(self)
         db.session.add(new_task)

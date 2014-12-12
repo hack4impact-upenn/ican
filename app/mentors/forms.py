@@ -14,6 +14,7 @@ class MultiCheckboxField(SelectMultipleField):
 
 class TaskCreationForm(Form):
     students = MultiCheckboxField("Students", coerce=int)
+    title = StringField('Task Title')
     description = TextField('Task Description')
     deadline = DateField('When is this task due? (YYYY-MM-DD)')
     submit = SubmitField('Create Tasks')

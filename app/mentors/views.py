@@ -71,15 +71,16 @@ def students():
 def student(student_id):
     form = ContactForm()
     student = User.query.get(student_id)
+    tasks = student.tasks.order_by(Task.deadline)
     if form.validate_on_submit():
         name = student.name
         flash(name + ' has been sent a message!')
-        account_sid = ""
-        auth_token = ""
-        client = TwilioRestClient(account_sid, auth_token)
-        message = client.messages.create(body=form.text.data, to="2407515073", from_="+14845882099")
-        return redirect(url_for('students'))
-    return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime)
+        # account_sid = ""
+        # auth_token = ""
+        # client = TwilioRestClient(account_sid, auth_token)
+        # message = client.messages.create(body=form.text.data, to="2407515073", from_="+14845882099")
+        return redirect(url_for('.students'))
+    return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime, tasks=tasks)
 
 @mentors.route('/profile-edit', methods=['GET', 'POST'])
 def profile_edit():
@@ -112,7 +113,7 @@ def create_tasks():
         for student_id in form.students.data:
             student = User.query.get(student_id)
             deadline = datetime.datetime(form.deadline.data.year, form.deadline.data.month, form.deadline.data.day)
-            student.add_task(deadline=deadline, description=form.description.data)
+            student.add_task(deadline=deadline, description=form.description.data, title=form.title.data)
         flash('Added the new tasks!')
         return redirect(url_for('.index'))
     return render_template('mentor/task_creation.html', form=form)

@@ -14,9 +14,14 @@
 {% block main %}
 <div class="wrap">
   <h1 class="overview-name">{{ student.name }}</h1>
+  <div class="mentor-pic" style="background-image:
+      url('{{ student.gravatar(size=256) |default('https://newevolutiondesigns.com/images/freebies/cat-wallpaper-2.jpg')}}')">
+  </div>
   <h2 class="overview-title">Tasks</h2>
-  {% for task in student.tasks %}
-    {% if date.now() > task.deadline %}
+  {% for task in tasks %}
+    {% if task.completed  %}
+    <li class="overview-task"><b>{{ task.title }}</b> was completed!</li>
+    {% elif date.now() > task.deadline  %}
     <li class="overview-overdue overvew-task"><b>{{ task.title }}</b> was due on {{task.deadline.strftime('%b %d, %Y')}}</li>
     {% else %}
     <li class="overview-task"><b>{{ task.title }}</b> is due on {{task.deadline.strftime('%b %d, %Y')}}</li>
