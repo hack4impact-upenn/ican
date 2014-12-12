@@ -494,10 +494,18 @@ ul#students {
   }
 }
 
+.due-date {
+  color: black;
+  font-weight: normal;
+  &.overdue {
+    color: $temple-red;
+    font-weight: bold;
+  }
+}
+
 // filtering
 #filter {
-  margin: 0 1em;
-  margin-bottom: 2em;
+  margin: 0 1em 2em;
 }
 
 .filter-l {

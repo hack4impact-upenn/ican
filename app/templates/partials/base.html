@@ -3,7 +3,9 @@
 
 <head>
     {% block head %}
-    <meta charset="utf-8">{% assets "css_main" %}
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        {% assets "css_main" %}
     <link rel="stylesheet" href="{{ ASSET_URL }}">{% endassets %}
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdn.rawgit.com/weblinc/jquery.smoothState.js/master/jquery.smoothState.js"></script>
