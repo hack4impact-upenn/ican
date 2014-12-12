@@ -24,6 +24,7 @@
         </header>
         {% endif %}
         <main class="fade-in-up element">
+            {#  TODO fix flash issues #}
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
                     {% for message in messages %}

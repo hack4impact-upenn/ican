@@ -3435,6 +3435,7 @@ body:after {
 /* line 139 */
 .grid-items-lines {
   position: relative;
+  margin-bottom: 5%;
 }
 /* line 15, /Users/Max/Dropbox/Extracurricular/Hack4Impact/ican/app/assets/scss/bourbon/addons/_clearfix.scss */
 .grid-items-lines:after {
@@ -3442,12 +3443,11 @@ body:after {
   display: table;
   clear: both;
 }
-/* line 146 */
+/* line 148 */
 .grid-items-lines .grid-item {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  height: 13em;
   width: 80%;
   overflow: hidden;
   float: left;
@@ -3457,55 +3457,74 @@ body:after {
   border: 1px solid #DDD;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 146 */
+  /* line 148 */
   .grid-items-lines .grid-item {
     width: 30.76923%;
     margin-top: 16px;
     margin-right: 16px;
   }
 }
-/* line 159 */
+/* line 162 */
 .grid-items-lines .grid-item:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
-/* line 164 */
+/* line 167 */
 .grid-items-lines .grid-item h1 {
   color: #373d3f;
   font-size: 1.3em;
   margin-bottom: .4em;
 }
-/* line 169 */
+/* line 172 */
 .grid-items-lines .grid-item p {
   color: rgba(55, 61, 63, 0.6);
 }
-@media screen and (min-width: 40em) {
-  /* line 169 */
-  .grid-items-lines .grid-item p {
-    max-width: 70%;
-  }
-}
 @media screen and (min-width: 53.75em) {
-  /* line 175 */
+  /* line 178 */
   .grid-items-lines .grid-item-big {
     width: 61.53846%;
     margin-top: 16px;
     margin-right: 16px;
   }
 }
-@media screen and (min-width: 40em) {
-  /* line 179 */
-  .grid-items-lines .grid-item-big p {
-    max-width: 60%;
+
+@media (max-width: 870px) {
+  /* line 192 */
+  .menu-title {
+    text-align: center;
+  }
+
+  /* line 196 */
+  .grid-items-lines {
+    margin: 3% auto;
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  /* line 201 */
+  .grid-item-big, .grid-item {
+    margin: 2% auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 207 */
+  .grid-item p, .grid-item-big p {
+    text-align: center;
   }
 }
-
+@media (min-width: 870px) {
+  /* line 213 */
+  .grid-item, .grid-item-big {
+    height: 13em;
+  }
+}
 /***************** STUDENT MENU ******************/
-/* line 189 */
+/* line 223 */
 li.overdue {
   color: #9e1b34;
   list-style-type: none;
 }
-/* line 192 */
+/* line 226 */
 li.overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3518,47 +3537,47 @@ li.overdue:before {
 
 /********* OVERALL STUDENT PAGE STYLES **********/
 @media (max-width: 350px) {
-  /* line 205 */
+  /* line 239 */
   h1 {
     font-size: 150%;
   }
 
-  /* line 208 */
+  /* line 242 */
   h3 {
     font-size: 100%;
   }
 }
 @media (min-width: 350px) and (max-width: 440px) {
-  /* line 214 */
+  /* line 248 */
   h1 {
     font-size: 180%;
   }
 
-  /* line 218 */
+  /* line 252 */
   h3 {
     font-size: 130%;
   }
 }
 /**************** STUDENT FAQ *******************/
-/* line 225 */
+/* line 259 */
 p.question {
   font-size: 130%;
   font-weight: bold;
 }
 
 /**************** STUDENT PROFILE ***************/
-/* line 232 */
+/* line 266 */
 #field {
   font-weight: bold;
 }
 
-/* line 236 */
+/* line 270 */
 h1.faq {
   padding-bottom: 1em;
 }
 
 /**************** STUDENT MENTOR VIEW ***********/
-/* line 242 */
+/* line 276 */
 div.mentor-pic {
   display: block;
   height: 256px;
@@ -3570,7 +3589,7 @@ div.mentor-pic {
 }
 
 /**************** STUDENT TASKS *****************/
-/* line 254 */
+/* line 288 */
 div.hidden-items {
   border: 2px solid #c1c7c9;
   padding: 12px 16px;
@@ -3582,17 +3601,17 @@ div.hidden-items {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 262 */
+/* line 296 */
 div.hidden-items:hover {
   color: #5a6466;
   border-color: #717f82;
 }
-/* line 267 */
+/* line 301 */
 div.hidden-items:active {
   background: #717f82;
   color: white;
 }
-/* line 271 */
+/* line 305 */
 div.hidden-items::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3606,7 +3625,7 @@ div.hidden-items::after {
   font-weight: bold;
 }
 
-/* line 280 */
+/* line 314 */
 .block {
   display: block;
   background-color: white;
@@ -3617,19 +3636,19 @@ div.hidden-items::after {
   transition: all 0.3s ease-in-out;
   border: 1px solid #DDD;
 }
-/* line 286 */
+/* line 320 */
 .block:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
 
-/* line 292 */
+/* line 326 */
 .task.block {
   padding: 30px 50px 40px;
   cursor: pointer;
 }
 
 /**** FLASHES ****/
-/* line 299 */
+/* line 333 */
 .flash-error {
   max-width: 60em;
   margin-left: auto;
@@ -3645,7 +3664,7 @@ div.hidden-items::after {
   display: table;
   clear: both;
 }
-/* line 305 */
+/* line 339 */
 .flash-error::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3658,7 +3677,7 @@ div.hidden-items::after {
 
 /****** MENTOR STYLES *******/
 /*** View Students ***/
-/* line 320 */
+/* line 354 */
 .flex-boxes {
   -webkit-box-pack: center;
   -moz-box-pack: center;
@@ -3687,7 +3706,7 @@ div.hidden-items::after {
   clear: both;
 }
 
-/* line 329 */
+/* line 363 */
 .flex-box {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3706,51 +3725,51 @@ div.hidden-items::after {
   min-width: 31%;
   float: left;
 }
-/* line 342 */
+/* line 376 */
 .flex-box:hover {
   background: rgba(158, 27, 52, 0.3);
 }
-/* line 344 */
+/* line 378 */
 .flex-box:hover .flex-title {
   color: rgba(55, 61, 63, 0.8);
 }
 
 @media (max-width: 685px) {
-  /* line 353 */
+  /* line 387 */
   .flex-boxes {
     margin: 2%;
   }
 
-  /* line 357 */
+  /* line 391 */
   .flex-box {
     min-width: 97%;
     max-width: 97%;
   }
 }
 @media (min-width: 685px) and (max-width: 1020px) {
-  /* line 364 */
+  /* line 398 */
   .flex-boxes {
     margin: 2%;
   }
 
-  /* line 367 */
+  /* line 401 */
   .flex-box {
     min-width: 48%;
     max-width: 48%;
   }
 }
-/* line 374 */
+/* line 408 */
 .prog > div {
   text-align: center;
   margin: auto;
 }
 
-/* line 379 */
+/* line 413 */
 .prog {
   padding-bottom: 1.5em;
 }
 
-/* line 383 */
+/* line 417 */
 .flex-box .flex-title {
   color: rgba(55, 61, 63, 0.7);
   font-weight: 500;
@@ -3758,7 +3777,7 @@ div.hidden-items::after {
   margin-bottom: .5em;
 }
 
-/* line 390 */
+/* line 424 */
 .flex-box p {
   margin: auto;
   line-height: 1.5em;
@@ -3766,17 +3785,17 @@ div.hidden-items::after {
 }
 
 /*** Specific student ***/
-/* line 397 */
+/* line 431 */
 .overview-name {
   margin-bottom: 1em;
 }
 
-/* line 401 */
+/* line 435 */
 .overview-title {
   margin: 1em 0 0.5em;
 }
 
-/* line 405 */
+/* line 439 */
 .overview-task, .overview-overdue {
   list-style-type: none;
   margin-top: 0;
@@ -3786,11 +3805,11 @@ div.hidden-items::after {
   box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
 }
 
-/* line 414 */
+/* line 448 */
 .overview-overdue {
   color: #9e1b34;
 }
-/* line 416 */
+/* line 450 */
 .overview-overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3801,49 +3820,49 @@ div.hidden-items::after {
   content: "  ";
 }
 
-/* line 422 */
+/* line 456 */
 fieldset {
   margin-bottom: 2em;
 }
 
 /*** Task Creation Page ***/
-/* line 428 */
+/* line 462 */
 .form-group {
   margin-top: 0;
   margin-bottom: 2em;
 }
 
-/* line 434 */
+/* line 468 */
 .control-label {
   font-size: 1.5em;
 }
 
-/* line 439 */
+/* line 473 */
 label {
   display: inline-block;
   margin-top: 0;
   cursor: pointer;
 }
 
-/* line 445 */
+/* line 479 */
 input[name="students"]:checked + label {
   color: #9e1b34;
 }
 
-/* line 451 */
+/* line 485 */
 ul#students li {
   margin-top: 0;
 }
 
 /*** All tasks page ****/
-/* line 457 */
+/* line 491 */
 .all-tasks {
   margin-bottom: 2em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
-/* line 463 */
+/* line 497 */
 .all-tasks-li {
   list-style-type: none;
   padding: 1em;
@@ -3851,11 +3870,11 @@ ul#students li {
   box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
 }
 
-/* line 470 */
+/* line 504 */
 .all-tasks-li-overdue {
   color: #9e1b34;
 }
-/* line 472 */
+/* line 506 */
 .all-tasks-li-overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3866,7 +3885,7 @@ ul#students li {
   content: "  ";
 }
 
-/* line 478 */
+/* line 512 */
 .round-countdown {
   display: inline-block;
   border-radius: 100px;
@@ -3879,60 +3898,60 @@ ul#students li {
   line-height: 0.3;
   padding-top: 5px;
 }
-/* line 490 */
+/* line 524 */
 .round-countdown.overdue {
   background-color: #9e1b34;
   border-color: #9e1b34;
   color: white;
 }
 
-/* line 497 */
+/* line 531 */
 .due-date {
   color: black;
   font-weight: normal;
 }
-/* line 500 */
+/* line 534 */
 .due-date.overdue {
   color: #9e1b34;
   font-weight: bold;
 }
 
-/* line 507 */
+/* line 541 */
 #filter {
   margin: 0 1em 2em;
 }
 
-/* line 511 */
+/* line 545 */
 .filter-l {
   cursor: pointer;
   padding: 0 1em;
   font-weight: normal;
 }
 
-/* line 517 */
+/* line 551 */
 .filter-i {
   display: none !important;
 }
 
-/* line 521 */
+/* line 555 */
 .filter-i:checked + label {
   color: #9e1b34;
 }
 
-/* line 537 */
+/* line 571 */
 .dropdown {
   margin-top: 0;
   margin-bottom: 2em;
   text-align: center;
 }
 
-/* line 543 */
+/* line 577 */
 .dropdown-container {
   display: inline-block;
   position: relative;
 }
 
-/* line 548 */
+/* line 582 */
 .dropdown-description {
   background: #f2f3f4;
   border-bottom-left-radius: 3px;
@@ -3948,13 +3967,13 @@ ul#students li {
   padding: 0 0.5em 0 1em;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 548 */
+  /* line 582 */
   .dropdown-description {
     font-size: 1em;
   }
 }
 
-/* line 567 */
+/* line 601 */
 .dropdown-button {
   background: #f2f3f4;
   border-bottom-right-radius: 3px;
@@ -3972,19 +3991,19 @@ ul#students li {
   position: relative;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 567 */
+  /* line 601 */
   .dropdown-button {
     font-size: 1em;
     padding: 0 2.5em 0 0.5em;
   }
 }
 
-/* line 589 */
+/* line 623 */
 .dropdown-button:hover {
   background-color: #DDD;
 }
 
-/* line 593 */
+/* line 627 */
 .dropdown-button:after {
   color: #373d3f;
   content: "\25BE";
@@ -3994,7 +4013,7 @@ ul#students li {
   top: 0;
 }
 
-/* line 602 */
+/* line 636 */
 .dropdown-menu {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -4014,7 +4033,7 @@ ul#students li {
   z-index: 99999;
 }
 
-/* line 619 */
+/* line 653 */
 .dropdown-menu li {
   border-bottom: 1px solid silver;
   color: #373d3f;
@@ -4022,25 +4041,25 @@ ul#students li {
   padding: 0.5em;
 }
 
-/* line 626 */
+/* line 660 */
 .dropdown-menu li:hover {
   background: #DDD;
 }
 
-/* line 630 */
+/* line 664 */
 .dropdown-menu li:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-/* line 635 */
+/* line 669 */
 .dropdown-menu li:last-child {
   border: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
-/* line 641 */
+/* line 675 */
 .show-menu {
   display: block;
 }
