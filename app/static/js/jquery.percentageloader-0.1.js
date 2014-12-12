@@ -260,7 +260,7 @@ see the file license.txt that was included with the plugin bundle.
 
                 percentageText.style.top = ((settings.height / 2) - (fontSize / 2)).toString() + 'px';
                 percentageText.style.color = '#999';
-                percentageText.style.font = fontSize.toString() + 'px BebasNeueRegular';
+                percentageText.style.fontSize = '22px';
                 percentageText.style.textShadow = '0 1px 1px #FFFFFF';
 
                 /* Calculate the text for the given percentage */
@@ -271,7 +271,6 @@ see the file license.txt that was included with the plugin bundle.
                 /* Calculate font and placement of small 'value' text */
                 smallSize = cX / 5.5;
                 valueText.style.color = '#80a9c8';
-                valueText.style.font = smallSize.toString() + 'px BebasNeueRegular';
                 valueText.style.height = smallSize.toString() + 'px';
                 valueText.style.textShadow = 'None';
 

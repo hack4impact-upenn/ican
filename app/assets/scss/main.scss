@@ -51,6 +51,14 @@ body {
 .wrap {
     @include outer-container;
 }
+
+// media queries - regular doesnt work
+@media (max-width: 1010px) {
+  .wrap {
+    margin: 0 3%;
+  }
+}
+
 /**** LANDING SPECIFIC ****/
 
 .overlay {
@@ -178,6 +186,25 @@ li.overdue {
 h1.page {
     padding-bottom: 1em;
 }
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 150%;
+  }
+  h3 {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 440px) {
+  h1 {
+    font-size: 180%;
+  }
+
+  h3 {
+    font-size: 130%;
+  }
+}
 /**************** STUDENT FAQ *******************/
 
 p.question {
@@ -277,23 +304,26 @@ $flex-box-color: transparentize($base-font-color, .3);
 
 .flex-boxes {
   @include clearfix;
-  @include display(flex);
+  //@include display(flex);
   @include justify-content(center);
   @include align-items(stretch);
-  @include flex-wrap(wrap);
+  //@include flex-wrap(wrap);
   text-align: center;
 }
 
 .flex-box {
   @include transition (all 0.2s ease-in-out);
-  @include flex(2 2 15em);
+  //@include flex(2 2 15em);
   @include align-self(stretch);
-  display: block;
+  display: inline-block;
   box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10);
   border-radius: $base-border-radius;
   margin: $flex-box-gutter;
   padding: 2em 2em 3em 2em;
   background: white;
+  max-width: 31%;
+  min-width:31%;
+  float:left;
 
   &:hover {
     background: rgba($temple-red, 0.3);
@@ -302,6 +332,30 @@ $flex-box-color: transparentize($base-font-color, .3);
     }
   }
 }
+
+//breakpoint 1012 for less than 3
+// MEDIA QUERIES FOR FLEXBOX
+@media (max-width: 685px) {
+  .flex-boxes {
+    margin: 2%;
+  }
+
+  .flex-box {
+    min-width: 97%;
+    max-width: 97%;
+  }
+}
+
+@media (min-width: 685px) and (max-width: 1020px) {
+  .flex-boxes {
+    margin: 2%;
+  }
+  .flex-box {
+    min-width: 48%;
+    max-width: 48%;
+  }
+}
+
 
 .prog > div {
   text-align:center;
@@ -324,10 +378,6 @@ $flex-box-color: transparentize($base-font-color, .3);
   margin: auto;
   line-height: 1.5em;
   color: transparentize($flex-box-color, .1);
-}
-
-.flex-box-big {
-  @include flex(1 1 40em);
 }
 
 /*** Specific student ***/
