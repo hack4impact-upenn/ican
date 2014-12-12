@@ -11,8 +11,8 @@
 
 {% block main %}
 <div class="wrap">
-    <h1>Hey there, {{ student.name }}.</h1>
-    <h3>You have {{tasks|length}} task{{'s' if tasks|length != 1}}.</h3>
+    <h1 class="menu-title">Hey there, {{ student.name }}.</h1>
+    <h3 class="menu-title">You have {{tasks|length}} task{{'s' if tasks|length != 1}}.</h3>
     <ul class="margins-off">
     {% for task in tasks %}
       {# Overdue tasks #}
