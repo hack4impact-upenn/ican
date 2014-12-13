@@ -3587,8 +3587,15 @@ div.mentor-pic {
   margin: 0 auto;
 }
 
+/**************** STUDENT UNIVERSITY ************/
+/* line 288 */
+.uni {
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+
 /**************** STUDENT TASKS *****************/
-/* line 289 */
+/* line 295 */
 div.hidden-items {
   border: 2px solid #c1c7c9;
   padding: 12px 16px;
@@ -3600,17 +3607,17 @@ div.hidden-items {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 297 */
+/* line 303 */
 div.hidden-items:hover {
   color: #5a6466;
   border-color: #717f82;
 }
-/* line 302 */
+/* line 308 */
 div.hidden-items:active {
   background: #717f82;
   color: white;
 }
-/* line 306 */
+/* line 312 */
 div.hidden-items::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3624,7 +3631,7 @@ div.hidden-items::after {
   font-weight: bold;
 }
 
-/* line 315 */
+/* line 321 */
 .block {
   display: block;
   background-color: white;
@@ -3635,19 +3642,24 @@ div.hidden-items::after {
   transition: all 0.3s ease-in-out;
   border: 1px solid #DDD;
 }
-/* line 321 */
+/* line 327 */
 .block:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
 
-/* line 327 */
+/* line 333 */
 .task.block {
   padding: 30px 50px 40px;
   cursor: pointer;
 }
 
+/* line 338 */
+.tasks {
+  margin-bottom: 3%;
+}
+
 /**** FLASHES ****/
-/* line 334 */
+/* line 344 */
 .flash {
   max-width: 60em;
   margin-left: auto;
@@ -3663,7 +3675,7 @@ div.hidden-items::after {
   display: table;
   clear: both;
 }
-/* line 340 */
+/* line 350 */
 .flash::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3676,7 +3688,7 @@ div.hidden-items::after {
 
 /****** MENTOR STYLES *******/
 /*** View Students ***/
-/* line 355 */
+/* line 365 */
 .flex-boxes {
   -webkit-box-pack: center;
   -moz-box-pack: center;
@@ -3705,7 +3717,7 @@ div.hidden-items::after {
   clear: both;
 }
 
-/* line 364 */
+/* line 374 */
 .flex-box {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3724,51 +3736,51 @@ div.hidden-items::after {
   min-width: 31%;
   float: left;
 }
-/* line 377 */
+/* line 387 */
 .flex-box:hover {
   background: rgba(158, 27, 52, 0.3);
 }
-/* line 379 */
+/* line 389 */
 .flex-box:hover .flex-title {
   color: rgba(55, 61, 63, 0.8);
 }
 
 @media (max-width: 685px) {
-  /* line 388 */
-  .flex-boxes {
-    margin: 2%;
-  }
-
-  /* line 392 */
-  .flex-box {
-    min-width: 97%;
-    max-width: 97%;
-  }
-}
-@media (min-width: 685px) and (max-width: 1020px) {
-  /* line 399 */
+  /* line 398 */
   .flex-boxes {
     margin: 2%;
   }
 
   /* line 402 */
   .flex-box {
+    min-width: 97%;
+    max-width: 97%;
+  }
+}
+@media (min-width: 685px) and (max-width: 1020px) {
+  /* line 409 */
+  .flex-boxes {
+    margin: 2%;
+  }
+
+  /* line 412 */
+  .flex-box {
     min-width: 48%;
     max-width: 48%;
   }
 }
-/* line 409 */
+/* line 419 */
 .prog > div {
   text-align: center;
   margin: auto;
 }
 
-/* line 414 */
+/* line 424 */
 .prog {
   padding-bottom: 1.5em;
 }
 
-/* line 418 */
+/* line 428 */
 .flex-box .flex-title {
   color: rgba(55, 61, 63, 0.7);
   font-weight: 500;
@@ -3776,7 +3788,7 @@ div.hidden-items::after {
   margin-bottom: .5em;
 }
 
-/* line 425 */
+/* line 435 */
 .flex-box p {
   margin: auto;
   line-height: 1.5em;
@@ -3784,18 +3796,18 @@ div.hidden-items::after {
 }
 
 /*** Specific student ***/
-/* line 432 */
+/* line 442 */
 .overview-name {
   margin-bottom: 1em;
   text-align: center;
 }
 
-/* line 437 */
+/* line 447 */
 .overview-title {
   margin: 1em 0 0.5em;
 }
 
-/* line 441 */
+/* line 451 */
 .overview-task, .overview-overdue, .noneTask {
   list-style-type: none;
   margin-top: 0;
@@ -3805,11 +3817,11 @@ div.hidden-items::after {
   box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
 }
 
-/* line 450 */
+/* line 460 */
 .overview-overdue {
   color: #9e1b34;
 }
-/* line 452 */
+/* line 462 */
 .overview-overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3820,11 +3832,11 @@ div.hidden-items::after {
   content: "  ";
 }
 
-/* line 458 */
+/* line 468 */
 .overview-completed {
   color: green;
 }
-/* line 460 */
+/* line 470 */
 .overview-completed:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3835,49 +3847,49 @@ div.hidden-items::after {
   content: "  ";
 }
 
-/* line 466 */
+/* line 476 */
 fieldset {
   margin-bottom: 2em;
 }
 
 /*** Task Creation Page ***/
-/* line 472 */
+/* line 482 */
 .form-group {
   margin-top: 0;
   margin-bottom: 2em;
 }
 
-/* line 478 */
+/* line 488 */
 .control-label {
   font-size: 1.5em;
 }
 
-/* line 483 */
+/* line 493 */
 label {
   display: inline-block;
   margin-top: 0;
   cursor: pointer;
 }
 
-/* line 489 */
+/* line 499 */
 input[name="students"]:checked + label {
   color: #9e1b34;
 }
 
-/* line 495 */
+/* line 505 */
 ul#students li {
   margin-top: 0;
 }
 
 /*** All tasks page ****/
-/* line 501 */
+/* line 511 */
 .all-tasks {
   margin-bottom: 2em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
-/* line 507 */
+/* line 517 */
 .all-tasks-li {
   list-style-type: none;
   padding: 1em;
@@ -3885,11 +3897,11 @@ ul#students li {
   box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
 }
 
-/* line 514 */
+/* line 524 */
 .all-tasks-li-overdue {
   color: #9e1b34;
 }
-/* line 516 */
+/* line 526 */
 .all-tasks-li-overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3900,7 +3912,7 @@ ul#students li {
   content: "  ";
 }
 
-/* line 522 */
+/* line 532 */
 .round-countdown {
   display: inline-block;
   border-radius: 100px;
@@ -3913,60 +3925,60 @@ ul#students li {
   line-height: 0.3;
   padding-top: 5px;
 }
-/* line 534 */
+/* line 544 */
 .round-countdown.overdue {
   background-color: #9e1b34;
   border-color: #9e1b34;
   color: white;
 }
 
-/* line 541 */
+/* line 551 */
 .due-date {
   color: black;
   font-weight: normal;
 }
-/* line 544 */
+/* line 554 */
 .due-date.overdue {
   color: #9e1b34;
   font-weight: bold;
 }
 
-/* line 551 */
+/* line 561 */
 #filter {
   margin: 0 1em 2em;
 }
 
-/* line 555 */
+/* line 565 */
 .filter-l {
   cursor: pointer;
   padding: 0 1em;
   font-weight: normal;
 }
 
-/* line 561 */
+/* line 571 */
 .filter-i {
   display: none !important;
 }
 
-/* line 565 */
+/* line 575 */
 .filter-i:checked + label {
   color: #9e1b34;
 }
 
-/* line 581 */
+/* line 591 */
 .dropdown {
   margin-top: 0;
   margin-bottom: 2em;
   text-align: center;
 }
 
-/* line 587 */
+/* line 597 */
 .dropdown-container {
   display: inline-block;
   position: relative;
 }
 
-/* line 592 */
+/* line 602 */
 .dropdown-description {
   background: #f2f3f4;
   border-bottom-left-radius: 3px;
@@ -3982,13 +3994,13 @@ ul#students li {
   padding: 0 0.5em 0 1em;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 592 */
+  /* line 602 */
   .dropdown-description {
     font-size: 1em;
   }
 }
 
-/* line 611 */
+/* line 621 */
 .dropdown-button {
   background: #f2f3f4;
   border-bottom-right-radius: 3px;
@@ -4006,19 +4018,19 @@ ul#students li {
   position: relative;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 611 */
+  /* line 621 */
   .dropdown-button {
     font-size: 1em;
     padding: 0 2.5em 0 0.5em;
   }
 }
 
-/* line 633 */
+/* line 643 */
 .dropdown-button:hover {
   background-color: #DDD;
 }
 
-/* line 637 */
+/* line 647 */
 .dropdown-button:after {
   color: #373d3f;
   content: "\25BE";
@@ -4028,7 +4040,7 @@ ul#students li {
   top: 0;
 }
 
-/* line 646 */
+/* line 656 */
 .dropdown-menu {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -4048,7 +4060,7 @@ ul#students li {
   z-index: 99999;
 }
 
-/* line 663 */
+/* line 673 */
 .dropdown-menu li {
   border-bottom: 1px solid silver;
   color: #373d3f;
@@ -4056,25 +4068,25 @@ ul#students li {
   padding: 0.5em;
 }
 
-/* line 670 */
+/* line 680 */
 .dropdown-menu li:hover {
   background: #DDD;
 }
 
-/* line 674 */
+/* line 684 */
 .dropdown-menu li:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-/* line 679 */
+/* line 689 */
 .dropdown-menu li:last-child {
   border: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
-/* line 685 */
+/* line 695 */
 .show-menu {
   display: block;
 }

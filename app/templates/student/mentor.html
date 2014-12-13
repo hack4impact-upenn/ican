@@ -9,7 +9,7 @@
 {% block main %}
     <div class="wrap">
         <div class="module">
-            <h1>Your mentor is {{ mentor.name|default('pending') }}</h1>
+            <h1 class="page">Your mentor is {{ mentor.name|default('pending') }}</h1>
         </div>
         {% if mentor %}
             <div class="mentor-pic" style="background-image:

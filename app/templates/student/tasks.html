@@ -13,7 +13,7 @@
         <div class="hidden-items" onClick="location.href='tasks/completed'">
             View {{ num_completed }} completed tasks
         </div>
-
+        <div class="tasks">
         {% if tasks %}
             <ul>
                 {% for task, days_to_due in tasks %}
@@ -41,6 +41,6 @@
                 {% endfor %}
             </ul>
         {% endif %}
-
+      </div>
     </div>
 {% endblock %}

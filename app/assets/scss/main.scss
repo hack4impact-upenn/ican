@@ -284,6 +284,12 @@ div.mentor-pic {
   margin: 0 auto;
 }
 
+/**************** STUDENT UNIVERSITY ************/
+.uni {
+  margin-top:0;
+  margin-bottom: 3%;
+}
+
 /**************** STUDENT TASKS *****************/
 
 div.hidden-items {
@@ -327,6 +333,10 @@ div.hidden-items {
 .task.block {
   padding: 30px 50px 40px;
   cursor: pointer;
+}
+
+.tasks {
+  margin-bottom: 3%;
 }
 
 /**** FLASHES ****/
