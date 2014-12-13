@@ -34,7 +34,6 @@ def signup():
             student = User(email=form.email.data, name=form.name.data,
                            university=u, password=form.password.data,
                            user_role='student')
-            # TODO Assign tasks to students based on University
             general_tasks = GeneralTask.query.all()
             for gt in general_tasks:
                 if (gt.university_id == u.id) or (gt.university_id is None):
@@ -115,7 +114,6 @@ def profile():
     return render_template('student/profile.html', student=current_user)
 
 
-# TODO: add form to confirm student edits -- @Maya
 @students.route('/profile-edit', methods=['GET', 'POST'])
 def profile_edit():
     form = EditProfileForm(obj=current_user)
