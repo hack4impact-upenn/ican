@@ -104,8 +104,8 @@ body {
   border: 5px solid transparentize($base-accent-color, 0.4);
   border-radius: 8px;
   padding: 30px 30px;
-  @include span-columns(7);
-  @include shift(2.5);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /******************************************************************************
@@ -232,7 +232,7 @@ li.overdue {
 /********* OVERALL STUDENT PAGE STYLES **********/
 
 h1.page {
-  //padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 @media (max-width: 350px) {
@@ -330,7 +330,7 @@ div.hidden-items {
 
 /**** FLASHES ****/
 
-.flash-error {
+.flash {
   @include outer-container;
   background-color: darken($silver, 20%);
   color: white;
