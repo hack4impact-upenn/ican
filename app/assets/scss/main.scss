@@ -194,9 +194,8 @@ body {
   }
 
   .grid-items-lines {
-    margin:3% auto;
     width: 100%;
-    margin-left: 10%;
+    margin: 3% auto 3% 10%;
   }
   .grid-item-big, .grid-item {
     margin: 2% auto;
@@ -278,9 +277,8 @@ div.mentor-pic {
   height: 256px;
   width: 256px;
   background-size: cover;
-  background-repeat: no-repeat;
   border-radius: 5px;
-  background-position: center;
+  background: no-repeat center;
   margin: 0 auto;
 }
 
@@ -602,10 +600,7 @@ $dropdown-arrow-top-distance: 0;
 .dropdown-description {
   background: $dropdown-background;
   border-bottom-left-radius: $base-border-radius;
-  border-bottom: $dropdown-border;
-  border-left: $dropdown-border;
   border-top-left-radius: $base-border-radius;
-  border-top: $dropdown-border;
   color: $dropdown-description-color;
   float: left;
   font-size: .7em;
