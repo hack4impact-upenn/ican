@@ -72,6 +72,21 @@ def student(student_id):
     form = ContactForm()
     student = User.query.get(student_id)
     tasks = student.tasks.order_by(Task.deadline)
+    overdue = []
+    upcoming = []
+    completed = []
+    for task in tasks:
+        if task.completed:
+            completed.append(task)
+        elif datetime.datetime.now() > task.deadline:
+            overdue.append(task)
+        else:
+            upcoming.append(task)
+    print "Tasks"
+    print overdue
+    print upcoming
+    print completed
+
     if form.validate_on_submit():
         name = student.name
         flash(name + ' has been sent a message!')
@@ -80,7 +95,7 @@ def student(student_id):
         # client = TwilioRestClient(account_sid, auth_token)
         # message = client.messages.create(body=form.text.data, to="2407515073", from_="+14845882099")
         return redirect(url_for('.students'))
-    return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime, tasks=tasks)
+    return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime, completed=completed, overdue=overdue, upcoming=upcoming)
 
 @mentors.route('/profile-edit', methods=['GET', 'POST'])
 def profile_edit():

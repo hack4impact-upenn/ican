@@ -281,6 +281,7 @@ div.mentor-pic {
   background-repeat: no-repeat;
   border-radius: 5px;
   background-position: center;
+  margin: 0 auto;
 }
 
 /**************** STUDENT TASKS *****************/
@@ -430,13 +431,14 @@ $flex-box-color: transparentize($base-font-color, .3);
 /*** Specific student ***/
 .overview-name {
   margin-bottom: 1em;
+  text-align:center;
 }
 
 .overview-title {
   margin: 1em 0 0.5em;
 }
 
-.overview-task, .overview-overdue {
+.overview-task, .overview-overdue, .noneTask {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0.5em;
@@ -452,6 +454,15 @@ $flex-box-color: transparentize($base-font-color, .3);
     content: "#{$fa-var-exclamation-circle}  ";
   }
 }
+
+.overview-completed {
+  color: green;
+  &:before {
+    @include fa-icon;
+    content: "#{$fa-var-check-circle}  ";
+  }
+}
+
 
 fieldset {
   margin-bottom: 2em;

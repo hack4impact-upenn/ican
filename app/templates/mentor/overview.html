@@ -17,16 +17,30 @@
   <div class="mentor-pic" style="background-image:
       url('{{ student.gravatar(size=256) |default('https://newevolutiondesigns.com/images/freebies/cat-wallpaper-2.jpg')}}')">
   </div>
-  <h2 class="overview-title">Tasks</h2>
-  {% for task in tasks %}
-    {% if task.completed  %}
-    <li class="overview-task"><b>{{ task.title }}</b> was completed!</li>
-    {% elif date.now() > task.deadline  %}
+  <h2 class="overview-title">Overdue Tasks</h2>
+  {% if overdue %}
+    {% for task in overdue %}
     <li class="overview-overdue overvew-task"><b>{{ task.title }}</b> was due on {{task.deadline.strftime('%b %d, %Y')}}</li>
-    {% else %}
-    <li class="overview-task"><b>{{ task.title }}</b> is due on {{task.deadline.strftime('%b %d, %Y')}}</li>
+    {% endfor %}
+  {% else %}
+    <li class="noneTask">None yet!</li>
+  {% endif %}
+  <h2 class="overview-title">Upcoming Tasks</h2>
+    {% if upcoming %}
+      {% for task in upcoming %}
+        <li class="overview-task overview-outstanding"><b>{{ task.title }}</b> is due on {{task.deadline.strftime('%b %d, %Y')}}</li>
+      {% endfor %}
+      {% else %}
+        <li class="noneTask">None yet!</li>
     {% endif %}
-  {% endfor %}
+  <h2 class="overview-title">Completed Tasks</h2>
+    {% if completed %}
+      {% for task in completed %}
+      <li class="overview-task overview-completed"><b>{{ task.title }}</b></li>
+      {% endfor %}
+    {% else %}
+      <li class="noneTask">None yet!</li>
+    {% endif %}
   <h2 class="overview-title">Contact</h2>
   <fieldset>{{ wtf.quick_form(form) }}</fieldset>
 </div>
