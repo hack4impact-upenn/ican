@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ ASSET_URL }}">{% endassets %}
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdn.rawgit.com/weblinc/jquery.smoothState.js/master/jquery.smoothState.js"></script>
+    <script src="https://cdn.rawgit.com/ftlabs/fastclick/master/lib/fastclick.js"></script>
     <script src="../../static/js/jquery.percentageloader-0.1.js"></script>
     <title>{% block title %}{% endblock %} - iCAN</title>
     {% endblock %}
@@ -24,13 +25,10 @@
         </header>
         {% endif %}
         <main class="fade-in-up element">
-            {#  TODO fix flash issues #}
             {% with messages = get_flashed_messages() %}
-                {% if messages %}
-                    {% for message in messages %}
-                    <div class="flash-error">{{ message }}</div>
-                    {% endfor %}
-                {% endif %}
+                {% for message in messages %}
+                    <div class="flash">{{ message }}</div>
+                {% endfor %}
             {% endwith %}
 
             {% block main %}{% endblock %}
@@ -42,25 +40,22 @@
     <script>
         (function ($) {
             'use strict';
-            var $body = $('html, body'),
-                content = $('#main').smoothState({
-                    development: true,
-                    prefetch: true,
-                    pageCacheSize: 4,
-                    // Runs when a link has been activated
-                    onStart: {
-                        duration: 250, // Duration of our animation
-                        render: function (url, $container) {
-                            // toggleAnimationClass() is a public method
-                            // for restarting css animations with a class
-                            content.toggleAnimationClass('is-exiting');
-                            // Scroll user to the top
-                            //                        $body.animate({
-                            //                            scrollTop: 0
-                            //                        });
-                        }
+            FastClick.attach(document.body);
+
+            var content = $('#main').smoothState({
+                development: true,
+                prefetch: true,
+                pageCacheSize: 4,
+                onEnd: {
+                    duration: 0,
+                    render: function(url, $container, $content) {
+                        $container.html($content);
+                        // Remove .flash-error divs
+                        $('.flash').css('display', 'none');
                     }
-                }).data('smoothState'); // makes public methods available
+                }
+            }).data('smoothState');
+
         })(jQuery);
     </script>
 </body>
