@@ -88,6 +88,13 @@ body {
   z-index: 0;
 }
 
+@media (max-width: 400px) {
+	.landing-btn {
+		display:block;
+		margin: 10px auto;
+	}
+}
+
 /******************************************************************************
  ** FORMS
  ******************************************************************************/
@@ -106,6 +113,17 @@ body {
   padding: 30px 30px;
   max-width: 500px;
   margin: 0 auto;
+}
+
+@media (max-width:400px) {
+	.form-wrapper {
+		max-width: 90%;
+		margin: 0 auto;
+		
+		.btn {
+			margin-top: 1em;
+		}
+	}
 }
 
 /******************************************************************************
