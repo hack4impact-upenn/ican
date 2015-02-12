@@ -3316,14 +3316,14 @@ header {
   color: white;
   padding: 5px 0;
 }
-/* line 35 */
+/* line 36 */
 header a {
   color: white;
   font-weight: bold;
   display: inline !important;
 }
 
-/* line 43 */
+/* line 44 */
 body {
   background: #f2f3f4 url(../../static/img/bg-pattern.png);
   background-size: 300px;
@@ -3340,7 +3340,7 @@ body:after {
  **  GRID
  **  See Neat library & docs: http://thoughtbot.github.io/neat-docs/latest/
  ******************************************************************************/
-/* line 55 */
+/* line 56 */
 .wrap {
   max-width: 60em;
   margin-left: auto;
@@ -3354,13 +3354,13 @@ body:after {
 }
 
 @media (max-width: 1010px) {
-  /* line 61 */
+  /* line 62 */
   .wrap {
     margin: 0 3%;
   }
 }
 /**** LANDING SPECIFIC ****/
-/* line 68 */
+/* line 69 */
 .overlay {
   position: fixed;
   width: 100%;
@@ -3375,7 +3375,7 @@ body:after {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 82 */
+/* line 83 */
 .landing {
   position: fixed;
   width: 100%;
@@ -3386,21 +3386,49 @@ body:after {
 }
 
 @media (max-width: 400px) {
-  /* line 92 */
+  /* line 93 */
   .landing-btn {
     display: block;
     margin: 10px auto;
   }
 }
+/* line 99 */
+.landing-btns {
+  clear: both;
+}
+
+/* line 103 */
+.logo-p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 2%;
+  vertical-align: text-bottom;
+}
+
+/* line 111 */
+.logo {
+  margin-left: 5px;
+  height: 1.5em;
+}
+
+@media (max-width: 800px) {
+  /* line 117 */
+  .logo-p {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /******************************************************************************
  ** FORMS
  ******************************************************************************/
-/* line 103 */
+/* line 129 */
 .help-block:before {
   content: "\2716\00A0\00A0";
 }
 
-/* line 109 */
+/* line 135 */
 .form-wrapper {
   background-color: white;
   border: 5px solid rgba(158, 27, 52, 0.6);
@@ -3411,16 +3439,16 @@ body:after {
 }
 
 @media (max-width: 400px) {
-  /* line 119 */
+  /* line 145 */
   .form-wrapper {
     max-width: 90%;
     margin: 0 auto;
   }
-  /* line 123 */
+  /* line 149 */
   .form-wrapper .control-label {
     font-size: 1em;
   }
-  /* line 127 */
+  /* line 153 */
   .form-wrapper .btn {
     margin-top: 1em;
   }
@@ -3429,17 +3457,17 @@ body:after {
  **  MODULES / LOBOTOMIZED OWLS
  **  See http://alistapart.com/article/axiomatic-css-and-lobotomized-owls)
  ******************************************************************************/
-/* line 138 */
+/* line 164 */
 * + * {
   margin-top: 1.5em;
 }
 
-/* line 142 */
+/* line 168 */
 .compact * + * {
   margin-top: 0.75em;
 }
 
-/* line 146 */
+/* line 172 */
 .margins-off > * {
   margin-top: 0;
 }
@@ -3447,7 +3475,7 @@ body:after {
 /******************************************************************************
  **  MENU GRID SYSTEM
  ******************************************************************************/
-/* line 161 */
+/* line 187 */
 .grid-items-lines {
   position: relative;
   margin-bottom: 5%;
@@ -3458,7 +3486,7 @@ body:after {
   display: table;
   clear: both;
 }
-/* line 170 */
+/* line 196 */
 .grid-items-lines .grid-item {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -3472,29 +3500,29 @@ body:after {
   border: 1px solid #DDD;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 170 */
+  /* line 196 */
   .grid-items-lines .grid-item {
     width: 30.76923%;
     margin-top: 16px;
     margin-right: 16px;
   }
 }
-/* line 184 */
+/* line 210 */
 .grid-items-lines .grid-item:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
-/* line 189 */
+/* line 215 */
 .grid-items-lines .grid-item h1 {
   color: #373d3f;
   font-size: 1.3em;
   margin-bottom: .4em;
 }
-/* line 194 */
+/* line 220 */
 .grid-items-lines .grid-item p {
   color: rgba(55, 61, 63, 0.6);
 }
 @media screen and (min-width: 53.75em) {
-  /* line 200 */
+  /* line 226 */
   .grid-items-lines .grid-item-big {
     width: 61.53846%;
     margin-top: 16px;
@@ -3503,42 +3531,42 @@ body:after {
 }
 
 @media (max-width: 870px) {
-  /* line 214 */
+  /* line 240 */
   .menu-title {
     text-align: center;
   }
 
-  /* line 218 */
+  /* line 244 */
   .grid-items-lines {
     width: 100%;
     margin: 3% auto 3% 10%;
   }
 
-  /* line 222 */
+  /* line 248 */
   .grid-item-big, .grid-item {
     margin: 2% auto;
     width: 100%;
     text-align: center;
   }
 
-  /* line 228 */
+  /* line 254 */
   .grid-item p, .grid-item-big p {
     text-align: center;
   }
 }
 @media (min-width: 870px) {
-  /* line 234 */
+  /* line 260 */
   .grid-item, .grid-item-big {
     height: 13em;
   }
 }
 /***************** STUDENT MENU ******************/
-/* line 244 */
+/* line 270 */
 li.overdue {
   color: #9e1b34;
   list-style-type: none;
 }
-/* line 247 */
+/* line 273 */
 li.overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3550,53 +3578,53 @@ li.overdue:before {
 }
 
 /********* OVERALL STUDENT PAGE STYLES **********/
-/* line 255 */
+/* line 281 */
 h1.page {
   padding-bottom: 1em;
 }
 
 @media (max-width: 350px) {
-  /* line 260 */
+  /* line 286 */
   h1 {
     font-size: 150%;
   }
 
-  /* line 263 */
+  /* line 289 */
   h3 {
     font-size: 100%;
   }
 }
 @media (min-width: 350px) and (max-width: 440px) {
-  /* line 269 */
+  /* line 295 */
   h1 {
     font-size: 180%;
   }
 
-  /* line 273 */
+  /* line 299 */
   h3 {
     font-size: 130%;
   }
 }
 /**************** STUDENT FAQ *******************/
-/* line 280 */
+/* line 306 */
 p.question {
   font-size: 130%;
   font-weight: bold;
 }
 
 /**************** STUDENT PROFILE ***************/
-/* line 287 */
+/* line 313 */
 #field {
   font-weight: bold;
 }
 
-/* line 291 */
+/* line 317 */
 h1.faq {
   padding-bottom: 1em;
 }
 
 /**************** STUDENT MENTOR VIEW ***********/
-/* line 297 */
+/* line 323 */
 div.mentor-pic {
   display: block;
   height: 256px;
@@ -3608,14 +3636,14 @@ div.mentor-pic {
 }
 
 /**************** STUDENT UNIVERSITY ************/
-/* line 308 */
+/* line 334 */
 .uni {
   margin-top: 0;
   margin-bottom: 3%;
 }
 
 /**************** STUDENT TASKS *****************/
-/* line 315 */
+/* line 341 */
 div.hidden-items {
   border: 2px solid #c1c7c9;
   padding: 12px 16px;
@@ -3627,17 +3655,17 @@ div.hidden-items {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 323 */
+/* line 349 */
 div.hidden-items:hover {
   color: #5a6466;
   border-color: #717f82;
 }
-/* line 328 */
+/* line 354 */
 div.hidden-items:active {
   background: #717f82;
   color: white;
 }
-/* line 332 */
+/* line 358 */
 div.hidden-items::after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3651,7 +3679,7 @@ div.hidden-items::after {
   font-weight: bold;
 }
 
-/* line 341 */
+/* line 367 */
 .block {
   display: block;
   background-color: white;
@@ -3662,24 +3690,24 @@ div.hidden-items::after {
   transition: all 0.3s ease-in-out;
   border: 1px solid #DDD;
 }
-/* line 347 */
+/* line 373 */
 .block:hover {
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.3);
 }
 
-/* line 353 */
+/* line 379 */
 .task.block {
   padding: 30px 50px 40px;
   cursor: pointer;
 }
 
-/* line 358 */
+/* line 384 */
 .tasks {
   margin-bottom: 3%;
 }
 
 /**** FLASHES ****/
-/* line 364 */
+/* line 390 */
 .flash {
   max-width: 60em;
   margin-left: auto;
@@ -3695,7 +3723,7 @@ div.hidden-items::after {
   display: table;
   clear: both;
 }
-/* line 370 */
+/* line 396 */
 .flash::before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3708,7 +3736,7 @@ div.hidden-items::after {
 
 /****** MENTOR STYLES *******/
 /*** View Students ***/
-/* line 385 */
+/* line 411 */
 .flex-boxes {
   -webkit-box-pack: center;
   -moz-box-pack: center;
@@ -3737,7 +3765,7 @@ div.hidden-items::after {
   clear: both;
 }
 
-/* line 394 */
+/* line 420 */
 .flex-box {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3756,51 +3784,51 @@ div.hidden-items::after {
   min-width: 31%;
   float: left;
 }
-/* line 407 */
+/* line 433 */
 .flex-box:hover {
   background: rgba(158, 27, 52, 0.3);
 }
-/* line 409 */
+/* line 435 */
 .flex-box:hover .flex-title {
   color: rgba(55, 61, 63, 0.8);
 }
 
 @media (max-width: 685px) {
-  /* line 418 */
+  /* line 444 */
   .flex-boxes {
     margin: 2%;
   }
 
-  /* line 422 */
+  /* line 448 */
   .flex-box {
     min-width: 97%;
     max-width: 97%;
   }
 }
 @media (min-width: 685px) and (max-width: 1020px) {
-  /* line 429 */
+  /* line 455 */
   .flex-boxes {
     margin: 2%;
   }
 
-  /* line 432 */
+  /* line 458 */
   .flex-box {
     min-width: 48%;
     max-width: 48%;
   }
 }
-/* line 439 */
+/* line 465 */
 .prog > div {
   text-align: center;
   margin: auto;
 }
 
-/* line 444 */
+/* line 470 */
 .prog {
   padding-bottom: 1.5em;
 }
 
-/* line 448 */
+/* line 474 */
 .flex-box .flex-title {
   color: rgba(55, 61, 63, 0.7);
   font-weight: 500;
@@ -3808,7 +3836,7 @@ div.hidden-items::after {
   margin-bottom: .5em;
 }
 
-/* line 455 */
+/* line 481 */
 .flex-box p {
   margin: auto;
   line-height: 1.5em;
@@ -3816,18 +3844,18 @@ div.hidden-items::after {
 }
 
 /*** Specific student ***/
-/* line 462 */
+/* line 488 */
 .overview-name {
   margin-bottom: 1em;
   text-align: center;
 }
 
-/* line 467 */
+/* line 493 */
 .overview-title {
   margin: 1em 0 0.5em;
 }
 
-/* line 471 */
+/* line 497 */
 .overview-task, .overview-overdue, .noneTask {
   list-style-type: none;
   margin-top: 0;
@@ -3837,11 +3865,11 @@ div.hidden-items::after {
   box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
 }
 
-/* line 480 */
+/* line 506 */
 .overview-overdue {
   color: #9e1b34;
 }
-/* line 482 */
+/* line 508 */
 .overview-overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3852,11 +3880,11 @@ div.hidden-items::after {
   content: "  ";
 }
 
-/* line 488 */
+/* line 514 */
 .overview-completed {
   color: green;
 }
-/* line 490 */
+/* line 516 */
 .overview-completed:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3867,49 +3895,49 @@ div.hidden-items::after {
   content: "  ";
 }
 
-/* line 496 */
+/* line 522 */
 fieldset {
   margin-bottom: 2em;
 }
 
 /*** Task Creation Page ***/
-/* line 502 */
+/* line 528 */
 .form-group {
   margin-top: 0;
   margin-bottom: 2em;
 }
 
-/* line 508 */
+/* line 534 */
 .control-label {
   font-size: 1.5em;
 }
 
-/* line 513 */
+/* line 539 */
 label {
   display: inline-block;
   margin-top: 0;
   cursor: pointer;
 }
 
-/* line 519 */
+/* line 545 */
 input[name="students"]:checked + label {
   color: #9e1b34;
 }
 
-/* line 525 */
+/* line 551 */
 ul#students li {
   margin-top: 0;
 }
 
 /*** All tasks page ****/
-/* line 531 */
+/* line 557 */
 .all-tasks {
   margin-bottom: 2em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
-/* line 537 */
+/* line 563 */
 .all-tasks-li {
   list-style-type: none;
   padding: 1em;
@@ -3917,11 +3945,11 @@ ul#students li {
   box-shadow: inset 0 0 1px #999, 0 2px 4px #d6d9dd;
 }
 
-/* line 544 */
+/* line 570 */
 .all-tasks-li-overdue {
   color: #9e1b34;
 }
-/* line 546 */
+/* line 572 */
 .all-tasks-li-overdue:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -3932,7 +3960,7 @@ ul#students li {
   content: "  ";
 }
 
-/* line 552 */
+/* line 578 */
 .round-countdown {
   display: inline-block;
   border-radius: 100px;
@@ -3945,60 +3973,60 @@ ul#students li {
   line-height: 0.3;
   padding-top: 5px;
 }
-/* line 564 */
+/* line 590 */
 .round-countdown.overdue {
   background-color: #9e1b34;
   border-color: #9e1b34;
   color: white;
 }
 
-/* line 571 */
+/* line 597 */
 .due-date {
   color: black;
   font-weight: normal;
 }
-/* line 574 */
+/* line 600 */
 .due-date.overdue {
   color: #9e1b34;
   font-weight: bold;
 }
 
-/* line 581 */
+/* line 607 */
 #filter {
   margin: 0 1em 2em;
 }
 
-/* line 585 */
+/* line 611 */
 .filter-l {
   cursor: pointer;
   padding: 0 1em;
   font-weight: normal;
 }
 
-/* line 591 */
+/* line 617 */
 .filter-i {
   display: none !important;
 }
 
-/* line 595 */
+/* line 621 */
 .filter-i:checked + label {
   color: #9e1b34;
 }
 
-/* line 611 */
+/* line 637 */
 .dropdown {
   margin-top: 0;
   margin-bottom: 2em;
   text-align: center;
 }
 
-/* line 617 */
+/* line 643 */
 .dropdown-container {
   display: inline-block;
   position: relative;
 }
 
-/* line 622 */
+/* line 648 */
 .dropdown-description {
   background: #f2f3f4;
   border-bottom-left-radius: 3px;
@@ -4011,13 +4039,13 @@ ul#students li {
   padding: 0 0.5em 0 1em;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 622 */
+  /* line 648 */
   .dropdown-description {
     font-size: 1em;
   }
 }
 
-/* line 638 */
+/* line 664 */
 .dropdown-button {
   background: #f2f3f4;
   border-bottom-right-radius: 3px;
@@ -4035,19 +4063,19 @@ ul#students li {
   position: relative;
 }
 @media screen and (min-width: 53.75em) {
-  /* line 638 */
+  /* line 664 */
   .dropdown-button {
     font-size: 1em;
     padding: 0 2.5em 0 0.5em;
   }
 }
 
-/* line 660 */
+/* line 686 */
 .dropdown-button:hover {
   background-color: #DDD;
 }
 
-/* line 664 */
+/* line 690 */
 .dropdown-button:after {
   color: #373d3f;
   content: "\25BE";
@@ -4057,7 +4085,7 @@ ul#students li {
   top: 0;
 }
 
-/* line 673 */
+/* line 699 */
 .dropdown-menu {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -4077,7 +4105,7 @@ ul#students li {
   z-index: 99999;
 }
 
-/* line 690 */
+/* line 716 */
 .dropdown-menu li {
   border-bottom: 1px solid silver;
   color: #373d3f;
@@ -4085,25 +4113,43 @@ ul#students li {
   padding: 0.5em;
 }
 
-/* line 697 */
+/* line 723 */
 .dropdown-menu li:hover {
   background: #DDD;
 }
 
-/* line 701 */
+/* line 727 */
 .dropdown-menu li:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-/* line 706 */
+/* line 732 */
 .dropdown-menu li:last-child {
   border: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
-/* line 712 */
+/* line 738 */
 .show-menu {
   display: block;
+}
+
+/* line 744 */
+.iframe {
+  position: relative;
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 751 */
+.iframe-wrap {
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  overflow: scroll;
 }

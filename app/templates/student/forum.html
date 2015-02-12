@@ -1,0 +1,35 @@
+{% extends "partials/base.html" %}
+
+{% block title %}Forum{% endblock %}
+
+{% block header %}
+  {% include "partials/pageheader.html" %}
+{% endblock %}
+
+{% block main %}
+<div class="iframe-wrap">
+    <h1 class="page">Forum</h1>
+
+    <iframe class="iframe"
+     src="javascript:void(0)"
+     frameborder="0">
+    </iframe>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".iframe").height($(document).height());
+    $(".iframe").attr("src", function() {
+      return "https://groups.google.com/forum/embed/?place=forum/hack4impact" +
+ "&showsearch=true&showpopout=true&theme=default&parenturl=" + encodeURIComponent(window.location.href);
+  });
+});
+
+  $(document).resize(function() {
+    $(".iframe").height($(document).height());
+  });
+</script>
+{% endblock %}

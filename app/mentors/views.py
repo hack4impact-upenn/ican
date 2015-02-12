@@ -39,7 +39,11 @@ def signup():
             return redirect(url_for('.signup'))
     return render_template('mentor/signup.html', form = form)
 
-# TODO: modify - temporarily added by Annie
+@mentors.route('/forum')
+# @mentors_required
+def forum():
+    return render_template('mentor/forum.html')
+
 @mentors.route('/profile')
 # @mentors_required
 def profile():
