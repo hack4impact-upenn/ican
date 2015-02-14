@@ -1,0 +1,27 @@
+{% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}FAQs{% endblock %}
+
+{% block header %}
+<div class="wrap margins-off">
+  <a href="/admin"><i class="fa fa-angle-left"></i>&nbsp; Back</a>
+  <span style="float: right"><a href="/"><i class="fa fa-times-circle"></i>&nbsp; Log out</a></span>
+  <div style="clear: both;"></div>
+</div>
+{% endblock %}
+{% block main %}
+<table>
+    <tr>
+        <th> Question </th>
+    </tr>
+    {% for faq in faqs %}
+    <tr>
+        <td>{{faq.question}}</td>
+        <td><a href={{"/admin/faqs/edit/" + faq.id|string}}>Edit</td>
+        <td><a href={{"/admin/faqs/delete/" + faq.id|string}}>Delete</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/admin/faqs/create">Create FAQ</a>
+{% endblock %}

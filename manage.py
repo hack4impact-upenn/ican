@@ -40,21 +40,23 @@ def populate():
   gt_4 = GeneralTask(title="Speak to Advisor", description="WOOOOOOOOOO!!!!!", deadline=datetime.datetime(2014,12,7), university=temple)
 
   #create mentor
-  annie = User(name="Annie Meng", email="anniezmeng@gmail.com", password="password", user_role="mentor", university=temple, bio="Lorem ipsum dolor sit amet praesent. Libero vehicula turpis. Neque fermentum augue rutrum accumsan eget pretium sapien eu. Sed sed similique sed turpis suscipit rhoncus justo sapien faucibus commodo nibh. Velit aliquet pellentesque turpis eget in. Arcu eu nec. Nulla sollicitudin quis. In placerat eleifend vestibulum animi nullam amet ipsum lorem et a habitant. Feugiat pellentesque inceptos. Nulla vel cursus. Pulvinar pede augue amet nibh tempus. Leo at sollicitudin. Sit amet quo. Viverra integer nullam felis bibendum lectus. Nulla accumsan ut curabitur velit sollicitudin nam nisl felis. Aliquam aenean exercitation diam facilisis mauris. Nulla sit sollicitudin morbi sit commodo arcu.")
+  annie = User(name="Annie Meng", email="anniezmeng@gmail.com", phone='1234567890', password="password", user_role="mentor", university=temple, bio="Lorem ipsum dolor sit amet praesent. Libero vehicula turpis. Neque fermentum augue rutrum accumsan eget pretium sapien eu. Sed sed similique sed turpis suscipit rhoncus justo sapien faucibus commodo nibh. Velit aliquet pellentesque turpis eget in. Arcu eu nec. Nulla sollicitudin quis. In placerat eleifend vestibulum animi nullam amet ipsum lorem et a habitant. Feugiat pellentesque inceptos. Nulla vel cursus. Pulvinar pede augue amet nibh tempus. Leo at sollicitudin. Sit amet quo. Viverra integer nullam felis bibendum lectus. Nulla accumsan ut curabitur velit sollicitudin nam nisl felis. Aliquam aenean exercitation diam facilisis mauris. Nulla sit sollicitudin morbi sit commodo arcu.")
 
   #create students
-  max_mc = User(name="Max McCarthy", email="maxllmcc@icloud.com", password="password", user_role="student",university=temple)
+  max_mc = User(name="Max McCarthy", email="maxllmcc@icloud.com", password="password", phone='2234567890', user_role="student",university=temple)
   max_mc.mentor = annie
 
-  maya = User(name="Maya Ebsworth", email="maya.ebsworth@gmail.com", password="password", user_role="student", university=temple)
+  maya = User(name="Maya Ebsworth", email="maya.ebsworth@gmail.com", password="password", phone='3234567890', user_role="student", university=temple)
   maya.mentor = annie
 
-  ayush = User(name="Ayush Goyal", email="ayush.goy01@gmail.com", password="password", user_role="student", university=temple)
+  ayush = User(name="Ayush Goyal", email="ayush.goy01@gmail.com", password="password", phone='4234567890', user_role="student", university=temple)
   ayush.mentor = annie
 
+  ali = User(name="Ali Altaf", email="admin@gmail.com", password="password", user_role="admin")
+
   #assign tasks to students
-  max_1 = Task(title="FAFSA", description="Max loves Hackuna Matata", deadline=datetime.datetime(2014,5,5), student=max_mc)
-  max_2 = Task(title="Housing Application", description="I love comic sans", deadline=datetime.datetime(2014,6,6), student=max_mc)
+  max_1 = Task(title="FAFSA", description="Max loves Hackuna Matata", deadline=datetime.datetime(2014,5,5), student=max_mc, completed=True)
+  max_2 = Task(title="Housing Application", description="I love comic sans", deadline=datetime.datetime(2014,6,6), student=max_mc, completed=True)
   max_3 = Task(title="Scholarship Application", description="Ali is the best!!!!", deadline=datetime.datetime(2014,12,5), student=max_mc)
   max_4 = Task(title="Speak to Advisor", description="WOOOOOOOOOO!!!!!", deadline=datetime.datetime(2014,12,7), student=max_mc)
 
@@ -64,7 +66,7 @@ def populate():
   maya_4 = Task(title="Speak to Advisor", description="WOOOOOOOOOO!!!!!", deadline=datetime.datetime(2014,12,7), student=maya)
 
   ayush_1 = Task(title="FAFSA", description="ayush loves Hackuna Matata", deadline=datetime.datetime(2014,5,5), student=ayush)
-  ayush_2 = Task(title="Housing Application", description="I love comic sans", deadline=datetime.datetime(2014,6,6), student=ayush)
+  ayush_2 = Task(title="Housing Application", description="I love comic sans", deadline=datetime.datetime(2014,6,6), student=ayush, completed=True)
   ayush_3 = Task(title="Scholarship Application", description="Ali is the best!!!!", deadline=datetime.datetime(2014,12,5), student=ayush)
   ayush_4 = Task(title="Speak to Advisor", description="WOOOOOOOOOO!!!!!", deadline=datetime.datetime(2014,12,7), student=ayush)
 
@@ -79,6 +81,7 @@ def populate():
   db.session.add(max_mc)
   db.session.add(maya)
   db.session.add(ayush)
+  db.session.add(ali)
 
   db.session.add(gt_1)
   db.session.add(gt_2)

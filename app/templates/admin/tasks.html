@@ -1,0 +1,33 @@
+{% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Tasks{% endblock %}
+
+{% block header %}
+<div class="wrap margins-off">
+  <a href="/admin"><i class="fa fa-angle-left"></i>&nbsp; Back</a>
+  <span style="float: right"><a href="/"><i class="fa fa-times-circle"></i>&nbsp; Log out</a></span>
+  <div style="clear: both;"></div>
+</div>
+{% endblock %}
+{% block main %}
+<table>
+    <tr>
+        <th> Title </th>
+        <th> Description </th>
+        <th> Deadline </th>
+        <th> University </th>
+    </tr>
+    {% for task in tasks %}
+    <tr>
+        <td>{{task.title}}</td>
+        <td>{{task.description}}</td>
+        <td>{{task.deadline}}</td>
+        <td> {{task.university.name}} </td>
+        <td><a href={{"/admin/tasks/edit/" + task.id|string}}>Edit</td>
+        <td><a href={{"/admin/tasks/delete/" + task.id|string}}>Delete</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/admin/tasks/create">Create Task</a>
+{% endblock %}

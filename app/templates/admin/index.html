@@ -1,0 +1,23 @@
+{% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Admin Panel{% endblock %}
+
+{% block header %}
+<div class="wrap margins-off">
+  <span style="float: right"><a href="/"><i class="fa fa-times-circle"></i>&nbsp; Log out</a></span>
+  <div style="clear: both;"></div>
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="wrap">
+  <h1 class="overview-name">Admin Panel</h1>
+  <h2 class="overview-title"><a href="mentors">Mentors</a></h2>
+  <h2 class="overview-title"><a href="students">Students</a></h2>
+  <h2 class="overview-title"><a href="universities">Universities</a></h2>
+  <h2 class="overview-title"><a href="faqs">FAQs</a></h2>
+  <h2 class="overview-title"><a href="tasks">Tasks</a></h2>
+</div>
+{% endblock %}
+

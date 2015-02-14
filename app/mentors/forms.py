@@ -1,6 +1,6 @@
 from flask.ext.wtf import Form
-from wtforms import StringField, SubmitField, PasswordField, TextAreaField, TextField, DateField,SelectMultipleField, widgets, SelectField
-from wtforms.validators import Required, Email, EqualTo
+from wtforms import StringField, SubmitField, PasswordField, TextAreaField, TextField, DateField,SelectMultipleField, widgets, SelectField, IntegerField
+from wtforms.validators import Required, Email, EqualTo, NumberRange
 
 class MultiCheckboxField(SelectMultipleField):
     """
@@ -23,6 +23,7 @@ class TaskCreationForm(Form):
 class EditProfileForm(Form):
     name = StringField('Name:')
     email = StringField('Email:', validators=[Email()])
+    phone = IntegerField('Phone: ', validators=[NumberRange(min=1000000000,max=9999999999)])
     current_password = PasswordField('Current Password:')
     new_password = PasswordField('New Password:')
     submit = SubmitField('Save')
@@ -32,6 +33,7 @@ class SignupForm(Form):
     email = StringField('What is your email?', validators=[Required(), Email()])
     university = SelectField('Which college are you currently enrolled?', validators=[Required()], coerce=int)
     bio = StringField('Tell us about yourself:', validators=[Required()])
+    phone = IntegerField('Phone: ', validators=[NumberRange(min=1000000000,max=9999999999)])
     password = PasswordField('Enter a password:', validators=[Required(), EqualTo('password2', message='Passwords must match') ])
     password2 = PasswordField('Confirm password', validators=[Required()])
     submit = SubmitField('Sign up')

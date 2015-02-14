@@ -3,7 +3,7 @@ from flask import flash, render_template, redirect, url_for, \
 from ..models import User
 from .forms import LoginForm
 from . import main
-from flask.ext.login import login_user
+from flask.ext.login import login_user, logout_user, login_required
 
 
 @main.route('/')
@@ -28,3 +28,11 @@ def login():
                 return redirect(url_for('mentors.index'))
         flash('Invalid username or password.')
     return render_template('main/login.html', form=form)
+
+@main.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    flash('You have been logged out.')
+    return redirect(url_for('.index'))
+

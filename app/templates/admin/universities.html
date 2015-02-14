@@ -1,0 +1,25 @@
+{% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Universities{% endblock %}
+
+{% block header %}
+<div class="wrap margins-off">
+  <a href="/admin"><i class="fa fa-angle-left"></i>&nbsp; Back</a>
+  <span style="float: right"><a href="/"><i class="fa fa-times-circle"></i>&nbsp; Log out</a></span>
+  <div style="clear: both;"></div>
+</div>
+{% endblock %}
+{% block main %}
+<table>
+    <tr>
+        <th> Name </th>
+    </tr>
+    {% for u in universities %}
+    <tr>
+        <td>{{u.name}}</td>
+        <td><a href={{"/admin/universities/edit" + u.id|string}}>Edit Info</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "partials/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Profile{% endblock %}
+
+{% block header %}
+<div class="wrap margins-off">
+  <a href="/admin"><i class="fa fa-angle-left"></i>&nbsp; Back</a>
+  <span style="float: right"><a href="/"><i class="fa fa-times-circle"></i>&nbsp; Log out</a></span>
+  <div style="clear: both;"></div>
+</div>
+{% endblock %}
+{% block main %}
+<table>
+    <tr>
+        <th> Name </th>
+        <th> Email </th>
+        <th> Phone </th>
+    </tr>
+    {% for mentor in mentors %}
+    <tr>
+        <td>{{mentor.name}}</td>
+        <td>{{mentor.email}}</td>
+        <td>{{mentor.phone}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,22 +1,26 @@
+import datetime
+
 from . import mentors
-from flask import render_template, session, redirect, url_for, flash, current_app
-from flask.ext.login import login_required, current_user, login_user
 from ..decorators import mentor_required
 from ..models import User, Task, University
 from forms import TaskCreationForm, EditProfileForm, SignupForm, ContactForm
 from ..import db
 
+from flask import render_template, session, redirect, url_for, flash, current_app
+from flask.ext.login import login_required, current_user, login_user
 from twilio.rest import TwilioRestClient
 
-import datetime
 
 @mentors.route('/')
+@login_required
+@mentor_required
 def index():
     return render_template('mentor/menu.html')
 
 
 @mentors.route('/signup', methods=['GET', 'POST'])
-# @mentors_required
+@login_required
+@mentor_required
 def signup():
     form = SignupForm()
     form.university.choices = [(u.id,u.name) for u in University.query.all()]
@@ -29,7 +33,8 @@ def signup():
                         university=u,
                         bio=form.bio.data,
                         password=form.password.data,
-                        user_role = "mentor")
+                        user_role = "mentor",
+                        phone=form.phone.data)
             db.session.add(user)
             db.session.commit()
             login_user(user)
@@ -39,21 +44,26 @@ def signup():
             return redirect(url_for('.signup'))
     return render_template('mentor/signup.html', form = form)
 
-# TODO: modify - temporarily added by Annie
+
 @mentors.route('/profile')
-# @mentors_required
+@login_required
+@mentor_required
 def profile():
     return render_template('mentor/profile.html')
 
+
 @mentors.route('/tasks')
-# @mentors_required
+@login_required
+@mentor_required
 def tasks():
     taskList = [i for i in current_user.get_all_tasks_list() if i.completed is False]
     students = current_user.students
     return render_template('mentor/tasks.html', students=students, User=User, tasks=taskList, date=datetime.datetime.now())
 
+
 @mentors.route('/students')
-# @mentors_required
+@login_required
+@mentor_required
 def students():
     students = current_user.students
     student_data = []
@@ -67,10 +77,16 @@ def students():
         student_data.append(dic)
     return render_template('mentor/students.html', students=student_data)
 
+
 @mentors.route('/students/<student_id>', methods=['GET','POST'])
+@login_required
+@mentor_required
 def student(student_id):
     form = ContactForm()
     student = User.query.get(student_id)
+    if student.user_role != 'student' or student.mentor != current_user:
+        flash("You are not authorized to view this user!")
+        return redirect(url_for('.students'))
     tasks = student.tasks.order_by(Task.deadline)
     overdue = []
     upcoming = []
@@ -97,12 +113,16 @@ def student(student_id):
         return redirect(url_for('.students'))
     return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime, completed=completed, overdue=overdue, upcoming=upcoming)
 
+
 @mentors.route('/profile-edit', methods=['GET', 'POST'])
+@login_required
+@mentor_required
 def profile_edit():
     form = EditProfileForm(obj=current_user)
     if form.validate_on_submit():
         current_user.name = form.name.data
         current_user.email = form.email.data
+        current_user.phone = form.phone.data
         if (form.new_password.data and form.current_password.data):
             if current_user.verify_password(form.current_password.data):
                 current_user.password = form.new_password.data
@@ -116,7 +136,9 @@ def profile_edit():
         return redirect(url_for('.index'))
     form.name.data = current_user.name
     form.email.data = current_user.email
+    form.phone.data = current_user.phone
     return render_template('mentor/profile-edit.html', student=current_user, form=form)
+
 
 @mentors.route('/create_tasks', methods=['GET', 'POST'])
 @login_required
@@ -132,3 +154,10 @@ def create_tasks():
         flash('Added the new tasks!')
         return redirect(url_for('.index'))
     return render_template('mentor/task_creation.html', form=form)
+
+
+@mentors.route('/forum')
+@login_required
+@mentor_required
+def forum():
+    return render_template('mentor/forum.html')

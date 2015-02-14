@@ -141,6 +141,7 @@ class University(db.Model):
     tasks = db.relationship('GeneralTask', backref='university')
     users = db.relationship('User', backref='university')
 
+
 class FAQ(db.Model):
     __tablename__ = 'FAQs'
     id = db.Column(db.Integer, primary_key=True)
