@@ -6,6 +6,7 @@ from flask import render_template, session, redirect, url_for, current_app, flas
 from .. import db
 from forms import ReassignForm, EditTaskForm, TaskCreationForm, EditFAQForm, FAQCreationForm
 from ..decorators import admin_required
+from ..email import send_text
 
 from flask.ext.login import login_required
 from twilio.rest import TwilioRestClient
@@ -166,15 +167,12 @@ def create_faq():
 
 @admin.route('/send_reminders')
 def send_reminders():
-    account_sid = "ACdcb35266e1787a2de79a7789cb382199"
-    auth_token = "0e0ca7204a74f30b27c37d0565de8a9f"
-    client = TwilioRestClient(account_sid, auth_token)
+
     for student in User.query.filter_by(user_role="student").all():
         tasks = student.tasks.filter_by(completed=False).order_by(Task.deadline).all()
         for task in tasks:
             deadline_now_diff = task.deadline - datetime.datetime.now()
             if deadline_now_diff < datetime.timedelta(1):
-                message = client.messages.create(to="+1" + str(student.phone), from_="+12673184464",
-                                     body="Hello there! " + task.title + " is due in less than 24 hours!")
+                send_text("2672374105", "Hello there! " + task.title + " is due in less than 24 hours!")
     return 'Reminders sent.'
 

@@ -32,6 +32,7 @@ header {
   background-color: $base-accent-color;
   color: white;
   padding: 5px 0;
+
   a {
     color: white;
     font-weight: bold;
@@ -95,6 +96,31 @@ body {
 	}
 }
 
+.landing-btns {
+  clear:both;
+}
+
+.logo-p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 2%;
+  vertical-align:text-bottom;
+}
+
+.logo {
+  margin-left: 5px;
+  height: 1.5em;
+}
+
+@media (max-width: 800px) {
+  .logo-p {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /******************************************************************************
  ** FORMS
  ******************************************************************************/
@@ -119,7 +145,11 @@ body {
 	.form-wrapper {
 		max-width: 90%;
 		margin: 0 auto;
-		
+
+		.control-label {
+			font-size: 1em;
+		}
+
 		.btn {
 			margin-top: 1em;
 		}
@@ -707,4 +737,23 @@ $dropdown-arrow-top-distance: 0;
 
 .show-menu {
   display: block;
+}
+
+
+// FORUM
+.iframe {
+  position: relative;
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.iframe-wrap {
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  overflow: scroll;
+  //margin-bottom: 5%;
 }

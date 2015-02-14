@@ -5,6 +5,7 @@ from ..decorators import mentor_required
 from ..models import User, Task, University
 from forms import TaskCreationForm, EditProfileForm, SignupForm, ContactForm
 from ..import db
+from ..email import send_text
 
 from flask import render_template, session, redirect, url_for, flash, current_app
 from flask.ext.login import login_required, current_user, login_user
@@ -43,7 +44,6 @@ def signup():
             flash("This Username/Password is already in use.")
             return redirect(url_for('.signup'))
     return render_template('mentor/signup.html', form = form)
-
 
 @mentors.route('/profile')
 @login_required
@@ -98,18 +98,11 @@ def student(student_id):
             overdue.append(task)
         else:
             upcoming.append(task)
-    print "Tasks"
-    print overdue
-    print upcoming
-    print completed
 
     if form.validate_on_submit():
         name = student.name
         flash(name + ' has been sent a message!')
-        # account_sid = ""
-        # auth_token = ""
-        # client = TwilioRestClient(account_sid, auth_token)
-        # message = client.messages.create(body=form.text.data, to="2407515073", from_="+14845882099")
+        send_text("2672374105", form.text.data)
         return redirect(url_for('.students'))
     return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime, completed=completed, overdue=overdue, upcoming=upcoming)
 

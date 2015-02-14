@@ -3,6 +3,9 @@ from flask import current_app, render_template
 from flask.ext.mail import Message
 from . import mail
 
+account_sid = "ACdcb35266e1787a2de79a7789cb382199"
+auth_token = "0e0ca7204a74f30b27c37d0565de8a9f"
+client = TwilioRestClient(account_sid, auth_token)
 
 def send_async_email(app, msg):
     with app.app_context():
@@ -18,3 +21,7 @@ def send_email(to, subject, template, **kwargs):
     thr = Thread(target=send_async_email, args=[app, msg])
     thr.start()
     return thr
+
+
+def send_text(to, body):
+    client.messages.create("+1" + str(to), from_="+12673184464", body)
