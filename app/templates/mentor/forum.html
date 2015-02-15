@@ -13,8 +13,8 @@
      src="javascript:void(0)"
      frameborder="0">
    </iframe>-->
-   <object data="https://groups.google.com/forum/embed/?place=forum/hack4impact&showsearch=true&output=embed&showpopout=true&theme=default" width="600" height="400">
-    <embed src="https://groups.google.com/forum/embed/?place=forum/hack4impact&showsearch=true&output=embed&showpopout=true&theme=default" width="600" height="400"> </embed>
+   <object class="embed" data="https://groups.google.com/forum/embed/?place=forum/hack4impact&showsearch=true&output=embed&showpopout=true&theme=default">
+    <embed class="embed" src="https://groups.google.com/forum/embed/?place=forum/hack4impact&showsearch=true&output=embed&showpopout=true&theme=default"> </embed>
     Error: Embedded data could not be displayed.
   </object>
 
@@ -23,16 +23,16 @@
 
 {% block scripts %}
 <script type="text/javascript">
-  /*$(document).ready(function() {
-    $(".iframe").height($(document).height());
-    $(".iframe").attr("src", function() {
+  $(document).ready(function() {
+    $(".embed").height($(document).height());
+    /*$(".iframe").attr("src", function() {
       return "https://groups.google.com/forum/embed/?place=forum/hack4impact" +
  "&showsearch=true&output=embed&showpopout=true&theme=default&parenturl=" + encodeURIComponent(window.location.href);
-  });
+  });*/
 });
 
   $(document).resize(function() {
-    $(".iframe").height($(document).height());
-  });*/
+    $(".embed").height($(document).height());
+  });
 </script>
 {% endblock %}

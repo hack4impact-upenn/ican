@@ -10,10 +10,15 @@
 <div class="iframe-wrap">
     <h1 class="page">Forum</h1>
 
-    <iframe class="iframe"
+    <!--<iframe class="iframe"
      src="javascript:void(0)"
      frameborder="0">
-    </iframe>
+   </iframe>-->
+
+    <object class="embed" data="https://groups.google.com/forum/embed/?place=forum/hack4impact&showsearch=true&output=embed&showpopout=true&theme=default">
+     <embed class="embed" src="https://groups.google.com/forum/embed/?place=forum/hack4impact&showsearch=true&output=embed&showpopout=true&theme=default"> </embed>
+     Error: Embedded data could not be displayed.
+   </object>
 
 </div>
 {% endblock %}
@@ -21,15 +26,15 @@
 {% block scripts %}
 <script type="text/javascript">
   $(document).ready(function() {
-    $(".iframe").height($(document).height());
-    $(".iframe").attr("src", function() {
+    $(".embed").height($(document).height());
+    /*$(".iframe").attr("src", function() {
       return "https://groups.google.com/forum/embed/?place=forum/hack4impact" +
  "&showsearch=true&showpopout=true&theme=default&parenturl=" + encodeURIComponent(window.location.href);
-  });
+  });*/
 });
 
   $(document).resize(function() {
-    $(".iframe").height($(document).height());
+    $(".embed").height($(document).height());
   });
 </script>
 {% endblock %}
