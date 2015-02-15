@@ -1,7 +1,7 @@
 {% extends "partials/base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
 
-{% block title %}Reassign{% endblock %}
+{% block title %}Profile{% endblock %}
 
 {% block header %}
 <div class="wrap margins-off">
@@ -12,10 +12,18 @@
 {% endblock %}
 
 {% block main %}
-<div class="wrap">
-    <div class="form-wrapper">
-        <h1>Reassign {{student.name}}</h1>
-        {{ wtf.quick_form(form) }}
-    </div>
-</div>
+<table>
+    <tr>
+        <th> Name </th>
+        <th> Email </th>
+        <th> Phone </th>
+    </tr>
+    {% for mentor in mentors %}
+    <tr>
+        <td>{{mentor.name}}</td>
+        <td>{{mentor.email}}</td>
+        <td>{{mentor.phone}}</td>
+    </tr>
+    {% endfor %}
+</table>
 {% endblock %}
