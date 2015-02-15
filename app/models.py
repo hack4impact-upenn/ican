@@ -16,7 +16,7 @@ class User(UserMixin, db.Model):
     mentor_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     university_id = db.Column(db.Integer, db.ForeignKey('universities.id'))
     mentor = db.relationship('User', backref='students', remote_side=[id])
-    bio = db.Column(db.String(64), index=True)
+    bio = db.Column(db.Text, index=True)
     tasks = db.relationship('Task', backref='student', lazy='dynamic')
     display_phone = db.Column(db.Boolean) # for mentors only, True: display phone & email; False: display just email
     avatar_hash = db.Column(db.String(32))
@@ -145,5 +145,5 @@ class University(db.Model):
 class FAQ(db.Model):
     __tablename__ = 'FAQs'
     id = db.Column(db.Integer, primary_key=True)
-    question = db.Column(db.String(64))
-    answer = db.Column(db.String(64))
+    question = db.Column(db.Text)
+    answer = db.Column(db.Text)
