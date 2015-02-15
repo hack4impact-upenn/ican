@@ -25,4 +25,4 @@ def send_email(to, subject, template, **kwargs):
 
 
 def send_text(to, body):
-    client.messages.create(to="+1" + str(to), from_="+12673184464", body=body)
+    client.messages.create(to="+1" + to, from_="+12673184464", body=body)
