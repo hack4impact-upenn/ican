@@ -9,7 +9,6 @@ from ..decorators import admin_required
 from ..email import send_text
 
 from flask.ext.login import login_required
-from twilio.rest import TwilioRestClient
 
 @admin.route('/')
 @login_required
@@ -173,6 +172,6 @@ def send_reminders():
         for task in tasks:
             deadline_now_diff = task.deadline - datetime.datetime.now()
             if deadline_now_diff < datetime.timedelta(1):
-                send_text("2672374105", "Hello there! " + task.title + " is due in less than 24 hours!")
+                send_text(student.phone, "Hello there! " + task.title + " is due in less than 24 hours!")
     return 'Reminders sent.'
 

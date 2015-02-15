@@ -102,7 +102,7 @@ def student(student_id):
     if form.validate_on_submit():
         name = student.name
         flash(name + ' has been sent a message!')
-        send_text("2672374105", form.text.data)
+        send_text(student.phone, form.text.data)
         return redirect(url_for('.students'))
     return render_template('mentor/overview.html', form=form, student=student, date=datetime.datetime, completed=completed, overdue=overdue, upcoming=upcoming)
 
