@@ -107,5 +107,11 @@ def populate():
   db.session.add(faq_2)
   db.session.add(faq_3)
 
+@manager.command
+def deploy():
+  from flask.ext.migrate import upgrade
+
+  upgrade()
+
 if __name__ == '__main__':
     manager.run()
