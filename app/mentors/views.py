@@ -20,8 +20,6 @@ def index():
 
 
 @mentors.route('/signup', methods=['GET', 'POST'])
-@login_required
-@mentor_required
 def signup():
     form = SignupForm()
     form.university.choices = [(u.id,u.name) for u in University.query.all()]
