@@ -1,5 +1,5 @@
 from flask.ext.wtf import Form
-from wtforms import SelectField, SubmitField, StringField, TextField, DateField, widgets, SelectMultipleField
+from wtforms import SelectField, SubmitField, StringField, TextField, DateField, widgets, SelectMultipleField, TextAreaField
 from wtforms.validators import Required
 
 class MultiCheckboxField(SelectMultipleField):
@@ -38,3 +38,7 @@ class FAQCreationForm(Form):
     question = TextField('Question')
     answer = TextField('Answer')
     submit = SubmitField('Create FAQ')
+
+class EditUniversityForm(Form):
+    description = TextAreaField('University Description')
+    submit = SubmitField('Update University')

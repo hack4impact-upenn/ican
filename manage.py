@@ -31,7 +31,7 @@ def populate():
   db.create_all()
 
   #create university
-  temple = University(name="Temple University")
+  temple = University(name="Temple University", description="asdfasdfasdfasdf")
 
   #create general tasks for temple
   gt_1 = GeneralTask(title="FAFSA", description="Max loves Hackuna Matata", deadline=datetime.datetime(2014,5,5), university=temple)
