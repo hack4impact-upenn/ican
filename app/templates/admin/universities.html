@@ -18,7 +18,7 @@
     {% for u in universities %}
     <tr>
         <td>{{u.name}}</td>
-        <td><a href={{"/admin/universities/edit" + u.id|string}}>Edit Info</td>
+        <td><a href={{"/admin/universities/edit/" + u.id|string}}>Edit Info</td>
     </tr>
     {% endfor %}
 </table>

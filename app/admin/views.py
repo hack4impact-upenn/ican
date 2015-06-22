@@ -4,7 +4,7 @@ from . import admin
 from ..models import User, University, GeneralTask, FAQ, Task
 from flask import render_template, session, redirect, url_for, current_app, flash
 from .. import db
-from forms import ReassignForm, EditTaskForm, TaskCreationForm, EditFAQForm, FAQCreationForm
+from forms import ReassignForm, EditTaskForm, TaskCreationForm, EditFAQForm, FAQCreationForm, EditUniversityForm
 from ..decorators import admin_required
 from ..email import send_text
 
@@ -45,7 +45,7 @@ def reassign(student_id):
         flash("Reassigned " + student.name)
         return redirect(url_for('.index'))
 
-    return render_template('admin/reassign.html', form=form, student = student)
+    return render_template('admin/reassign.html', form=form, student=student)
 
 @admin.route('/universities')
 @login_required
@@ -54,6 +54,20 @@ def universities():
     universities = University.query.all()
     return render_template('admin/universities.html', universities=universities)
 
+@admin.route('/universities/edit/<university_id>', methods=['GET', 'POST'])
+@login_required
+@admin_required
+def edit_universities(university_id):
+    university = University.query.filter_by(id=university_id).first()
+    form = EditUniversityForm(obj=university)
+    if form.validate_on_submit():
+        description = form.description.data
+        university.description = description
+        db.session.add(university)
+        db.session.commit()
+        flash("Edited description for " + university.name)
+        return redirect(url_for('.index'))
+    return render_template('admin/edit_universities.html', university=university, form=form)
 
 @admin.route('/tasks')
 @login_required
