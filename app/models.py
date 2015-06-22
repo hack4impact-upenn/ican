@@ -140,6 +140,7 @@ class University(db.Model):
     name = db.Column(db.String(64))
     tasks = db.relationship('GeneralTask', backref='university')
     users = db.relationship('User', backref='university')
+    description = db.Column(db.String(5000))
 
 
 class FAQ(db.Model):
