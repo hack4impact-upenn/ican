@@ -14,16 +14,31 @@
      src="javascript:void(0)"
      frameborder="0">
    </iframe>-->
-
+<!-- 
     <object class="embed" data="https://groups.google.com/forum/embed/?place=forum/hack4impact&showsearch=true&output=embed&showpopout=true&theme=default">
      <embed class="embed" src="https://groups.google.com/forum/embed/?place=forum/hack4impact&showsearch=true&output=embed&showpopout=true&theme=default"> </embed>
      Error: Embedded data could not be displayed.
-   </object>
+   </object> -->
+   <iframe id="forum_embed"
+ src="javascript:void(0)"
+ scrolling="no"
+ frameborder="0"
+ width="900"
+ height="700">
+</iframe>
+<script type="text/javascript">
+ document.getElementById("forum_embed").src =
+  "https://groups.google.com/forum/embed/?place=forum/ican-students-2015" +
+  "&showsearch=true&showpopout=true&parenturl=" +
+  encodeURIComponent(window.location.href);
+</script>
 
 </div>
 {% endblock %}
 
 {% block scripts %}
+
+
 <script type="text/javascript">
   $(document).ready(function() {
     $(".embed").height($(document).height());
